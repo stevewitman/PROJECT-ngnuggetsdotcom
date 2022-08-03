@@ -1,4 +1,153 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-orange50: #FF66000F;
+  --color-orange100: #FF660010;
+  --color-orange150: #FF660015;
+  --color-orange500: #FF6600;
+  --color-orange500: #ffa500;
+  --color-orange700: #ce5200;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  --color-turquoise100: #3EC1D317;
+  --color-turquoise200: #3EC1D330;
+  --color-turquoise500: #3EC1D3;
+  --color-turquoise700: #2e919e;
+
+  --color-small-thin-gray-text: #333;
+  --color-small-gray-logo: #BBB;
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 599px) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// PAGE STYLES
+.page-title {
+  padding: 10px 10px 0 0;
+}
+
+.page-container-narrow {
+  max-width: 560px;
+  display: flex;
+  // justify-content: space-between;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+  padding-left: 12px;
+
+  @media screen and (max-width: 599px) {
+    padding-left: 0px;
+  }
+}
+
+.page-container-wide {
+  display: flex;
+  // justify-content: space-between;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+  padding-left: 12px;
+
+  @media screen and (max-width: 599px) {
+    padding-left: 0px;
+  }
+}
+
+// FORM STYLES
+mat-form-field {
+  width: 100%;
+  max-width: 560px;
+  display: block;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: var(--color-turquoise700);
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  color: var(--color-turquoise700);
+  background-color: var(--color-turquoise700);
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+  opacity: 0 !important;
+  ;
+  background-color: var(--color-turquoise700);
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.mat-form-field-label {
+  color: #333 !important;
+  font-weight: bold !important;
+}
+
+// mat input placeholder color when focused
+.mat-focused .mat-form-field-label {
+  color: #333 !important;
+}
+
+.radio-group-label {
+  padding: 0 0 6px 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-button {
+  max-width: calc(100%);
+  padding: 5px 5px 5px 15px;
+}
+
+.radio-button-selected {
+  color: var(--color-turquoise700);
+  font-weight: bolder;
+  background-color: var(--color-turquoise100);
+  border-radius: 4px;
+}
+
+.mat-radio-label-content {
+  margin-left: 5px;
+}
+
+.question {
+  padding-left: 0.1em;
+}
