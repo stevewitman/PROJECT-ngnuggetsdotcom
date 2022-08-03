@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ngnuggetsdotcom-firebase": {
+      "hosting": {
+        "ngnuggetsdotcom": [
+          "ngnuggetsdotcom-firebase"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ngnuggetsdotcom-firebase"
+  }
+}
