@@ -1,7 +1,3 @@
-.mat-icon {
-  margin-bottom: 2px;
-}
-
 .toolbar-main {
   display: flex;
   align-items: center;
@@ -25,8 +21,8 @@
   }
 }
 
-.toolbar-button {
-  padding-bottom: 12px;
+.mat-icon {
+  margin-bottom: 2px;
 }
 
 .logo-home-button {
@@ -34,7 +30,7 @@
   padding: 0 8px 2px 8px;
 }
 
-.logo-ngnuggets {
+.logo-image {
   margin: 0 5px;
   height: 26px;
 }
@@ -46,6 +42,7 @@
   font-family: "Roboto Condensed";
   font-size: 24px;
 }
+
 .logo-text-orange {
   color: #FF7F00;
 }

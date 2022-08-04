@@ -1,20 +1,18 @@
 <mat-toolbar class="toolbar-main">
 
 <!-- ***** SIDENAV TOGGLE BUTTON ***** -->
-    <button mat-icon-button (click)="toggleDrawer.emit()" class="toolbar-button" aria-label="Toggle sidenav button">
+    <button mat-icon-button (click)="toggleDrawer.emit()" aria-label="Toggle sidenav button">
       <mat-icon aria-label="Side nav toggle icon" *ngIf="!drawerOpen">menu</mat-icon>
       <mat-icon aria-label="Side nav toggle icon" *ngIf="drawerOpen">menu_open</mat-icon>
     </button>
 
-
 <!-- ***** LOGO ***** -->
   <div class="toolbar-middle">
     <button mat-flat-button class="logo-home-button" [routerLink]="['/']">
-      <img src="./assets/images/ngnuggets-transparent.png" class="logo-ngnuggets">
+      <img src="./assets/images/ngnuggets-transparent.png" class="logo-image">
       <span class="logo-text">ng<span class="logo-text-orange">Nuggets</span></span> 
     </button>
   </div>
-
 
 <!-- ***** AUTH STATUS ***** -->
   <button mat-icon-button>

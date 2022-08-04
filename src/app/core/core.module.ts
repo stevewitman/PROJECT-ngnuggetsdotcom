@@ -8,13 +8,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { HeaderComponent } from './components/header/header.component';
 import { LayoutComponent } from './components/layout/layout.component';
-import { HeaderMainToolbarComponent } from './components/header-main-toolbar/header-main-toolbar.component';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [HeaderComponent, LayoutComponent, HeaderMainToolbarComponent, SideNavComponent],
+  declarations: [LayoutComponent, ToolbarComponent, SidenavComponent],
   imports: [
     CommonModule,
     RouterModule,
