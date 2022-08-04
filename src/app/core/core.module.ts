@@ -10,9 +10,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { HeaderComponent } from './components/header/header.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { HeaderMainToolbarComponent } from './components/header-main-toolbar/header-main-toolbar.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
-  declarations: [HeaderComponent, LayoutComponent],
+  declarations: [HeaderComponent, LayoutComponent, HeaderMainToolbarComponent, SideNavComponent],
   imports: [
     CommonModule,
     RouterModule,

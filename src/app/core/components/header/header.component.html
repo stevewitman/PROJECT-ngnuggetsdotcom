@@ -1,29 +1,4 @@
-<mat-toolbar class="main-toolbar">
-  <ng-container *ngIf="!drawer.opened">
-    <button
-      type="button"
-      aria-label="Toggle sidenav"
-      mat-icon-button
-      (click)="drawer.toggle()"
-    >
-      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button>
-  </ng-container>
-  <ng-container *ngIf="drawer.opened">
-    <button
-      type="button"
-      aria-label="Toggle sidenav"
-      mat-icon-button
-      (click)="drawer.toggle()"
-    >
-      <mat-icon aria-label="Side nav toggle icon">menu_open</mat-icon>
-    </button>
-  </ng-container>
-  <!-- <a [routerLink]="['/']"> -->
-  <a >
-    <img src="./assets/images/ngnuggets-logo-toolbar-dark.png" class="ngnuggets-logo-toolbar">
-  </a>
-</mat-toolbar>
+<app-header-main-toolbar [drawerOpen]="drawer.opened" (toggleDrawer)="drawer.toggle()"></app-header-main-toolbar>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
@@ -36,30 +11,30 @@
     <mat-nav-list>
       <a
         mat-list-item
-
+        class="list-item"
         (click)="isHandset && drawer.close()"
         routerLinkActive="link-active"
-        ><mat-icon class="icon">home</mat-icon
-        ><span class="menu-item">Home</span></a
+        ><mat-icon class="list-item-icon">home</mat-icon
+        ><span class="list-item-text">Home</span></a
       >
       <a
         mat-list-item
-
+class="list-item"
         (click)="onClickFilters()"
         (click)="isHandset && !showFilters && drawer.close()"
       >
-        <mat-icon class="icon">filter_alt</mat-icon>
-        <span class="menu-item">Filter By</span>
+        <mat-icon class="list-item-icon">filter_alt</mat-icon>
+        <span class="list-item-text">Filter By</span>
         <mat-icon class="menu-expand">expand_more</mat-icon></a
       >
       <mat-nav-list class="sub-menu" *ngIf="showFilters" @staggerList>
-        <a mat-list-item><span class="menu-item">Hide Videos</span></a>
-        <a mat-list-item><span class="menu-item">Hide Blogs</span></a>
-        <a mat-list-item><span class="menu-item">Hide Podcasts</span></a>
-        <a mat-list-item><span class="menu-item">Hide Releases</span></a>
-        <a mat-list-item><span class="menu-item">Hide Community</span></a>
-        <!-- <a mat-list-item><span class="menu-item">My Favorites</span></a> -->
-        <!-- <a mat-list-item><span class="menu-item">Search</span></a> -->
+        <a mat-list-item><span class="list-item-text">Hide Videos</span></a>
+        <a mat-list-item><span class="list-item-text">Hide Blogs</span></a>
+        <a mat-list-item><span class="list-item-text">Hide Podcasts</span></a>
+        <a mat-list-item><span class="list-item-text">Hide Releases</span></a>
+        <a mat-list-item><span class="list-item-text">Hide Community</span></a>
+        <!-- <a mat-list-item><span class="list-item-text">My Favorites</span></a> -->
+        <!-- <a mat-list-item><span class="list-item-text">Search</span></a> -->
       </mat-nav-list>
 
       <hr />
@@ -69,40 +44,40 @@
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">mail</mat-icon
-        ><span class="menu-item">Newsletter</span></a
+        ><mat-icon class="list-item-icon">mail</mat-icon
+        ><span class="list-item-text">Newsletter</span></a
       >
       <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">note_add</mat-icon
-        ><span class="menu-item">Submit Link</span></a
+        ><mat-icon class="list-item-icon">note_add</mat-icon
+        ><span class="list-item-text">Submit Link</span></a
       >
       <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">settings</mat-icon
-        ><span class="menu-item">Settings</span></a
+        ><mat-icon class="list-item-icon">settings</mat-icon
+        ><span class="list-item-text">Settings</span></a
       >
       <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">info</mat-icon
-        ><span class="menu-item">About</span></a
+        ><mat-icon class="list-item-icon">info</mat-icon
+        ><span class="list-item-text">About</span></a
       >
       <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">contact_page</mat-icon
-        ><span class="menu-item">Contact</span></a
+        ><mat-icon class="list-item-icon">contact_page</mat-icon
+        ><span class="list-item-text">Contact</span></a
       >
 
 
@@ -113,23 +88,23 @@
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">star</mat-icon
-        ><span class="menu-item">Sponsors</span></a
+        ><mat-icon class="list-item-icon">star</mat-icon
+        ><span class="list-item-text">Sponsors</span></a
       >
       <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
-        ><mat-icon class="icon">attach_money</mat-icon
-        ><span class="menu-item">Donate</span></a
+        ><mat-icon class="list-item-icon">attach_money</mat-icon
+        ><span class="list-item-text">Donate</span></a
       >
 
       <hr />
 
       <a mat-list-item>
         <mat-icon class="angularmentors-light-icon">people_outline</mat-icon>
-        <span class="menu-item">
+        <span class="list-item-text">
           <span class="angularmentors-light-angular">ANGULAR</span>
           <span class="angularmentors-light-mentors">MENTORS</span>
           <span class="angularmentors-light-dotcom">.COM</span>

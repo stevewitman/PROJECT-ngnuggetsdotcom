@@ -4,17 +4,7 @@ mat-toolbar {
   padding-left: 12px;
 }
 
-.main-toolbar {
-  height: 56px;
-  position: fixed;
-  z-index: 10;
-  background: #252525;
-  color: white;
 
-  a {
-    text-decoration: none;
-  }
-}
 
 // Sidenav Styles
 .mat-sidenav {
@@ -26,18 +16,21 @@ mat-toolbar {
 
 .mat-nav-list {
   padding-left: 0px;
+  .mat-list-item {
+    height: 40px;
+  }
 }
 
-.menu-item {
+.list-item-icon {
+  padding-left: 2px;
+  padding-right: 6px;
+  color: #606060;
+}
+
+.list-item-text {
   padding-left: 12px;
 }
 
-.icon {
-  padding-left: 2px;
-  padding-right: 6px;
-
-  color: #606060;
-}
 
 .link-active {
   color: var(--color-orange500);
@@ -59,50 +52,9 @@ hr {
   border-top: 1px solid #ccc;
 }
 
-// ngNuggets Logo
-.ngnuggets-dark-logo {
-  position: relative;
-  display: flex;
-  top: -2px;
-}
-
-.ngnuggets-dark-text {
-  position: relative;
-}
-
-.ngnuggets-dark-svg {
-  padding-left: 12px;
-  padding-right: 2px;
-}
-
-.ngnuggets-dark-ng {
-  position: absolute;
-  top: 8px;
-  font-size: 22px;
-  color: var(--color-orange500);
-  letter-spacing: 0px;
-}
-
-.ngnuggets-dark-nugs {
-  position: absolute;
-  top: 8px;
-  right: -120px;
-  font-size: 22px;
-  color: white;
-  padding-left: 1px;
-  padding-right: 3px;
-  letter-spacing: 0px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-// Angular Mentors Logo
-.ngnuggets-logo-toolbar {
-  padding-top: 8px;
-  width: 175px;
-}
+// ANGULAR MENTORS LOGO
 
 .angularmentors-light-icon {
-  // padding-left: 8px;
   color: var(--color-orange500);
 }
 

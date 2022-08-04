@@ -1,0 +1,51 @@
+.mat-icon {
+  margin-bottom: 2px;
+}
+
+.toolbar-main {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  padding-left: 12px;
+  height: 56px;
+  background: var(--color-gray-2);
+  color: white;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.toolbar-middle {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 650px) {
+    justify-content: center;
+  }
+}
+
+.toolbar-button {
+  padding-bottom: 12px;
+}
+
+.logo-home-button {
+  background-color: var(--color-gray-2);
+  padding: 0 8px 2px 8px;
+}
+
+.logo-ngnuggets {
+  margin: 0 5px;
+  height: 26px;
+}
+
+.logo-text {
+  position: relative;
+  bottom: 1px;
+  color: white;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+}
+.logo-text-orange {
+  color: #FF7F00;
+}
