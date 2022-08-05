@@ -1,87 +1,33 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 
-import { map, Observable, shareReplay } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { MatSidenav } from '@angular/material/sidenav';
 
-import {
-  animate,
-  group,
-  query,
-  stagger,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { BreakpointService } from '../../services/breakpoint.service';
+import { Animations } from '../../../shared/animations'
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
-    animations: [
-    trigger('staggerList', [
-      transition(':enter', [
-        style({ height: '0px' }),
-        group([
-          animate('250ms ease-in-out', style({ height: '*', opacity: 1 })),
-          query('a', style({ opacity: 0 }), { optional: true }),
-          query(
-            'a',
-            stagger('40ms', [
-              animate(
-                '40ms ease-in-out',
-                style({
-                  opacity: 1,
-                })
-              ),
-            ]),
-            { optional: true }
-          ),
-        ]),
-      ]),
-      transition(':leave', [
-        style({ height: '*' }),
-        group([
-          animate('250ms ease-out', style({ height: '0px', opacity: 1 })),
-          query('a', style({ opacity: 1 }), { optional: true }),
-          query(
-            'a',
-            stagger('-40ms', [
-              animate(
-                '40ms ease-out',
-                style({
-                  opacity: 0,
-                })
-              ),
-            ]),
-            { optional: true }
-          ),
-        ]),
-      ]),
-    ]),
-    trigger('routeAnimations', [
-      transition('* <=> *', [style({ opacity: 0 }), animate('400ms ease-in')]),
-    ]),
+  animations: [
+    Animations.staggerList,
+    Animations.routeAnimation
   ],
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent implements OnInit, OnDestroy {
   @ViewChild('drawer') drawerRef!: MatSidenav;
 
-  isHandset$: Observable<boolean> = this.breakpointObserver
-    .observe(Breakpoints.XSmall)
-    .pipe(
-      map((result) => result.matches),
-      shareReplay()
-    );
-
-  isHandset!: boolean;
+  isHandset: boolean | undefined;
+  isHandset$: Observable<boolean> | undefined;
+  isHandset$$: Subscription | undefined;
 
   showFilters = false;
 
   constructor(
-    private breakpointObserver: BreakpointObserver,
-    private router: Router,
+    public breakpointService: BreakpointService,
+    private router: Router
   ) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd && location.pathname == '/') {
@@ -94,9 +40,13 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.isHandset$.subscribe((value) => {
-      this.isHandset = value;
+    this.isHandset$$ = this.breakpointService.isHandset$?.subscribe(val => {
+      this.isHandset = val;
     });
+  }
+
+  ngOnDestroy() {
+    this.isHandset$$?.unsubscribe()
   }
 
   prepareRoute(outlet: RouterOutlet) {
