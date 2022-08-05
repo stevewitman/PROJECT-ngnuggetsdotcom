@@ -1,0 +1,78 @@
+// SIDENAV STYLES
+.mat-sidenav {
+  width: 240px;
+  margin-top: 56px;
+  border: none;
+  background: white;
+}
+
+.mat-nav-list {
+  padding-left: 0px;
+
+  .mat-list-item {
+    height: 40px;
+  }
+}
+
+.list-item-icon {
+  padding-left: 2px;
+  padding-right: 6px;
+  color: #606060;
+}
+
+.list-item-text {
+  padding-left: 12px;
+}
+
+.link-active {
+  color: var(--color-orange500);
+
+  .mat-icon {
+    color: var(--color-orange500);
+  }
+}
+
+.sub-menu {
+  padding-left: 50px;
+}
+
+.menu-expand {
+  padding-left: 80px;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+}
+
+// ANGULAR MENTORS LOGO
+.angularmentors-light-icon {
+  color: var(--color-orange500);
+}
+.angularmentors-light-angular {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.angularmentors-light-mentors {
+  padding-left: 2px;
+  color: var(--color-orange500);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.angularmentors-light-dotcom {
+  padding-left: 2px;
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.6rem;
+}
+
+// PAGE STYLES
+.page-container {
+  padding: 76px 50px 16px 50px;
+  position: relative; // used for route animation
+}
+
+.page-container>* {
+  display: block;
+}
+
+.page-container-handset {
+  padding: 63px 0px 10px 0px;
+}

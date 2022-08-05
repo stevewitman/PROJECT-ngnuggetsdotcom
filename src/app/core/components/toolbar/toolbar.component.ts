@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
-  @Input() drawerOpen = false;
+  @Input() drawerOpen: any;
 
   @Output() toggleDrawer = new EventEmitter()
 
