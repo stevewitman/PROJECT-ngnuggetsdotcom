@@ -1,0 +1,18 @@
+<!-- SIGNED IN -->
+<ng-container *ngIf="(userAuthStatus$ | async)?.photoURL">
+  <img [src]="(userAuthStatus$ | async)?.photoURL" [matMenuTriggerFor]="menuSignedIn" referrerpolicy="no-referrer">
+  <mat-menu #menuSignedIn="matMenu" class="auth-menu">
+    <button mat-menu-item (click)="signOutWithGoogle()">Sign Out</button>
+  </mat-menu>
+</ng-container>
+
+<!-- NOT SIGNED IN -->
+<ng-container *ngIf="!(userAuthStatus$ | async)">
+  <button mat-icon-button aria-label="Toggle sidenav button" [matMenuTriggerFor]="menuSignedOut">
+    <mat-icon class="handset-person-icon" >person</mat-icon>
+  </button>
+  <mat-menu #menuSignedOut="matMenu" class="auth-menu">
+    <button mat-menu-item (click)="signInWithGoogle()">Sign In</button>
+  </mat-menu>
+</ng-container>
+
