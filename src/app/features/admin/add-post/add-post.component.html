@@ -1,0 +1,314 @@
+<div class="form-preview-container">
+  <div class="form-column">
+    <form [formGroup]="postForm">
+      <!-- ROW ONE -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>URL</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="url"
+            matInput
+            id="url;"
+            #url
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+      <!-- ROW TWO -->
+      <div class="form-row">
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Slug</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="slug"
+            matInput
+            id="slug"
+            #slug
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Source Date</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="dateSource"
+            matInput
+            id="dateSource"
+            #dateSource
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Posted Date</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="datePosted"
+            matInput
+            id="datePosted"
+            #datePosted
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Type</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="type"
+            matInput
+            id="type"
+            #type
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Duration</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="duration"
+            matInput
+            id="duration"
+            #duration
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+
+      <!-- ROW THREE -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Title</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="title"
+            matInput
+            id="title"
+            #title
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+
+      <!-- ROW FOUR -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Description</mat-label>
+          <textarea
+            type="text"
+            class="admin-form-textarea-text"
+            formControlName="description"
+            matInput
+            id="description"
+            #description
+            autocomplete="off"
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+          ></textarea>
+        </mat-form-field>
+      </div>
+
+      <!-- ROW FIVE -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Source Site</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="sourceSite"
+            matInput
+            id="sourceSite"
+            #sourceSite
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Source URL</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="sourceUrl"
+            matInput
+            id="sourceUrl"
+            #sourceUrl
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+
+      <!-- ROW SIX -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Author Name</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="authorName"
+            matInput
+            id="authorName"
+            #authorName
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Author URL</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="authorUrl"
+            matInput
+            id="authorUrl"
+            #authorUrl
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+
+      <!-- ROW SEVEN -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Speakers</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="speakers"
+            matInput
+            id="speakers"
+            #speakers
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+
+      <!-- ROW EIGHT -->
+      <div class="form-row">
+        <mat-form-field
+          appearance="fill"
+          color="primary"
+          class="form-field-full"
+        >
+          <mat-label>Tags</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="tags"
+            matInput
+            id="tags"
+            #tags
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+
+  <!-- ***** PREVIEW COLUMN ***** -->
+  <div class="preview-column">
+    <div class="card" *ngIf="postForm.value as post">
+      <a [href]="post.url">
+        <div>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/post-thumbs%2F2022-07-29-P.jpg?alt=media&token=439ac56f-75c2-41ee-b46a-ab6f64470ce2"
+            class="card-image"
+          />
+          <div class="card-part post-title">
+            <h3 class="post-title-text">{{ post.title }}</h3>
+          </div>
+        </div>
+      </a>
+      <div class="card-part card-row-source">
+        <div class="post-source">
+          <a
+            class="post-source-link"
+            href="{{ post.authorUrl }}"
+            target="_blank"
+          >
+            {{ post.authorName }}
+          </a>
+          <span *ngIf="post.authorName && post.sourceSite"
+            >&nbsp;&nbsp;|&nbsp;&nbsp;</span
+          >
+          <a
+            class="post-source-link"
+            href="{{ post.sourceUrl }}"
+            target="_blank"
+          >
+            {{ post.sourceSite }}
+          </a>
+        </div>
+        <!-- <div class="card-days-ago">{{ post.datePosted }}</div> -->
+      </div>
+
+      <div class="card-part card-row-bottom">
+        <div class="content-type">
+          <span
+            *ngIf="post.type === 'video'"
+            class="material-icons content-type-icon video-icon"
+            >smart_display</span
+          >
+          <span
+            *ngIf="post.type === 'blog'"
+            class="material-icons content-type-icon blog-icon"
+            >article</span
+          >
+          <span
+            *ngIf="post.type === 'podcast'"
+            class="material-icons content-type-icon podcast-icon"
+            >podcasts</span
+          >
+          <span
+            *ngIf="post.type === 'release'"
+            class="material-icons content-type-icon release-icon"
+            >sell</span
+          >
+          <span>
+            {{ post.type | uppercase }}
+            <span *ngIf="post.duration"> - {{ post.duration }}m</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <pre>
+{{ postForm.value | json }}
+    </pre>
+  </div>
+</div>

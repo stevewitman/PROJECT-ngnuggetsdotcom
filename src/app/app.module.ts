@@ -27,6 +27,6 @@ import { CoreModule } from './core/core.module';
     CoreModule,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

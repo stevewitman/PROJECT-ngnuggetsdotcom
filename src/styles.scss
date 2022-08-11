@@ -107,8 +107,7 @@ input:-webkit-autofill:active {
 // FORM STYLES
 mat-form-field {
   width: 100%;
-  max-width: 560px;
-  display: block;
+  // display: block;
 }
 
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
@@ -175,3 +174,9 @@ mat-form-field {
   margin-right: -16px;
   margin-top: 9px;
 }
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+

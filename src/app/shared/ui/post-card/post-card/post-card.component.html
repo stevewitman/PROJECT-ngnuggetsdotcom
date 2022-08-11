@@ -1,0 +1,75 @@
+<div class="card" *ngIf="post as post">
+  <a [href]="post.url">
+    <div>
+      <!-- <img
+        src="assets/images/{{post.slug}}.jpg"
+        class="card-image"
+        matTooltip="{{tooltip}}"
+        matTooltipClass="description-tooltip"
+        matTooltipPosition="above"
+        matTooltipShowDelay="750"/> -->
+      <img 
+        src="https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/post-thumbs%2F2022-07-29-P.jpg?alt=media&token=439ac56f-75c2-41ee-b46a-ab6f64470ce2"
+        class="card-image"
+        matTooltip="{{tooltip}}"
+        matTooltipClass="description-tooltip"
+        matTooltipPosition="above"
+        matTooltipShowDelay="750"/>
+      <div class="card-part post-title">
+        <h3 class="post-title-text">{{ post.title }}</h3>
+      </div>
+    </div>
+  </a>
+  <div class="card-part card-row-source">
+    <div class="post-source">
+      <a class="post-source-link" href="{{ post.authorUrl }}" target="_blank">
+        {{ post.authorName }}
+      </a>
+      <span *ngIf="post.authorName && post.sourceSite"
+        >&nbsp;&nbsp;|&nbsp;&nbsp;</span
+      >
+      <a class="post-source-link" href="{{ post.sourceUrl }}" target="_blank">
+        {{ post.sourceSite }}
+      </a>
+    </div>
+  </div>
+
+  <div class="card-part card-row-bottom">
+    <div class="content-type">
+      <span
+        *ngIf="post.type === 'video'"
+        class="material-icons content-type-icon video-icon"
+        >smart_display</span
+      >
+      <span
+        *ngIf="post.type === 'blog'"
+        class="material-icons content-type-icon blog-icon"
+        >article</span
+      >
+      <span
+        *ngIf="post.type === 'podcast'"
+        class="material-icons content-type-icon podcast-icon"
+        >podcasts</span
+      >
+      <span
+        *ngIf="post.type === 'release'"
+        class="material-icons content-type-icon release-icon"
+        >sell</span
+      >
+      <span>
+        {{ post.type | uppercase }}
+        <span *ngIf="post.duration"> - {{ post.duration }}m</span>
+      </span>
+    </div>
+    <div class="card-actions">
+      <button
+        mat-button
+        class="more-button"
+        [routerLink]="['/post', post.slug]"
+        routerLinkActive="router-link-active"
+      >
+        <mat-icon class="details-icon">more_horiz</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
