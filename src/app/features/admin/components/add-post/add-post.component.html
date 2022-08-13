@@ -15,7 +15,6 @@
             formControlName="url"
             matInput
             autocomplete="off"
-            (change)="onUrlChange()"
           />
         </mat-form-field>
       </div>
@@ -55,7 +54,7 @@
           <mat-label>Type</mat-label>
           <mat-select formControlName="type" class="admin-form-input-text">
             <mat-option
-              *ngFor="let type of postTypes"
+              *ngFor="let type of constants.postTypes"
               [value]="type.value"
             >
               {{ type.value | uppercase }}
