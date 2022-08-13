@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { User } from '@angular/fire/auth';
 import { Observable, of } from 'rxjs';
 import { AuthService } from '../../services/auth.service';

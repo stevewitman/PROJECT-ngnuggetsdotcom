@@ -14,9 +14,8 @@
             class="admin-form-input-text"
             formControlName="url"
             matInput
-            id="url;"
-            #url
             autocomplete="off"
+            (change)="onUrlChange()"
           />
         </mat-form-field>
       </div>
@@ -29,46 +28,39 @@
             class="admin-form-input-text"
             formControlName="slug"
             matInput
-            id="slug"
-            #slug
             autocomplete="off"
           />
         </mat-form-field>
         <mat-form-field appearance="fill" color="primary">
-          <mat-label>Source Date</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="dateSource"
-            matInput
-            id="dateSource"
-            #dateSource
-            autocomplete="off"
-          />
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="primary">
-          <mat-label>Posted Date</mat-label>
+          <mat-label>Date Posted</mat-label>
           <input
             type="text"
             class="admin-form-input-text"
             formControlName="datePosted"
             matInput
-            id="datePosted"
-            #datePosted
+            autocomplete="off"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" color="primary">
+          <mat-label>Date of Source</mat-label>
+          <input
+            type="text"
+            class="admin-form-input-text"
+            formControlName="dateSource"
+            matInput
             autocomplete="off"
           />
         </mat-form-field>
         <mat-form-field appearance="fill" color="primary">
           <mat-label>Type</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="type"
-            matInput
-            id="type"
-            #type
-            autocomplete="off"
-          />
+          <mat-select formControlName="type" class="admin-form-input-text">
+            <mat-option
+              *ngFor="let type of postTypes"
+              [value]="type.value"
+            >
+              {{ type.value | uppercase }}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
         <mat-form-field appearance="fill" color="primary">
           <mat-label>Duration</mat-label>
@@ -77,8 +69,6 @@
             class="admin-form-input-text"
             formControlName="duration"
             matInput
-            id="duration"
-            #duration
             autocomplete="off"
           />
         </mat-form-field>
@@ -97,8 +87,6 @@
             class="admin-form-input-text"
             formControlName="title"
             matInput
-            id="title"
-            #title
             autocomplete="off"
           />
         </mat-form-field>
@@ -117,8 +105,6 @@
             class="admin-form-textarea-text"
             formControlName="description"
             matInput
-            id="description"
-            #description
             autocomplete="off"
             cdkTextareaAutosize
             #autosize="cdkTextareaAutosize"
@@ -139,8 +125,6 @@
             class="admin-form-input-text"
             formControlName="sourceSite"
             matInput
-            id="sourceSite"
-            #sourceSite
             autocomplete="off"
           />
         </mat-form-field>
@@ -175,8 +159,6 @@
             class="admin-form-input-text"
             formControlName="authorName"
             matInput
-            id="authorName"
-            #authorName
             autocomplete="off"
           />
         </mat-form-field>
@@ -191,8 +173,6 @@
             class="admin-form-input-text"
             formControlName="authorUrl"
             matInput
-            id="authorUrl"
-            #authorUrl
             autocomplete="off"
           />
         </mat-form-field>
@@ -211,8 +191,6 @@
             class="admin-form-input-text"
             formControlName="speakers"
             matInput
-            id="speakers"
-            #speakers
             autocomplete="off"
           />
         </mat-form-field>
@@ -231,8 +209,6 @@
             class="admin-form-input-text"
             formControlName="tags"
             matInput
-            id="tags"
-            #tags
             autocomplete="off"
           />
         </mat-form-field>
@@ -246,7 +222,7 @@
       <a [href]="post.url">
         <div>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/post-thumbs%2F2022-07-29-P.jpg?alt=media&token=439ac56f-75c2-41ee-b46a-ab6f64470ce2"
+            src="assets/images/placeholder.jpg"
             class="card-image"
           />
           <div class="card-part post-title">
@@ -274,7 +250,6 @@
             {{ post.sourceSite }}
           </a>
         </div>
-        <!-- <div class="card-days-ago">{{ post.datePosted }}</div> -->
       </div>
 
       <div class="card-part card-row-bottom">
