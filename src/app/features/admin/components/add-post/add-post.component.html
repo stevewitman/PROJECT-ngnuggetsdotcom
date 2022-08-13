@@ -42,14 +42,18 @@
         </mat-form-field>
         <mat-form-field appearance="fill" color="primary">
           <mat-label>Date of Source</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="dateSource"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
+          <div class="field-with-buttons">
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="dateSource"
+              matInput
+              autocomplete="off"
+            />
+            <mat-icon class="offset-buttons" (click)="adjSrcDate(-1)">arrow_left</mat-icon>
+            <mat-icon class="offset-buttons" [class.inc-disabled] = "srcDateOffset >= 0" (click)="adjSrcDate(1)">arrow_right</mat-icon>
+          </div>
+        </mat-form-field>   
         <mat-form-field appearance="fill" color="primary">
           <mat-label>Type</mat-label>
           <mat-select formControlName="type" class="admin-form-input-text">

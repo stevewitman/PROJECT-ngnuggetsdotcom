@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-import { concatMap, of, Subscription } from 'rxjs';
+import { concatMap, fromEvent, of, Subscription, merge, startWith, Observable, scan, tap } from 'rxjs';
 
 import { AdminConstantsService } from '../../services/admin-constants.service';
 import { AdminUtilsService } from '../../services/admin-utils.service';
@@ -13,8 +13,11 @@ import { PostFomGroup } from 'src/app/core/models/postFormGroup';
   styleUrls: ['./add-post.component.scss'],
 })
 export class AddPostComponent implements OnInit, OnDestroy {
+  todaysDate: Date = new Date();
   SubTypeValueChanges: Subscription | undefined;
   SubUrlValueChanges: Subscription | undefined;
+
+  srcDateOffset = 0;
 
   postForm = new FormGroup<PostFomGroup>({
     slug: new FormControl<string>('', {
@@ -70,6 +73,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.postForm.controls.duration.disable();
+    this.initializeDates();
     this.watchUrlChanges();
     this.watchTypeChanges();
   }
@@ -79,8 +83,13 @@ export class AddPostComponent implements OnInit, OnDestroy {
     this.SubTypeValueChanges?.unsubscribe();
   }
 
-  // Patch "type", "sourceSite", and "sourceUrl" form controls on
-  // matching "url" substring match
+  /**
+   * Watches 'url' ctrl and patches 'type', 'sourceSite', & 'sourceUrl' values
+   * mapping for url to patch values imported from AdminConstantsService
+   *
+   * @param
+   * @returns
+   */
   watchUrlChanges() {
     this.SubUrlValueChanges = this.postForm.controls.url.valueChanges
       .pipe(
@@ -99,9 +108,13 @@ export class AddPostComponent implements OnInit, OnDestroy {
       .subscribe();
   }
 
-  // ENABLE "duration" control and add REQUIRED validator if post "type"
-  // control is VIDEO or PODCAST.
-  // Otherwise DISABLE "duration" control and remove REQUIRED validator
+  /**
+   * Watches 'type' ctrl and updates 'duration' ctrl disabled & validation states.
+   * (video & podcast need 'duration', blog, release & community do not)
+   *
+   * @param
+   * @returns
+   */
   watchTypeChanges() {
     this.SubTypeValueChanges = this.postForm.controls.type.valueChanges
       .pipe(
@@ -121,4 +134,29 @@ export class AddPostComponent implements OnInit, OnDestroy {
       )
       .subscribe();
   }
+
+  adjSrcDate(x: number) {
+    this.srcDateOffset = this.srcDateOffset + x;
+    if (this.srcDateOffset <= 0) {
+      let newDate = this.utils.dateStringFromOffset(this.srcDateOffset);
+      this.postForm.patchValue({
+        dateSource: newDate,
+      });
+    } else {
+      this.srcDateOffset = 0
+    }    
+  }
+
+  initializeDates() {
+    this.postForm.patchValue({
+      datePosted: this.utils.todayDateString(),
+      dateSource: this.utils.todayDateString(),
+    });
+  }
+
+  changeSourceDate(x: number) {
+    // srcDate = this.postForm.console.log('sourceDate ', x);
+  }
 }
+
+
