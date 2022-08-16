@@ -50,10 +50,17 @@
               matInput
               autocomplete="off"
             />
-            <mat-icon class="offset-buttons" (click)="adjSrcDate(-1)">arrow_left</mat-icon>
-            <mat-icon class="offset-buttons" [class.inc-disabled] = "srcDateOffset >= 0" (click)="adjSrcDate(1)">arrow_right</mat-icon>
+            <mat-icon class="offset-buttons" (click)="adjSrcDate(-1)"
+              >arrow_left</mat-icon
+            >
+            <mat-icon
+              class="offset-buttons"
+              [class.inc-disabled]="srcDateOffset >= 0"
+              (click)="adjSrcDate(1)"
+              >arrow_right</mat-icon
+            >
           </div>
-        </mat-form-field>   
+        </mat-form-field>
         <mat-form-field appearance="fill" color="primary">
           <mat-label>Type</mat-label>
           <mat-select formControlName="type" class="admin-form-input-text">
@@ -183,21 +190,36 @@
 
       <!-- ROW SEVEN -->
       <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          color="primary"
-          class="form-field-full"
-        >
+        <mat-form-field class="example-chip-list" appearance="fill">
           <mat-label>Speakers</mat-label>
-          <input
+          <mat-chip-list #chipList>
+            <mat-chip *ngFor="let speaker of speakerChips" (removed)="removeSpeaker(speaker)">
+              {{ speaker }}
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip>
+            <input
+              [matChipInputFor]="chipList"
+              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              [matChipInputAddOnBlur]="addSpeakerOnBlur"
+              (matChipInputTokenEnd)="addSpeaker($event)"
+              autocomplete="off"
+            />
+          </mat-chip-list>
+        </mat-form-field>
+        <input
             type="text"
             class="admin-form-input-text"
             formControlName="speakers"
             matInput
             autocomplete="off"
+            hidden
           />
-        </mat-form-field>
       </div>
+
+
+
 
       <!-- ROW EIGHT -->
       <div class="form-row">
@@ -224,10 +246,7 @@
     <div class="card" *ngIf="postForm.value as post">
       <a [href]="post.url">
         <div>
-          <img
-            src="assets/images/placeholder.jpg"
-            class="card-image"
-          />
+          <img src="assets/images/placeholder.jpg" class="card-image" />
           <div class="card-part post-title">
             <h3 class="post-title-text">{{ post.title }}</h3>
           </div>
@@ -285,8 +304,6 @@
       </div>
     </div>
     <mat-divider></mat-divider>
-    <pre>
-{{ postForm.value | json }}
-    </pre>
+
   </div>
 </div>

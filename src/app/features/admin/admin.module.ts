@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -23,6 +24,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     AdminRoutingModule,
     PostCardModule,
     MatButtonModule,
+    MatChipsModule,
     MatDividerModule,
     MatIconModule,
     MatFormFieldModule,

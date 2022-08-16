@@ -14,3 +14,8 @@ export interface Post {
   speakers: string[];
   tags: string[];
 }
+
+export interface DailyPosts {
+  date: string;
+  dailyPosts: Post[];
+}

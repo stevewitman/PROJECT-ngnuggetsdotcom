@@ -1,11 +1,16 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-import { concatMap, fromEvent, of, Subscription, merge, startWith, Observable, scan, tap } from 'rxjs';
+import { Subscription, Observable, of } from 'rxjs';
+import { concatMap, map, tap } from 'rxjs/operators';
+import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { MatChipInputEvent } from '@angular/material/chips';
 
 import { AdminConstantsService } from '../../services/admin-constants.service';
 import { AdminUtilsService } from '../../services/admin-utils.service';
 import { PostFomGroup } from 'src/app/core/models/postFormGroup';
+import { AdminPostsService } from '../../services/admin-posts.service';
+import { Post } from 'src/app/core/models/post';
 
 @Component({
   selector: 'app-add-post',
@@ -13,11 +18,15 @@ import { PostFomGroup } from 'src/app/core/models/postFormGroup';
   styleUrls: ['./add-post.component.scss'],
 })
 export class AddPostComponent implements OnInit, OnDestroy {
-  todaysDate: Date = new Date();
-  SubTypeValueChanges: Subscription | undefined;
+  readonly separatorKeysCodes = [ENTER, COMMA] as const;
+  recentPosts$: Observable<Post[]> = of([]);
+  SubRecentPosts: Subscription | undefined;
   SubUrlValueChanges: Subscription | undefined;
-
+  SubTypeValueChanges: Subscription | undefined;
+  SubAuthorNameValueChanges: Subscription | undefined;
   srcDateOffset = 0;
+  addSpeakerOnBlur = true;
+  speakerChips: string[] = [];
 
   postForm = new FormGroup<PostFomGroup>({
     slug: new FormControl<string>('', {
@@ -68,19 +77,28 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   constructor(
     public constants: AdminConstantsService,
-    private utils: AdminUtilsService
+    private utils: AdminUtilsService,
+    private adminPostsService: AdminPostsService
   ) {}
 
   ngOnInit() {
+    this.getRecentPosts();
     this.postForm.controls.duration.disable();
     this.initializeDates();
     this.watchUrlChanges();
     this.watchTypeChanges();
+    this.watchAuthorNameChanges();
   }
 
   ngOnDestroy() {
+    this.SubRecentPosts?.unsubscribe();
     this.SubUrlValueChanges?.unsubscribe();
     this.SubTypeValueChanges?.unsubscribe();
+    this.SubAuthorNameValueChanges?.unsubscribe();
+  }
+
+  getRecentPosts() {
+    this.recentPosts$ = this.adminPostsService.recentPosts();
   }
 
   /**
@@ -135,6 +153,95 @@ export class AddPostComponent implements OnInit, OnDestroy {
       .subscribe();
   }
 
+  /**
+   * Watches 'authorName' ctrl and updates 'authorUrl' ctrl and 'speakers'
+   * from retrieved posts if exists.
+   *
+   * @param
+   * @returns
+   */
+  watchAuthorNameChanges() {
+    this.SubAuthorNameValueChanges =
+      this.postForm.controls.authorName.valueChanges
+        .pipe(
+          tap((res) => {
+            this.SubRecentPosts = this.recentPosts$
+              .pipe(
+                map((posts) =>
+                  posts.find(
+                    (post) =>
+                      res === post.authorName &&
+                      this.postForm.controls.sourceSite.value ===
+                        post.sourceSite
+                  )
+                ),
+                tap((res) => {
+                  this.postForm.patchValue({
+                    authorUrl: res?.authorUrl,
+                    speakers: res?.speakers,
+                  });
+                  if (res?.speakers) {
+                    this.speakerChips.push(res?.speakers[0]);
+                  }
+                })
+              )
+              .subscribe();
+          })
+        )
+        .subscribe();
+  }
+
+  /**
+   * Initialize datePosted and dateSource with today's date
+   * @param
+   * @returns
+   */
+  initializeDates() {
+    this.postForm.patchValue({
+      datePosted: this.utils.todayDateString(),
+      dateSource: this.utils.todayDateString(),
+    });
+  }
+
+  /**
+   * Adds speaker to speakerChips array that displays chips
+   * and also patches speakers with new speakerChips array
+   * @param {string} speaker - string to be added to speakerChips array
+   * @returns
+   */
+  addSpeaker(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim();
+    // Add speaker
+    if (value) {
+      this.speakerChips.push(value);
+      this.postForm.patchValue({ speakers: this.speakerChips });
+    }
+    // Clear the input value
+    event.chipInput!.clear();
+  }
+
+  /**
+   * Remove speaker from speakerChips array that displays chips
+   * and also patches speakers with new speakerChips array
+   * @param {string} speaker - string to be removed from speakerChips array
+   * @returns
+   */
+  removeSpeaker(speaker: string): void {
+    const index = this.speakerChips.indexOf(speaker);
+    // Remove speaker
+    if (index >= 0) {
+      this.speakerChips.splice(index, 1);
+      this.postForm.patchValue({ speakers: this.speakerChips });
+    }
+  }
+
+  /**
+   * Changes srcDateOffset from increment or decrement button clicks and
+   * patches dateSource, if needed. dateSource cannot be past todays date.
+   *
+   * @param {number} x - one or minus one
+   * @returns
+   */
   adjSrcDate(x: number) {
     this.srcDateOffset = this.srcDateOffset + x;
     if (this.srcDateOffset <= 0) {
@@ -143,20 +250,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
         dateSource: newDate,
       });
     } else {
-      this.srcDateOffset = 0
-    }    
-  }
-
-  initializeDates() {
-    this.postForm.patchValue({
-      datePosted: this.utils.todayDateString(),
-      dateSource: this.utils.todayDateString(),
-    });
-  }
-
-  changeSourceDate(x: number) {
-    // srcDate = this.postForm.console.log('sourceDate ', x);
+      this.srcDateOffset = 0;
+    }
   }
 }
-
-
