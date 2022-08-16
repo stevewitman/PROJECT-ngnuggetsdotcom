@@ -2525,5 +2525,21 @@
     "tags": [
       "Performance"
     ]
+  },
+  {
+    "slug": "2022-07-06-B",
+    "type": "podcast",
+    "duration": "56",
+    "title": "S3 E16 - AWS Amplify for Frontend Developers",
+    "url": "https://www.spreaker.com/user/ng-conf/ap-show-s3e16-michael-liendo-edit-1",
+    "description": "If you're a Frontend Developer that has been stuck on side projects due to a lack of backend/auth/database layers knowledge, then this show is for you! In this episode, Michael Liendo demonstrates how AWS Amplify's powerful tooling makes backend functions approachable and enjoyable to Frontend Devs.",
+    "datePosted": "2022-07-06",
+    "dateSource": "2022-07-06",
+    "sourceSite": "Spreaker",
+    "sourceUrl": "https://www.spreaker.com",
+    "authorName": "The Angular Plus Show",
+    "authorUrl": "https://www.spreaker.com/show/angular-show",
+    "speakers": ["Michael Liendo"],
+    "tags": ["Aws"]
   }
 ]

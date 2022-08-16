@@ -5,7 +5,6 @@
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>URL</mat-label>
@@ -20,7 +19,7 @@
       </div>
       <!-- ROW TWO -->
       <div class="form-row">
-        <mat-form-field appearance="fill" color="primary">
+        <mat-form-field appearance="fill">
           <mat-label>Slug</mat-label>
           <input
             type="text"
@@ -30,7 +29,7 @@
             autocomplete="off"
           />
         </mat-form-field>
-        <mat-form-field appearance="fill" color="primary">
+        <mat-form-field appearance="fill">
           <mat-label>Date Posted</mat-label>
           <input
             type="text"
@@ -40,7 +39,7 @@
             autocomplete="off"
           />
         </mat-form-field>
-        <mat-form-field appearance="fill" color="primary">
+        <mat-form-field appearance="fill">
           <mat-label>Date of Source</mat-label>
           <div class="field-with-buttons">
             <input
@@ -61,7 +60,7 @@
             >
           </div>
         </mat-form-field>
-        <mat-form-field appearance="fill" color="primary">
+        <mat-form-field appearance="fill">
           <mat-label>Type</mat-label>
           <mat-select formControlName="type" class="admin-form-input-text">
             <mat-option
@@ -72,7 +71,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field appearance="fill" color="primary">
+        <mat-form-field appearance="fill">
           <mat-label>Duration</mat-label>
           <input
             type="text"
@@ -88,7 +87,6 @@
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Title</mat-label>
@@ -106,7 +104,6 @@
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Description</mat-label>
@@ -126,7 +123,6 @@
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Source Site</mat-label>
@@ -140,7 +136,6 @@
         </mat-form-field>
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Source URL</mat-label>
@@ -160,7 +155,6 @@
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Author Name</mat-label>
@@ -174,7 +168,6 @@
         </mat-form-field>
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Author URL</mat-label>
@@ -190,7 +183,7 @@
 
       <!-- ROW SEVEN -->
       <div class="form-row">
-        <mat-form-field class="example-chip-list" appearance="fill">
+        <mat-form-field appearance="fill">
           <mat-label>Speakers</mat-label>
           <mat-chip-list #chipList>
             <mat-chip *ngFor="let speaker of speakerChips" (removed)="removeSpeaker(speaker)">
@@ -200,6 +193,7 @@
               </button>
             </mat-chip>
             <input
+              class="admin-form-input-text"
               [matChipInputFor]="chipList"
               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
               [matChipInputAddOnBlur]="addSpeakerOnBlur"
@@ -218,14 +212,10 @@
           />
       </div>
 
-
-
-
       <!-- ROW EIGHT -->
       <div class="form-row">
         <mat-form-field
           appearance="fill"
-          color="primary"
           class="form-field-full"
         >
           <mat-label>Tags</mat-label>

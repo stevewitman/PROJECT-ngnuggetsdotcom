@@ -9,6 +9,6 @@ export class AdminPostsService {
   constructor(private http: HttpClient) {}
 
   recentPosts(): any {
-    return this.http.get(`assets/json/recentFlatter.json`);
+    return this.http.get(`assets/json/samplePosts.json`);
   }
 }
