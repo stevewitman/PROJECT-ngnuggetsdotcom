@@ -1,10 +1,11 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { Subscription, Observable, of } from 'rxjs';
-import { concatMap, map, tap } from 'rxjs/operators';
+import { concatMap, map, tap, startWith } from 'rxjs/operators';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { MatChipInputEvent } from '@angular/material/chips';
+import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 
 import { AdminConstantsService } from '../../services/admin-constants.service';
 import { AdminUtilsService } from '../../services/admin-utils.service';
@@ -27,6 +28,12 @@ export class AddPostComponent implements OnInit, OnDestroy {
   srcDateOffset = 0;
   addSpeakerOnBlur = true;
   speakerChips: string[] = [];
+  tagsCtrl = new FormControl('');
+  filteredTags!: Observable<string[]>;
+  selectedTags: string[] = [];
+  allTags: string[] = [];
+  @ViewChild('tagInput') tagInput: ElementRef<HTMLInputElement> =
+    {} as ElementRef;
 
   postForm = new FormGroup<PostFomGroup>({
     slug: new FormControl<string>('', {
@@ -88,6 +95,13 @@ export class AddPostComponent implements OnInit, OnDestroy {
     this.watchUrlChanges();
     this.watchTypeChanges();
     this.watchAuthorNameChanges();
+    this.allTags = this.constants.allTags;
+    this.filteredTags = this.tagsCtrl.valueChanges.pipe(
+      startWith(null),
+      map((tag: string | null) =>
+        tag ? this._tagFilter(tag) : this.allTags.slice()
+      )
+    );
   }
 
   ngOnDestroy() {
@@ -236,6 +250,49 @@ export class AddPostComponent implements OnInit, OnDestroy {
   }
 
   /**
+   * Adds tag to selectedTags array that displays chips
+   * and also patches tags with new selectedTags array
+   * @param {string} tag - string to be added to selectedTags array
+   * @returns
+   */
+  addTag(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim();
+    // Add tag
+    if (value) {
+      this.selectedTags.push(value);
+      // TODO - add new tags to tags list
+      if (!this.allTags.includes(value)) {
+        console.error('Tag not recognized!');
+      }
+    }
+    // Clear the input value
+    event.chipInput!.clear();
+    this.tagsCtrl.setValue(null);
+  }
+
+  /**
+   * Remove tag from selectedTags array that displays chips
+   * and also patches tags with new selectedTags array
+   * @param {string} tag - string to be removed from selectedTags array
+   * @returns
+   */
+  removeTag(tag: string): void {
+    const index = this.selectedTags.indexOf(tag);
+    // Remove tag
+    if (index >= 0) {
+      this.selectedTags.splice(index, 1);
+      this.postForm.patchValue({ tags: this.selectedTags });
+    }
+  }
+
+  tagSelected(event: MatAutocompleteSelectedEvent): void {
+    this.selectedTags.push(event.option.viewValue);
+    this.tagInput.nativeElement.value = '';
+    this.postForm.patchValue({ tags: this.selectedTags });
+    this.tagsCtrl.setValue(null);
+  }
+
+  /**
    * Changes srcDateOffset from increment or decrement button clicks and
    * patches dateSource, if needed. dateSource cannot be past todays date.
    *
@@ -252,5 +309,12 @@ export class AddPostComponent implements OnInit, OnDestroy {
     } else {
       this.srcDateOffset = 0;
     }
+  }
+
+  private _tagFilter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+    return this.allTags.filter((tag) =>
+      tag.toLowerCase().includes(filterValue)
+    );
   }
 }

@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class AdminPostsService {
-
   constructor(private http: HttpClient) {}
 
   recentPosts(): any {
     return this.http.get(`assets/json/samplePosts.json`);
   }
+
 }

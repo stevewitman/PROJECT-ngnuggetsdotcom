@@ -185,7 +185,7 @@
       <div class="form-row">
         <mat-form-field appearance="fill">
           <mat-label>Speakers</mat-label>
-          <mat-chip-list #chipList>
+          <mat-chip-list #speakerChipList>
             <mat-chip *ngFor="let speaker of speakerChips" (removed)="removeSpeaker(speaker)">
               {{ speaker }}
               <button matChipRemove>
@@ -194,7 +194,7 @@
             </mat-chip>
             <input
               class="admin-form-input-text"
-              [matChipInputFor]="chipList"
+              [matChipInputFor]="speakerChipList"
               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
               [matChipInputAddOnBlur]="addSpeakerOnBlur"
               (matChipInputTokenEnd)="addSpeaker($event)"
@@ -214,20 +214,42 @@
 
       <!-- ROW EIGHT -->
       <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
+        <mat-form-field appearance="fill">
           <mat-label>Tags</mat-label>
-          <input
+          <mat-chip-list #tagChipList>
+            <mat-chip *ngFor="let tag of selectedTags" (removed)="removeTag(tag)">
+              {{ tag }}
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip>
+            <input
+              #tagInput
+              class="admin-form-input-text"
+              [formControl]="tagsCtrl"
+              [matAutocomplete]="tagAuto"
+              [matChipInputFor]="tagChipList"
+              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              (matChipInputTokenEnd)="addTag($event)"
+              autocomplete="off"
+            />
+          </mat-chip-list>
+          <mat-autocomplete #tagAuto="matAutocomplete" (optionSelected)="tagSelected($event)">
+            <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
+              {{tag}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <input
             type="text"
             class="admin-form-input-text"
             formControlName="tags"
             matInput
             autocomplete="off"
+            hidden
           />
-        </mat-form-field>
       </div>
+
     </form>
   </div>
 
@@ -295,5 +317,12 @@
     </div>
     <mat-divider></mat-divider>
 
+    <pre>
+{{ postForm.value | json}}
+    </pre>
+
   </div>
 </div>
+<!-- <pre>
+  {{ totalTags | json}}
+</pre> -->
