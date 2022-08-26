@@ -12,7 +12,11 @@ import { AdminUtilsService } from '../../services/admin-utils.service';
 import { PostFomGroup } from 'src/app/core/models/postFormGroup';
 import { AdminPostsService } from '../../services/admin-posts.service';
 import { Post } from 'src/app/core/models/post';
+import { UtilsService } from 'src/app/core/services/utils.service';
 
+export interface PostsData {
+  posts: string;
+}
 @Component({
   selector: 'app-add-post',
   templateUrl: './add-post.component.html',
@@ -84,7 +88,8 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   constructor(
     public constants: AdminConstantsService,
-    private utils: AdminUtilsService,
+    private utils: UtilsService,
+    private adminUtils: AdminUtilsService,
     private adminPostsService: AdminPostsService
   ) {}
 
@@ -101,6 +106,10 @@ export class AddPostComponent implements OnInit, OnDestroy {
       map((tag: string | null) =>
         tag ? this._tagFilter(tag) : this.allTags.slice()
       )
+    );
+    console.log(
+      'WEEK',
+      this.utils.getWeekNumberFromDateRange('2022-01-01', '2022-08-20')
     );
   }
 
@@ -127,7 +136,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
       .pipe(
         concatMap((v) => {
           this.constants.urlMatches.forEach((element) => {
-            if (this.utils.urlContains(v, element.matchSubstring)) {
+            if (this.adminUtils.urlContains(v, element.matchSubstring)) {
               this.postForm.patchValue(element.postFormPatch);
               return of(true); // return value not used for anything
             } else {
@@ -302,7 +311,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
   adjSrcDate(x: number) {
     this.srcDateOffset = this.srcDateOffset + x;
     if (this.srcDateOffset <= 0) {
-      let newDate = this.utils.dateStringFromOffset(this.srcDateOffset);
+      let newDate = this.adminUtils.dateStringFromOffset(this.srcDateOffset);
       this.postForm.patchValue({
         dateSource: newDate,
       });
@@ -317,4 +326,5 @@ export class AddPostComponent implements OnInit, OnDestroy {
       tag.toLowerCase().includes(filterValue)
     );
   }
+
 }

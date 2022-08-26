@@ -15,11 +15,6 @@ export class AdminUtilsService {
     return fullstring.indexOf(substring) !== -1 ? true : false;
   }
 
-  todayDateString() {
-    const todaysDate = new Date();
-    return [todaysDate.toISOString().split('T')[0]].toString();
-  }
-
   dateStringFromOffset(offset: number) {
    return new Date(new Date().setDate(new Date().getDate() + offset))
     .toISOString()

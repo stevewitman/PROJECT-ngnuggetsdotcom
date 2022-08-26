@@ -16,9 +16,10 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { PostCardModule } from 'src/app/shared/ui/post-card/post-card.module';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { MigrationComponent } from './components/migration/migration.component';
 
 @NgModule({
-  declarations: [PostsPageComponent, AddPostComponent],
+  declarations: [PostsPageComponent, AddPostComponent, MigrationComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
