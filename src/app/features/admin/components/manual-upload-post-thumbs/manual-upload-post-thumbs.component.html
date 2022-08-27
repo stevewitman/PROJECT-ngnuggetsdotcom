@@ -1,0 +1,25 @@
+<h1>Manual Upload Post Thumbs</h1>
+<ol>
+  <li>Manually enter 'week' string in db-thumbs-upload.component.ts</li>
+  <li>Reads corresponding 'week'.json file</li>
+  <li>Allows admin to select thumb to upload for each post</li>
+  <li>Image is uploaded to storage thumbs/'week' and Image Url with token is returned</li>
+  <li>Output at bottom of page is updated with new "imgUrl"</li>
+  <li>Note: Firestore is not directly updated by this utility, copy/paste only</li>
+  <li class="error">REMOVE JSON FROM ASSETS WHEN FINISHED</li>
+</ol>
+<h2>assets/json/{{ week }}.json - <span *ngIf="posts">{{posts.length}}</span> posts</h2>
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+<div *ngFor="let post of posts; let i = index">
+  <div>
+    <span class="span-margin">{{ post.slug }}</span>
+    <span class="span-margin done" *ngIf="posts[i].imgUrl">DONE</span>
+    <input type="file" (change)="uploadImage($event, i)">
+    <span *ngIf="error" class="error">ERROR</span>
+    <img *ngIf="posts[i].imgUrl" [src]="posts[i].imgUrl" class="mini-img">
+
+  </div>
+  <hr>
+</div>
+
+<pre>{{ posts | json }}</pre>

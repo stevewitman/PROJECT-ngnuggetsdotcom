@@ -16,10 +16,10 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { PostCardModule } from 'src/app/shared/ui/post-card/post-card.module';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
-import { MigrationComponent } from './components/migration/migration.component';
+import { ManualUploadPostThumbsComponent } from './components/manual-upload-post-thumbs/manual-upload-post-thumbs.component';
 
 @NgModule({
-  declarations: [PostsPageComponent, AddPostComponent, MigrationComponent],
+  declarations: [PostsPageComponent, AddPostComponent, ManualUploadPostThumbsComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

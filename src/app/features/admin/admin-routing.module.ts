@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
-import { MigrationComponent } from './components/migration/migration.component';
+import { ManualUploadPostThumbsComponent } from './components/manual-upload-post-thumbs/manual-upload-post-thumbs.component';
 
 const routes: Routes = [
   {
@@ -14,8 +14,8 @@ const routes: Routes = [
     component: AddPostComponent,
   },
   {
-    path: 'migration',
-    component: MigrationComponent,
+    path: 'manual-upload-post-thumbs',
+    component: ManualUploadPostThumbsComponent,
   },
 ];
 

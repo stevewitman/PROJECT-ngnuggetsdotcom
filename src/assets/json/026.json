@@ -11,8 +11,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Job Alex Muturi",
     "aUrl": "https://alex-migwi.medium.com",
-    "spkrs": ["Job Alex Muturi"],
-    "tags": ["RxJS", "Observables"]
+    "spkrs": [
+      "Job Alex Muturi"
+    ],
+    "tags": [
+      "RxJS",
+      "Observables"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-A?alt=media&token=44697b27-ddef-43b7-9d72-a52979f3fafa"
   },
   {
     "slug": "2022-06-25-B",
@@ -27,8 +33,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "Fabio Biondi - Front-End Tutorials",
     "aUrl": "https://www.youtube.com/c/FabioBiondi",
-    "spkrs": ["Fabio Biondi"],
-    "tags": ["NPM"]
+    "spkrs": [
+      "Fabio Biondi"
+    ],
+    "tags": [
+      "NPM"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-B?alt=media&token=24cc35d5-f120-4aaf-9538-b90b985d018f"
   },
   {
     "slug": "2022-06-25-C",
@@ -42,8 +53,15 @@
     "srcUrl": "https://medium.com",
     "aName": "Preston Lamb",
     "aUrl": "https://medium.com/@pjlamb12",
-    "spkrs": ["Preston Lamb"],
-    "tags": ["<ng-template>", "<ng-container>", "ngTemplateOutlet"]
+    "spkrs": [
+      "Preston Lamb"
+    ],
+    "tags": [
+      "<ng-template>",
+      "<ng-container>",
+      "ngTemplateOutlet"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-C?alt=media&token=48f910a2-d6d1-42d9-96ee-488aafee0e71"
   },
   {
     "slug": "2022-06-25-D",
@@ -58,7 +76,10 @@
     "aName": "Amplication",
     "aUrl": "https://dev.to/amplication",
     "spkrs": [],
-    "tags": ["CRUD"]
+    "tags": [
+      "CRUD"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-D?alt=media&token=59a00822-cb2b-46b4-aca9-85b7455c7d21"
   },
   {
     "slug": "2022-06-25-E",
@@ -73,7 +94,8 @@
     "aName": "Rsagheda",
     "aUrl": "https://medium.com/@rsagheda123",
     "spkrs": [],
-    "tags": []
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-E?alt=media&token=70204368-0798-40bd-88b5-920a316f4d8f"
   },
   {
     "slug": "2022-06-25-F",
@@ -87,8 +109,11 @@
     "srcUrl": "https://medium.com",
     "aName": "Mikjail Salazar",
     "aUrl": "https://medium.com/@mikjailsalazar",
-    "spkrs": ["Mikjail Salazar"],
-    "tags": []
+    "spkrs": [
+      "Mikjail Salazar"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-F?alt=media&token=e16fe053-29fc-47aa-9989-f25960bf00bc"
   },
   {
     "slug": "2022-06-25-G",
@@ -103,8 +128,17 @@
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": ["Felix Lemke", "Karsten Silz", "Younes Jaaidi"],
-    "tags": ["Forms", "Routing", "Testing"]
+    "spkrs": [
+      "Felix Lemke",
+      "Karsten Silz",
+      "Younes Jaaidi"
+    ],
+    "tags": [
+      "Forms",
+      "Routing",
+      "Testing"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-G?alt=media&token=a43183e5-61c5-4d19-9be4-c2d483bc9b60"
   },
   {
     "slug": "2022-06-25-H",
@@ -120,7 +154,10 @@
     "aName": "JS Frameworks",
     "aUrl": "https://www.youtube.com/c/JSFrameworks/videos",
     "spkrs": [],
-    "tags": ["SingleSPA"]
+    "tags": [
+      "SingleSPA"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-H?alt=media&token=12533f79-a67c-44aa-8d6e-2ab48b22b503"
   },
   {
     "slug": "2022-06-25-J",
@@ -136,7 +173,10 @@
     "aName": "Technical Rajni",
     "aUrl": "https://www.youtube.com/c/TechnicalRajni/videos",
     "spkrs": [],
-    "tags": ["CRUD"]
+    "tags": [
+      "CRUD"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-25-J?alt=media&token=f79d6c9d-2fdb-4fec-b8dc-07caa2b09471"
   },
   {
     "slug": "2022-06-26-A",
@@ -151,8 +191,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "CUSEC",
     "aUrl": "https://www.youtube.com/channel/UCZ7j8F6h1CxD-uC0od9rHBw/videos",
-    "spkrs": ["Alex Catus"],
-    "tags": ["RxJS"]
+    "spkrs": [
+      "Alex Catus"
+    ],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-A?alt=media&token=57a3716c-9de0-46bb-9a05-dd9963e7223c"
   },
   {
     "slug": "2022-06-26-B",
@@ -166,8 +211,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Alexander Goncharuk",
     "aUrl": "https://dev.to/agoncharuks",
-    "spkrs": ["Alexander Goncharuk"],
-    "tags": ["RxJS"]
+    "spkrs": [
+      "Alexander Goncharuk"
+    ],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-B?alt=media&token=6afa4fba-c1e2-41dd-ab91-4d58575800c7"
   },
   {
     "slug": "2022-06-26-C",
@@ -183,7 +233,10 @@
     "aName": "Learning Development",
     "aUrl": "https://www.youtube.com/channel/UC2fj4Vb8LgeoQchVA2tGQPA/videos",
     "spkrs": [],
-    "tags": ["DevTools"]
+    "tags": [
+      "DevTools"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-C?alt=media&token=48b55c9d-4c0f-4518-b199-0dbdebbffe10"
   },
   {
     "slug": "2022-06-26-D",
@@ -197,8 +250,15 @@
     "srcUrl": "https://dev.to",
     "aName": "Sandro Jhuliano Cagara",
     "aUrl": "https://dev.to/sandrocagara",
-    "spkrs": ["Sandro Jhuliano Cagara"],
-    "tags": ["OnPush", "Change Detection", "Performance"]
+    "spkrs": [
+      "Sandro Jhuliano Cagara"
+    ],
+    "tags": [
+      "OnPush",
+      "Change Detection",
+      "Performance"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-D?alt=media&token=4a55e9d8-b2a5-4dac-9983-9b0ebfb7f841"
   },
   {
     "slug": "2022-06-26-E",
@@ -213,8 +273,14 @@
     "srcUrl": "https://youtube.com",
     "aName": "Adnan Halilovic",
     "aUrl": "https://www.youtube.com/c/AdnanHalilovicDev/videos",
-    "spkrs": ["Adnan Halilovic"],
-    "tags": ["HttpInterceptors", "JWT"]
+    "spkrs": [
+      "Adnan Halilovic"
+    ],
+    "tags": [
+      "HttpInterceptors",
+      "JWT"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-E?alt=media&token=aeaa82a2-3202-488c-81c1-6759524ace1d"
   },
   {
     "slug": "2022-06-26-F",
@@ -230,7 +296,8 @@
     "aName": "ScriptBytes",
     "aUrl": "https://www.youtube.com/channel/UC9Q74_OpajjaFDUY2LwhxCQ/videos",
     "spkrs": [],
-    "tags": []
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-F?alt=media&token=2368ecf1-f24b-4a96-871e-47e72b52de4e"
   },
   {
     "slug": "2022-06-26-G",
@@ -245,7 +312,10 @@
     "aName": "Nivrith",
     "aUrl": "https://medium.com/@nivrith",
     "spkrs": [],
-    "tags": ["Debugging"]
+    "tags": [
+      "Debugging"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-G?alt=media&token=2ece9085-c613-466c-810d-464be893d592"
   },
   {
     "slug": "2022-06-26-H",
@@ -259,8 +329,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Sergey Gultyayev",
     "aUrl": "https://sergeygultyayev.medium.com",
-    "spkrs": ["Sergey Gultyayev"],
-    "tags": ["ViewEncapsulation", "Styles"]
+    "spkrs": [
+      "Sergey Gultyayev"
+    ],
+    "tags": [
+      "ViewEncapsulation",
+      "Styles"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-26-H?alt=media&token=e4bcd663-2793-4ca8-9f97-dbbd24fd619e"
   },
   {
     "slug": "2022-06-27-A",
@@ -274,8 +350,11 @@
     "srcUrl": "https://medium.com",
     "aName": "Neo Liu",
     "aUrl": "https://neowei.medium.com",
-    "spkrs": ["Neo Liu"],
-    "tags": []
+    "spkrs": [
+      "Neo Liu"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-A?alt=media&token=5273da37-95ee-4b89-b4e8-c0d24245524f"
   },
   {
     "slug": "2022-06-27-B",
@@ -289,8 +368,11 @@
     "srcUrl": "https://www.thisdot.co",
     "aName": "Hassan Sani",
     "aUrl": "https://www.thisdot.co/author/hassan-sani",
-    "spkrs": ["Hassan Sani"],
-    "tags": []
+    "spkrs": [
+      "Hassan Sani"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-B?alt=media&token=a360c61b-4a28-400a-b8c4-0563213f254b"
   },
   {
     "slug": "2022-06-27-C",
@@ -304,8 +386,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Esther Wavinya",
     "aUrl": "https://medium.com/@estherwavinya",
-    "spkrs": ["Esther Wavinya"],
-    "tags": ["RxJS", "map()"]
+    "spkrs": [
+      "Esther Wavinya"
+    ],
+    "tags": [
+      "RxJS",
+      "map()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-C?alt=media&token=9c7798ee-70dc-4d21-811f-0cf5a5af9969"
   },
   {
     "slug": "2022-06-27-D",
@@ -319,8 +407,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Reza Nazari",
     "aUrl": "https://dev.to/rezanazari",
-    "spkrs": ["Reza Nazari"],
-    "tags": ["Dependency Injection"]
+    "spkrs": [
+      "Reza Nazari"
+    ],
+    "tags": [
+      "Dependency Injection"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-D?alt=media&token=64b4a79d-1a55-425e-bbfb-844f22dca59c"
   },
   {
     "slug": "2022-06-27-E",
@@ -335,8 +428,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "TechshareSKK",
     "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
-    "spkrs": ["Sai Kumar Korthivada"],
-    "tags": ["Update"]
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ],
+    "tags": [
+      "Update"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-E?alt=media&token=f3334f82-4976-4d99-bf93-e9dc1546caeb"
   },
   {
     "slug": "2022-06-27-F",
@@ -351,8 +449,13 @@
     "srcUrl": "https://spreaker.com",
     "aName": "Angular Experience",
     "aUrl": "https://angular-experience.web.app/episodes",
-    "spkrs": ["Doguhan Uluca", "Brooke Avery", "Erik Slack"],
-    "tags": []
+    "spkrs": [
+      "Doguhan Uluca",
+      "Brooke Avery",
+      "Erik Slack"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-F?alt=media&token=04c61b28-4789-4512-a027-a18d2b62c640"
   },
   {
     "slug": "2022-06-27-G",
@@ -367,8 +470,14 @@
     "srcUrl": "https://youtube.com",
     "aName": "Briebug",
     "aUrl": "https://www.youtube.com/c/Briebugsoftwaresolutions/videos",
-    "spkrs": ["Nick Landkamer"],
-    "tags": ["RxJS", "tap()"]
+    "spkrs": [
+      "Nick Landkamer"
+    ],
+    "tags": [
+      "RxJS",
+      "tap()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-G?alt=media&token=58f99097-8126-489b-981c-4f6ab8041def"
   },
   {
     "slug": "2022-06-27-H",
@@ -384,7 +493,10 @@
     "aName": "Hike Coding Knowledge",
     "aUrl": "https://www.youtube.com/user/rajupaul71/videos",
     "spkrs": [],
-    "tags": ["Pipes"]
+    "tags": [
+      "Pipes"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-H?alt=media&token=13a058db-d0aa-4212-aadd-8524b785768c"
   },
   {
     "slug": "2022-06-27-J",
@@ -400,7 +512,11 @@
     "aName": "Hike Coding Knowledge",
     "aUrl": "https://www.youtube.com/user/rajupaul71/videos",
     "spkrs": [],
-    "tags": ["Pipes", "Custom"]
+    "tags": [
+      "Pipes",
+      "Custom"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-J?alt=media&token=bfa32185-4aaa-40ae-abff-aa0e72534bfb"
   },
   {
     "slug": "2022-06-27-K",
@@ -415,8 +531,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": ["Alex Rickabaugh"],
-    "tags": ["Components"]
+    "spkrs": [
+      "Alex Rickabaugh"
+    ],
+    "tags": [
+      "Components"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-K?alt=media&token=61eb5eaf-a568-4688-ab28-349add43dc75"
   },
   {
     "slug": "2022-06-27-L",
@@ -432,7 +553,10 @@
     "aName": "Coding Under Pressure",
     "aUrl": "https://www.youtube.com/channel/UCdGYTnk-Ll4S6yOsYwU8D2w/videos",
     "spkrs": [],
-    "tags": ["Routing"]
+    "tags": [
+      "Routing"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-L?alt=media&token=f11e4455-e374-40b9-a94c-9759c8744165"
   },
   {
     "slug": "2022-06-27-M",
@@ -447,8 +571,11 @@
     "srcUrl": "https://youtube.com",
     "aName": "Vicki Bealman",
     "aUrl": "https://www.youtube.com/channel/UC05RoruJ1PVjmS1I_d8E26g/videos",
-    "spkrs": ["Vicki Bealman"],
-    "tags": []
+    "spkrs": [
+      "Vicki Bealman"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-27-M?alt=media&token=d3f83c4f-3229-439a-a941-622e229f1f79"
   },
   {
     "slug": "2022-06-28-A",
@@ -463,8 +590,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "Geek 97",
     "aUrl": "https://www.youtube.com/c/Geek97/videos",
-    "spkrs": ["Vojtech Masek"],
-    "tags": ["Performance"]
+    "spkrs": [
+      "Vojtech Masek"
+    ],
+    "tags": [
+      "Performance"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-A?alt=media&token=b03f022f-b1ae-4798-89e8-b1f35c45af6e"
   },
   {
     "slug": "2022-06-28-B",
@@ -478,8 +610,11 @@
     "srcUrl": "https://medium.com",
     "aName": "Prachi Thakur",
     "aUrl": "https://medium.com/@thakurprachi",
-    "spkrs": ["Prachi Thakur"],
-    "tags": []
+    "spkrs": [
+      "Prachi Thakur"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-B?alt=media&token=e54c7957-551e-4c4b-9721-4d909cf7e09e"
   },
   {
     "slug": "2022-06-28-C",
@@ -493,8 +628,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Miroslav Slapka",
     "aUrl": "https://medium.com/@miroslav-slapka",
-    "spkrs": ["Miroslav Slapka"],
-    "tags": ["Architecture"]
+    "spkrs": [
+      "Miroslav Slapka"
+    ],
+    "tags": [
+      "Architecture"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-C?alt=media&token=485e5fde-60ee-4706-b3b3-1f4585db8dee"
   },
   {
     "slug": "2022-06-28-D",
@@ -509,8 +649,14 @@
     "srcUrl": "https://youtube.com",
     "aName": "Geek 97",
     "aUrl": "https://www.youtube.com/c/Geek97/videos",
-    "spkrs": ["Sam Bellen"],
-    "tags": ["Auth0", "Auth"]
+    "spkrs": [
+      "Sam Bellen"
+    ],
+    "tags": [
+      "Auth0",
+      "Auth"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-D?alt=media&token=874e24a4-3d07-404f-b79b-c5cb2aef299c"
   },
   {
     "slug": "2022-06-28-E",
@@ -524,8 +670,11 @@
     "srcUrl": "https://dev.to",
     "aName": "Xiao Ling",
     "aUrl": "https://dev.to/yushulx",
-    "spkrs": ["Xiao Ling"],
-    "tags": []
+    "spkrs": [
+      "Xiao Ling"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-E?alt=media&token=b9cce5a5-0c13-402e-b3dd-468db575fbae"
   },
   {
     "slug": "2022-06-28-F",
@@ -540,8 +689,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "Patrick God",
     "aUrl": "https://www.youtube.com/c/PatrickGod/videos",
-    "spkrs": ["Patrick God"],
-    "tags": ["Angular Material"]
+    "spkrs": [
+      "Patrick God"
+    ],
+    "tags": [
+      "Angular Material"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-F?alt=media&token=410b1639-d3a5-4e7b-a6dc-42a05ee809e1"
   },
   {
     "slug": "2022-06-28-G",
@@ -557,7 +711,13 @@
     "aName": "Monsterlessons Academy",
     "aUrl": "https://www.youtube.com/c/MonsterlessonsAcademy/videos",
     "spkrs": [],
-    "tags": ["RxJS", "Observables", "BehaviorSubject", "combineLatest()"]
+    "tags": [
+      "RxJS",
+      "Observables",
+      "BehaviorSubject",
+      "combineLatest()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-G?alt=media&token=c31d359e-aaea-4ff6-a59e-a3f1a53030bd"
   },
   {
     "slug": "2022-06-28-H",
@@ -571,8 +731,13 @@
     "srcUrl": "https://www.telerik.com/blogs/web-angular",
     "aName": "Dhananjay Kumar",
     "aUrl": "https://www.telerik.com/blogs/author/dhananjay-kumar",
-    "spkrs": ["Dhananjay Kumar"],
-    "tags": ["Standalone Components"]
+    "spkrs": [
+      "Dhananjay Kumar"
+    ],
+    "tags": [
+      "Standalone Components"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-H?alt=media&token=245e9e78-f6db-4568-aefb-81804ebc44e9"
   },
   {
     "slug": "2022-06-28-J",
@@ -588,7 +753,10 @@
     "aName": "Bitfumes",
     "aUrl": "https://www.youtube.com/c/Bitfumes/videos",
     "spkrs": [],
-    "tags": ["Firebase"]
+    "tags": [
+      "Firebase"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-J?alt=media&token=c4747072-1667-4ada-904a-067dc3d74ac7"
   },
   {
     "slug": "2022-06-28-K",
@@ -604,10 +772,14 @@
     "aName": "The Code Angle",
     "aUrl": "https://www.youtube.com/c/TheCodeAngle/videos",
     "spkrs": [],
-    "tags": ["Auth", "Firebase"]
+    "tags": [
+      "Auth",
+      "Firebase"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-K?alt=media&token=e8ec06c6-2e21-492f-bed8-d05e38ca9d2c"
   },
   {
-    "slug": "2022-06-28-L", 
+    "slug": "2022-06-28-L",
     "type": "blog",
     "title": "RxJS interop incompatibility: A tale as old as time",
     "url": "https://medium.com/applearn-engineering/rxjs-interop-incompatibility-a-tale-as-old-as-time-539282fabe43",
@@ -618,8 +790,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Simon Stevens",
     "aUrl": "https://medium.com/@simon.stevens_28965",
-    "spkrs": ["Simon Stevens"],
-    "tags": ["RxJS"]
+    "spkrs": [
+      "Simon Stevens"
+    ],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-L?alt=media&token=bc69c493-d448-4b3f-8226-5b4a79057698"
   },
   {
     "slug": "2022-06-28-M",
@@ -633,8 +810,11 @@
     "srcUrl": "https://dev.to",
     "aName": "Brandon Roberts",
     "aUrl": "https://dev.to/brandontroberts",
-    "spkrs": ["Brandon Roberts"],
-    "tags": []
+    "spkrs": [
+      "Brandon Roberts"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-M?alt=media&token=5098d0b4-60d0-44ba-8dc6-7492c68e0b4b"
   },
   {
     "slug": "2022-06-28-N",
@@ -649,8 +829,14 @@
     "srcUrl": "https://youtube.com",
     "aName": "Simon Grimm",
     "aUrl": "https://www.youtube.com/c/SimonGrimmDev/videos",
-    "spkrs": ["Simon Grimm"],
-    "tags": ["Angular Material", "Capacitor"]
+    "spkrs": [
+      "Simon Grimm"
+    ],
+    "tags": [
+      "Angular Material",
+      "Capacitor"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-N?alt=media&token=a48a3c58-4cb3-4af3-bcaf-594a24e84fe8"
   },
   {
     "slug": "2022-06-28-P",
@@ -664,8 +850,15 @@
     "srcUrl": "https://dev.to",
     "aName": "Colum Ferry",
     "aUrl": "https://dev.to/coly010",
-    "spkrs": ["Colum Ferry"],
-    "tags": ["Nx", "TailwindCSS", "Storybook"]
+    "spkrs": [
+      "Colum Ferry"
+    ],
+    "tags": [
+      "Nx",
+      "TailwindCSS",
+      "Storybook"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-P?alt=media&token=4b42a9b5-9050-48ce-b261-8ad5bcebcaf4"
   },
   {
     "slug": "2022-06-28-Q",
@@ -680,7 +873,10 @@
     "aName": "AngularEnthusiast",
     "aUrl": "https://medium.com/@ramya-bala221190",
     "spkrs": [],
-    "tags": ["Spinner"]
+    "tags": [
+      "Spinner"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-Q?alt=media&token=aa41cbb4-2c59-4089-9f68-d59eb0066852"
   },
   {
     "slug": "2022-06-28-R",
@@ -694,8 +890,11 @@
     "srcUrl": "https://dev.to",
     "aName": "Aliasger Jaffer",
     "aUrl": "https://hashnode.com/@aliasger",
-    "spkrs": ["Aliasger Jaffer"],
-    "tags": []
+    "spkrs": [
+      "Aliasger Jaffer"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-R?alt=media&token=68547581-7642-4b88-8af2-c2f58b15ec0c"
   },
   {
     "slug": "2022-06-28-S",
@@ -710,8 +909,11 @@
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": ["Ady Ngom"],
-    "tags": []
+    "spkrs": [
+      "Ady Ngom"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-28-S?alt=media&token=d589038c-0078-4946-91c0-03f3ca9c0595"
   },
   {
     "slug": "2022-06-29-A",
@@ -725,8 +927,14 @@
     "srcUrl": "https://dev.to",
     "aName": "Ricardo Torres",
     "aUrl": "https://dev.to/ricardojavister",
-    "spkrs": ["Ricardo Torres"],
-    "tags": ["RxJS", "mergeAll()"]
+    "spkrs": [
+      "Ricardo Torres"
+    ],
+    "tags": [
+      "RxJS",
+      "mergeAll()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-A?alt=media&token=b0eb7857-bcb0-4cf4-8359-45372c34e3a1"
   },
   {
     "slug": "2022-06-29-B",
@@ -740,8 +948,14 @@
     "srcUrl": "https://dev.to",
     "aName": "Ricardo Torres",
     "aUrl": "https://dev.to/ricardojavister",
-    "spkrs": ["Ricardo Torres"],
-    "tags": ["Forms", "Template Driven Forms"]
+    "spkrs": [
+      "Ricardo Torres"
+    ],
+    "tags": [
+      "Forms",
+      "Template Driven Forms"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-B?alt=media&token=e63564dc-f236-4c49-865d-020441a23aa9"
   },
   {
     "slug": "2022-06-29-C",
@@ -755,8 +969,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Vaibhav Gehani",
     "aUrl": "https://dev.to/vaibhavgehani",
-    "spkrs": ["Vaibhav Gehani"],
-    "tags": ["Ionic"]
+    "spkrs": [
+      "Vaibhav Gehani"
+    ],
+    "tags": [
+      "Ionic"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-C?alt=media&token=dc3c7745-e31a-4768-8b27-ebc1519b3fe2"
   },
   {
     "slug": "2022-06-29-D",
@@ -771,7 +990,8 @@
     "aName": "Veeranan S S",
     "aUrl": "https://medium.com/@veeranan.s",
     "spkrs": [],
-    "tags": []
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-D?alt=media&token=f12d5df8-fb6f-4f73-b810-d7eed541ea5e"
   },
   {
     "slug": "2022-06-29-E",
@@ -787,7 +1007,11 @@
     "aName": "Hike Coding Knowledge",
     "aUrl": "https://www.youtube.com/user/rajupaul71/videos",
     "spkrs": [],
-    "tags": ["Directives", "Custom"]
+    "tags": [
+      "Directives",
+      "Custom"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-E?alt=media&token=4fb44efe-de74-4010-bdcd-523d7de9919a"
   },
   {
     "slug": "2022-06-29-F",
@@ -801,8 +1025,15 @@
     "srcUrl": "https://medium.com",
     "aName": "Makesh Kumar",
     "aUrl": "https://makesh-kumar.medium.com",
-    "spkrs": ["Makesh Kumar"],
-    "tags": ["Lazy Loading", "Modules", "Performance"]
+    "spkrs": [
+      "Makesh Kumar"
+    ],
+    "tags": [
+      "Lazy Loading",
+      "Modules",
+      "Performance"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-F?alt=media&token=beba9ad9-1cef-4b69-be66-7eee241d3601"
   },
   {
     "slug": "2022-06-29-G",
@@ -817,8 +1048,16 @@
     "srcUrl": "https://youtube.com",
     "aName": "Joshua Morony",
     "aUrl": "https://www.youtube.com/c/JoshuaMorony/videos",
-    "spkrs": ["Joshua Morony"],
-    "tags": ["OnPush", "Change Detection", "Performance", "Architecture"]
+    "spkrs": [
+      "Joshua Morony"
+    ],
+    "tags": [
+      "OnPush",
+      "Change Detection",
+      "Performance",
+      "Architecture"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-G?alt=media&token=e041e4a4-5861-4861-9d3b-edd066e5b382"
   },
   {
     "slug": "2022-06-29-H",
@@ -832,8 +1071,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Haimantika Mitra",
     "aUrl": "https://dev.to/haimantika",
-    "spkrs": ["Haimantika Mitra"],
-    "tags": ["Data Binding"]
+    "spkrs": [
+      "Haimantika Mitra"
+    ],
+    "tags": [
+      "Data Binding"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-H?alt=media&token=e646c279-f354-44c2-b516-4507fb7b421f"
   },
   {
     "slug": "2022-06-29-J",
@@ -847,8 +1091,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Bipon Biswas",
     "aUrl": "https://dev.to/bipon68",
-    "spkrs": ["Bipon Biswas"],
-    "tags": ["Dependency Injection"]
+    "spkrs": [
+      "Bipon Biswas"
+    ],
+    "tags": [
+      "Dependency Injection"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-J?alt=media&token=d9db2a26-1dc1-4013-b9da-34dc3465cc9c"
   },
   {
     "slug": "2022-06-29-K",
@@ -862,8 +1111,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Andres Solorzano",
     "aUrl": "https://aosolorzano.medium.com",
-    "spkrs": ["Andres Solorzano"],
-    "tags": ["AWS"]
+    "spkrs": [
+      "Andres Solorzano"
+    ],
+    "tags": [
+      "AWS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-K?alt=media&token=419f3689-0d33-4cf3-8a90-f234af6f945d"
   },
   {
     "slug": "2022-06-29-L",
@@ -877,8 +1131,11 @@
     "srcUrl": "https://www.thisdot.co/blog?tag=angular&filter=Angular#result",
     "aName": "Hassan Sani",
     "aUrl": "https://www.thisdot.co/author/hassan-sani",
-    "spkrs": ["Hassan Sani"],
-    "tags": []
+    "spkrs": [
+      "Hassan Sani"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-L?alt=media&token=91345181-4570-4a29-9855-198e7561ca59"
   },
   {
     "slug": "2022-06-29-M",
@@ -893,7 +1150,10 @@
     "aName": "Dylan Hunn",
     "aUrl": "https://github.com/dylhunn",
     "spkrs": [],
-    "tags": ["Release"]
+    "tags": [
+      "Release"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-M?alt=media&token=b8f8d90c-4653-44fe-b50c-4e5694bc563c"
   },
   {
     "slug": "2022-06-29-N",
@@ -908,7 +1168,10 @@
     "aName": "Dylan Hunn",
     "aUrl": "https://github.com/dylhunn",
     "spkrs": [],
-    "tags": ["Release"]
+    "tags": [
+      "Release"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-N?alt=media&token=032e37a4-5858-4139-a015-a1602fed712f"
   },
   {
     "slug": "2022-06-29-P",
@@ -923,8 +1186,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "CantonCoders",
     "aUrl": "https://www.youtube.com/channel/UCvt2aFgjTktCMLPc-dtecAQ/videos",
-    "spkrs": ["Scott Hammer"],
-    "tags": ["TDD"]
+    "spkrs": [
+      "Scott Hammer"
+    ],
+    "tags": [
+      "TDD"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-P?alt=media&token=6f4ee2a4-eb51-4fc3-aae1-cde3ac64d11d"
   },
   {
     "slug": "2022-06-29-Q",
@@ -938,8 +1206,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Mark Thompson",
     "aUrl": "https://dev.to/mthompsoncode",
-    "spkrs": ["Mark Thompson"],
-    "tags": ["Performance"]
+    "spkrs": [
+      "Mark Thompson"
+    ],
+    "tags": [
+      "Performance"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-Q?alt=media&token=4e6dd8b9-2196-440f-a4e9-f1c13c87040e"
   },
   {
     "slug": "2022-06-29-R",
@@ -953,8 +1226,14 @@
     "srcUrl": "https://hashnode.com",
     "aName": "Aliasger Jaffer",
     "aUrl": "https://hashnode.com/@aliasger",
-    "spkrs": ["Aliasger Jaffer"],
-    "tags": ["RxJS", "Observables"]
+    "spkrs": [
+      "Aliasger Jaffer"
+    ],
+    "tags": [
+      "RxJS",
+      "Observables"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-R?alt=media&token=5cd9acb3-f8d6-416c-8ef9-4acc9dbe7f3a"
   },
   {
     "slug": "2022-06-29-S",
@@ -969,8 +1248,13 @@
     "srcUrl": "https://www.spreaker.com",
     "aName": "The Angular Plus Show",
     "aUrl": "https://www.spreaker.com/show/angular-show",
-    "spkrs": ["David Tucker"],
-    "tags": ["AWS"]
+    "spkrs": [
+      "David Tucker"
+    ],
+    "tags": [
+      "AWS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-S?alt=media&token=b4597729-d764-4ad2-80be-5bcd3d4675a5"
   },
   {
     "slug": "2022-06-29-T",
@@ -985,8 +1269,11 @@
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": ["Alisa Duncan"],
-    "tags": []
+    "spkrs": [
+      "Alisa Duncan"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-29-T?alt=media&token=794c650d-2e8e-4ef1-8fa5-f42e66f959e5"
   },
   {
     "slug": "2022-06-30-A",
@@ -1001,7 +1288,8 @@
     "aName": "WebTutPro",
     "aUrl": "https://codewithmrnerd.medium.com",
     "spkrs": [],
-    "tags": []
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-A?alt=media&token=1e645503-4ce8-4074-a763-37314265f309"
   },
   {
     "slug": "2022-06-30-B",
@@ -1016,8 +1304,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "TechshareSKK",
     "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
-    "spkrs": ["Sai Kumar Korthivada"],
-    "tags": ["Standalone Components"]
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ],
+    "tags": [
+      "Standalone Components"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-B?alt=media&token=d46fc8f3-a713-4d71-a76b-81a3c5d2590d"
   },
   {
     "slug": "2022-06-30-C",
@@ -1032,8 +1325,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "Code Shots With Profanis",
     "aUrl": "https://www.youtube.com/c/CodeShotsWithProfanis/videos",
-    "spkrs": ["Fanis Prodromou"],
-    "tags": ["Standalone Components"]
+    "spkrs": [
+      "Fanis Prodromou"
+    ],
+    "tags": [
+      "Standalone Components"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-C?alt=media&token=b949a628-fd99-45c6-938e-dfaf868ef48a"
   },
   {
     "slug": "2022-06-30-D",
@@ -1049,7 +1347,8 @@
     "aName": "Techinfocse",
     "aUrl": "https://www.youtube.com/channel/UCfu8GM0XEkovwMRRKKyYGlA/videos",
     "spkrs": [],
-    "tags": []
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-D?alt=media&token=dc5a9631-cdc4-4938-b5ab-505ab70330fc"
   },
   {
     "slug": "2022-06-30-E",
@@ -1063,8 +1362,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Luca Piciollo",
     "aUrl": "https://medium.com/@lucapiciollo",
-    "spkrs": ["Luca Piciollo"],
-    "tags": ["Schematics"]
+    "spkrs": [
+      "Luca Piciollo"
+    ],
+    "tags": [
+      "Schematics"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-E?alt=media&token=a171771d-ba4a-4718-9cd5-4e2a6e6bb2e7"
   },
   {
     "slug": "2022-06-30-F",
@@ -1078,8 +1382,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Kithmini Indimagedara",
     "aUrl": "https://medium.com/@kithminiii",
-    "spkrs": ["Kithmini Indimagedara"],
-    "tags": ["Testing", "Unit Testing"]
+    "spkrs": [
+      "Kithmini Indimagedara"
+    ],
+    "tags": [
+      "Testing",
+      "Unit Testing"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-F?alt=media&token=1e2642ba-9a3c-424f-bdb3-02949d644849"
   },
   {
     "slug": "2022-06-30-G",
@@ -1093,8 +1403,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Balram Chavan",
     "aUrl": "https://balramchavan.medium.com",
-    "spkrs": ["Balram Chavan"],
-    "tags": ["@Injectable", "Dependency Injection"]
+    "spkrs": [
+      "Balram Chavan"
+    ],
+    "tags": [
+      "@Injectable",
+      "Dependency Injection"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-G?alt=media&token=841044bb-6c3d-4dae-9a13-f204c060aba0"
   },
   {
     "slug": "2022-06-30-H",
@@ -1108,8 +1424,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Kagklis Vasileios",
     "aUrl": "https://kagklis.medium.com",
-    "spkrs": ["Kagklis Vasileios"],
-    "tags": ["Route Params"]
+    "spkrs": [
+      "Kagklis Vasileios"
+    ],
+    "tags": [
+      "Route Params"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-H?alt=media&token=963603a6-4c54-484d-944b-72a048ebfc31"
   },
   {
     "slug": "2022-06-30-J",
@@ -1124,8 +1445,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "JetBrainsTV",
     "aUrl": "https://www.youtube.com/user/JetBrainsTV/videos",
-    "spkrs": ["Chau Tran"],
-    "tags": ["Webstorm"]
+    "spkrs": [
+      "Chau Tran"
+    ],
+    "tags": [
+      "Webstorm"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-J?alt=media&token=ff86d5e1-bfee-419f-8bfa-e442e3b4ba53"
   },
   {
     "slug": "2022-06-30-K",
@@ -1140,8 +1466,15 @@
     "srcUrl": "https://youtube.com",
     "aName": "Bitovi",
     "aUrl": "https://www.youtube.com/c/Bitovi",
-    "spkrs": ["Jonathan Spickerman", "Wade Harkins", "Fabio Englert Moutinho"],
-    "tags": ["ESLint"]
+    "spkrs": [
+      "Jonathan Spickerman",
+      "Wade Harkins",
+      "Fabio Englert Moutinho"
+    ],
+    "tags": [
+      "ESLint"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-K?alt=media&token=f8c0c99d-1450-469d-aee9-0bc2dd1eddb7"
   },
   {
     "slug": "2022-06-30-L",
@@ -1155,8 +1488,13 @@
     "srcUrl": "https://dev.to",
     "aName": "Ria Pacheco",
     "aUrl": "https://dev.to/riapacheco",
-    "spkrs": ["Ria Pacheco"],
-    "tags": ["Charts"]
+    "spkrs": [
+      "Ria Pacheco"
+    ],
+    "tags": [
+      "Charts"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-L?alt=media&token=b699aa46-dfb1-4923-8134-a3c2d16501a6"
   },
   {
     "slug": "2022-06-30-M",
@@ -1171,8 +1509,11 @@
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": ["Michael Dowden"],
-    "tags": []
+    "spkrs": [
+      "Michael Dowden"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-06-30-M?alt=media&token=2822768c-10e7-4381-bec0-e138e25d5a06"
   },
   {
     "slug": "2022-07-01-A",
@@ -1186,8 +1527,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Shilpa Syal",
     "aUrl": "https://medium.com/@shilpasyal55",
-    "spkrs": ["Shilpa Syal"],
-    "tags": ["Autocomplete", "RxJS"]
+    "spkrs": [
+      "Shilpa Syal"
+    ],
+    "tags": [
+      "Autocomplete",
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-A?alt=media&token=e456938e-4490-4cf5-97f2-ea020fd0d481"
   },
   {
     "slug": "2022-07-01-B",
@@ -1203,7 +1550,11 @@
     "aName": "Kode With Kamran",
     "aUrl": "https://www.youtube.com/channel/UClAF60JODGbZKoyREtl6S5A/videos",
     "spkrs": [],
-    "tags": ["@Input", "Data Transfer"]
+    "tags": [
+      "@Input",
+      "Data Transfer"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-B?alt=media&token=edcd55d4-fa6f-48e6-8614-5f2a73998440"
   },
   {
     "slug": "2022-07-01-C",
@@ -1218,7 +1569,10 @@
     "aName": "Schaenk",
     "aUrl": "https://medium.com/@schaenk",
     "spkrs": [],
-    "tags": ["HttpParams"]
+    "tags": [
+      "HttpParams"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-C?alt=media&token=cc9f9a37-0655-4ed4-ac4f-d91a73955b88"
   },
   {
     "slug": "2022-07-01-D",
@@ -1232,8 +1586,13 @@
     "srcUrl": "https://medium.com",
     "aName": "Yevhenii Hudzenko",
     "aUrl": "https://medium.com/@hudzenko7",
-    "spkrs": ["Yevhenii Hudzenko"],
-    "tags": [""]
+    "spkrs": [
+      "Yevhenii Hudzenko"
+    ],
+    "tags": [
+      ""
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-D?alt=media&token=05dae25a-8ccb-4ae0-92ab-e9683719c236"
   },
   {
     "slug": "2022-07-01-E",
@@ -1247,8 +1606,14 @@
     "srcUrl": "https://medium.com",
     "aName": "Sergey Gultyayev",
     "aUrl": "https://sergeygultyayev.medium.com",
-    "spkrs": ["Sergey Gultyayev"],
-    "tags": ["Performance", "Architecture"]
+    "spkrs": [
+      "Sergey Gultyayev"
+    ],
+    "tags": [
+      "Performance",
+      "Architecture"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-E?alt=media&token=c41a6a18-2874-4015-b8d3-dc6febe04ad2"
   },
   {
     "slug": "2022-07-01-F",
@@ -1263,8 +1628,15 @@
     "srcUrl": "https://youtube.com",
     "aName": "AngularAir",
     "aUrl": "https://www.youtube.com/c/AngularAirPodcast/videos",
-    "spkrs": ["Justin Schwartzenberger", "Alyssa Nicoll", "Mike Brocci"],
-    "tags": ["inject()"]
+    "spkrs": [
+      "Justin Schwartzenberger",
+      "Alyssa Nicoll",
+      "Mike Brocci"
+    ],
+    "tags": [
+      "inject()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-F?alt=media&token=da62d94c-468f-4cec-8b91-71f08c5f78f8"
   },
   {
     "slug": "2022-07-01-G",
@@ -1279,8 +1651,13 @@
     "srcUrl": "https://youtube.com",
     "aName": "Advancio",
     "aUrl": "https://www.youtube.com/c/Advancio/videos",
-    "spkrs": ["Edgar Quiroz"],
-    "tags": ["Angular Material"]
+    "spkrs": [
+      "Edgar Quiroz"
+    ],
+    "tags": [
+      "Angular Material"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-G?alt=media&token=8092897d-e5ee-416d-83de-04955e60fe66"
   },
   {
     "slug": "2022-07-01-H",
@@ -1295,7 +1672,12 @@
     "srcUrl": "https://youtube.com",
     "aName": "Angular",
     "aUrl": "https://www.youtube.com/c/Angular/videos",
-    "spkrs": ["Mark Thompson", "Jeremy Elbourn", "Jessica Janiuk"],
-    "tags": []
+    "spkrs": [
+      "Mark Thompson",
+      "Jeremy Elbourn",
+      "Jessica Janiuk"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F026%2F2022-07-01-H?alt=media&token=69ea6da8-04e7-4b13-a7b3-6a2643149ace"
   }
 ]
