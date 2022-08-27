@@ -31,7 +31,7 @@ export class MigrationComponent implements OnInit {
   constructor(private http: HttpClient, private storage: Storage) {}
   error = false;
 
-  week = '017';
+  week = '026';
   posts: any;
   postsFinal = [];
   postsReversed: any;
