@@ -129,7 +129,7 @@
           <input
             type="text"
             class="admin-form-input-text"
-            formControlName="sourceSite"
+            formControlName="srcSite"
             matInput
             autocomplete="off"
           />
@@ -268,20 +268,20 @@
         <div class="post-source">
           <a
             class="post-source-link"
-            href="{{ post.authorUrl }}"
+            href="{{ post.aUrl }}"
             target="_blank"
           >
-            {{ post.authorName }}
+            {{ post.aName }}
           </a>
-          <span *ngIf="post.authorName && post.sourceSite"
+          <span *ngIf="post.aName && post.srcSite"
             >&nbsp;&nbsp;|&nbsp;&nbsp;</span
           >
           <a
             class="post-source-link"
-            href="{{ post.sourceUrl }}"
+            href="{{ post.srcUrl }}"
             target="_blank"
           >
-            {{ post.sourceSite }}
+            {{ post.srcSite }}
           </a>
         </div>
       </div>
@@ -310,7 +310,7 @@
           >
           <span>
             {{ post.type | uppercase }}
-            <span *ngIf="post.duration"> - {{ post.duration }}m</span>
+            <span *ngIf="post.dur"> - {{ post.dur }}m</span>
           </span>
         </div>
       </div>

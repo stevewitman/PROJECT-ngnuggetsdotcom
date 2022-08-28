@@ -1,0 +1,28 @@
+<div class="page-container-wide">
+  <h1 class="page-title">Daily, Hastily-Curated, ANGULAR News, Blogs, Videos and More ...</h1>
+  <h3>Reinforce what you know, learn something new, discover some new content creators, and monitor the pulse of the Angular community</h3>
+
+  <ng-container *ngIf="postsByDay$; else loading">
+    <div *ngFor="let dayGroup of postsByDay$ | async" class="daily-section">
+      <div class="divider-line">
+        <span class="divider-text">{{ dayGroup.date }}</span>
+      </div>
+      <ng-container *ngIf="dayGroup; else loading">
+      <div class="flex-container">
+        <div *ngFor="let post of dayGroup.dailyPosts">
+          <app-post-card
+            [post]="post"
+          ></app-post-card>
+        </div>
+      </div>
+      </ng-container>
+    </div>
+  </ng-container>
+
+
+  <!-- <button (click)="getMorePosts()">MORE</button> -->
+  <ng-template #loading>
+    <div>L o a d i n g . . .</div>
+  </ng-template>
+</div>
+

@@ -2,17 +2,18 @@ export interface Post {
   slug: string;
   url: string;
   type: string; // 'video' | 'blog' | 'podcast' | 'community' | 'release';
-  duration?: string | null;
+  dur?: string | null;
   title: string;
-  description: string;
-  datePosted: string;
-  dateSource: string;
-  sourceSite: string;
-  sourceUrl: string;
-  authorName: string;
-  authorUrl: string;
-  speakers: string[];
+  desc: string;
+  dAdd: string;
+  dSrc: string;
+  srcSite: string;
+  srcUrl: string;
+  aName: string;
+  aUrl: string;
+  spkrs: string[];
   tags: string[];
+  imgUrl?: string;
 }
 
 export interface DailyPosts {

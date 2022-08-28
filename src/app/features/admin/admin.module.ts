@@ -17,9 +17,10 @@ import { PostCardModule } from 'src/app/shared/ui/post-card/post-card.module';
 import { PostsPageComponent } from './components/posts-page/posts-page.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { ManualUploadPostThumbsComponent } from './components/manual-upload-post-thumbs/manual-upload-post-thumbs.component';
+import { ManualJsonToFirestoreComponent } from './components/manual-json-to-firestore/manual-json-to-firestore.component';
 
 @NgModule({
-  declarations: [PostsPageComponent, AddPostComponent, ManualUploadPostThumbsComponent],
+  declarations: [PostsPageComponent, AddPostComponent, ManualUploadPostThumbsComponent, ManualJsonToFirestoreComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

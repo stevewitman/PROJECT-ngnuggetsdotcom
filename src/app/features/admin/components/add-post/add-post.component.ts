@@ -52,37 +52,37 @@ export class AddPostComponent implements OnInit, OnDestroy {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    duration: new FormControl<string | null>('', {}),
+    dur: new FormControl<string | null>('', {}),
     title: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    description: new FormControl<string>('', { nonNullable: true }),
-    datePosted: new FormControl<string>('', {
+    desc: new FormControl<string>('', { nonNullable: true }),
+    dAdd: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    dateSource: new FormControl<string>('', {
+    dSrc: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    sourceSite: new FormControl<string>('', {
+    srcSite: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    sourceUrl: new FormControl<string>('', {
+    srcUrl: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    authorName: new FormControl<string>('', {
+    aName: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    authorUrl: new FormControl<string>('', {
+    aUrl: new FormControl<string>('', {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    speakers: new FormControl<string[]>([], { nonNullable: true }),
+    spkrs: new FormControl<string[]>([], { nonNullable: true }),
     tags: new FormControl<string[]>([], { nonNullable: true }),
   });
 
@@ -95,7 +95,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getRecentPosts();
-    this.postForm.controls.duration.disable();
+    this.postForm.controls.dur.disable();
     this.initializeDates();
     this.watchUrlChanges();
     this.watchTypeChanges();
@@ -125,7 +125,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Watches 'url' ctrl and patches 'type', 'sourceSite', & 'sourceUrl' values
+   * Watches 'url' ctrl and patches 'type', 'srcSite', & 'sourceUrl' values
    * mapping for url to patch values imported from AdminConstantsService
    *
    * @param
@@ -150,8 +150,8 @@ export class AddPostComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Watches 'type' ctrl and updates 'duration' ctrl disabled & validation states.
-   * (video & podcast need 'duration', blog, release & community do not)
+   * Watches 'type' ctrl and updates 'dur' ctrl disabled & validation states.
+   * (video & podcast need 'dur', blog, release & community do not)
    *
    * @param
    * @returns
@@ -161,14 +161,14 @@ export class AddPostComponent implements OnInit, OnDestroy {
       .pipe(
         concatMap((v) => {
           if (v === 'video' || v === 'podcast') {
-            this.postForm.controls.duration.enable();
-            this.postForm.controls.duration.setValidators([
+            this.postForm.controls.dur.enable();
+            this.postForm.controls.dur.setValidators([
               Validators.required,
             ]);
             return of(true); // return value not used for anything
           } else {
-            this.postForm.controls.duration.disable();
-            this.postForm.controls.duration.setValidators(null);
+            this.postForm.controls.dur.disable();
+            this.postForm.controls.dur.setValidators(null);
             return of(false); // return value not used for anything
           }
         })
@@ -184,51 +184,49 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchAuthorNameChanges() {
-    this.SubAuthorNameValueChanges =
-      this.postForm.controls.authorName.valueChanges
-        .pipe(
-          tap((res) => {
-            this.SubRecentPosts = this.recentPosts$
-              .pipe(
-                map((posts) =>
-                  posts.find(
-                    (post) =>
-                      res === post.authorName &&
-                      this.postForm.controls.sourceSite.value ===
-                        post.sourceSite
-                  )
-                ),
-                tap((res) => {
-                  this.postForm.patchValue({
-                    authorUrl: res?.authorUrl,
-                    speakers: res?.speakers,
-                  });
-                  if (res?.speakers) {
-                    this.speakerChips.push(res?.speakers[0]);
-                  }
-                })
-              )
-              .subscribe();
-          })
-        )
-        .subscribe();
+    this.SubAuthorNameValueChanges = this.postForm.controls.aName.valueChanges
+      .pipe(
+        tap((res) => {
+          this.SubRecentPosts = this.recentPosts$
+            .pipe(
+              map((posts) =>
+                posts.find(
+                  (post) =>
+                    res === post.aName &&
+                    this.postForm.controls.srcSite.value === post.srcSite
+                )
+              ),
+              tap((res) => {
+                this.postForm.patchValue({
+                  aUrl: res?.aUrl,
+                  spkrs: res?.spkrs,
+                });
+                if (res?.spkrs) {
+                  this.speakerChips.push(res?.spkrs[0]);
+                }
+              })
+            )
+            .subscribe();
+        })
+      )
+      .subscribe();
   }
 
   /**
-   * Initialize datePosted and dateSource with today's date
+   * Initialize dAdd and dSrc with today's date
    * @param
    * @returns
    */
   initializeDates() {
     this.postForm.patchValue({
-      datePosted: this.utils.todayDateString(),
-      dateSource: this.utils.todayDateString(),
+      dAdd: this.utils.todayDateString(),
+      dSrc: this.utils.todayDateString(),
     });
   }
 
   /**
    * Adds speaker to speakerChips array that displays chips
-   * and also patches speakers with new speakerChips array
+   * and also patches spkrs with new speakerChips array
    * @param {string} speaker - string to be added to speakerChips array
    * @returns
    */
@@ -237,7 +235,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
     // Add speaker
     if (value) {
       this.speakerChips.push(value);
-      this.postForm.patchValue({ speakers: this.speakerChips });
+      this.postForm.patchValue({ spkrs: this.speakerChips });
     }
     // Clear the input value
     event.chipInput!.clear();
@@ -245,7 +243,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   /**
    * Remove speaker from speakerChips array that displays chips
-   * and also patches speakers with new speakerChips array
+   * and also patches spkrs with new speakerChips array
    * @param {string} speaker - string to be removed from speakerChips array
    * @returns
    */
@@ -254,7 +252,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
     // Remove speaker
     if (index >= 0) {
       this.speakerChips.splice(index, 1);
-      this.postForm.patchValue({ speakers: this.speakerChips });
+      this.postForm.patchValue({ spkrs: this.speakerChips });
     }
   }
 
@@ -303,7 +301,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
 
   /**
    * Changes srcDateOffset from increment or decrement button clicks and
-   * patches dateSource, if needed. dateSource cannot be past todays date.
+   * patches dSrc, if needed. dSrc cannot be past todays date.
    *
    * @param {number} x - one or minus one
    * @returns
@@ -313,7 +311,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
     if (this.srcDateOffset <= 0) {
       let newDate = this.adminUtils.dateStringFromOffset(this.srcDateOffset);
       this.postForm.patchValue({
-        dateSource: newDate,
+        dSrc: newDate,
       });
     } else {
       this.srcDateOffset = 0;
@@ -326,5 +324,4 @@ export class AddPostComponent implements OnInit, OnDestroy {
       tag.toLowerCase().includes(filterValue)
     );
   }
-
 }

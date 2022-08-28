@@ -1,15 +1,8 @@
 <div class="card" *ngIf="post as post">
   <a [href]="post.url">
     <div>
-      <!-- <img
-        src="assets/images/{{post.slug}}.jpg"
-        class="card-image"
-        matTooltip="{{tooltip}}"
-        matTooltipClass="description-tooltip"
-        matTooltipPosition="above"
-        matTooltipShowDelay="750"/> -->
       <img 
-        src="https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/post-thumbs%2F2022-07-29-P.jpg?alt=media&token=439ac56f-75c2-41ee-b46a-ab6f64470ce2"
+        [src]="post.imgUrl"
         class="card-image"
         matTooltip="{{tooltip}}"
         matTooltipClass="description-tooltip"
@@ -22,14 +15,14 @@
   </a>
   <div class="card-part card-row-source">
     <div class="post-source">
-      <a class="post-source-link" href="{{ post.authorUrl }}" target="_blank">
-        {{ post.authorName }}
+      <a class="post-source-link" href="{{ post.aUrl }}" target="_blank">
+        {{ post.aName }}
       </a>
-      <span *ngIf="post.authorName && post.sourceSite"
+      <span *ngIf="post.aName && post.srcSite"
         >&nbsp;&nbsp;|&nbsp;&nbsp;</span
       >
-      <a class="post-source-link" href="{{ post.sourceUrl }}" target="_blank">
-        {{ post.sourceSite }}
+      <a class="post-source-link" href="{{ post.srcUrl }}" target="_blank">
+        {{ post.srcSite }}
       </a>
     </div>
   </div>
@@ -58,7 +51,7 @@
       >
       <span>
         {{ post.type | uppercase }}
-        <span *ngIf="post.duration"> - {{ post.duration }}m</span>
+        <span *ngIf="post.dur"> - {{ post.dur }}m</span>
       </span>
     </div>
     <div class="card-actions">

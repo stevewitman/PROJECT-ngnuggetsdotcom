@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomePageComponent } from './features/home/home-page/home-page.component';
-
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent
+    pathMatch: 'full',
+    loadChildren: () => import('./features/posts/posts.module').then(m  => m.PostsModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./features/home/home.module').then(m  => m.HomeModule)
   },
   {
     path: 'admin',

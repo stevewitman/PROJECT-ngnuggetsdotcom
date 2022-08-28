@@ -17,12 +17,12 @@ export class PostCardComponent implements OnInit {
       this.tooltip = `${this.post.slug}\n\nTITLE:\n${
         this.post.title
       }\n\nDESCRIPTION:\n${
-        this.post.description
-      }\n\nSPEAKERS:\n${this.post.speakers
+        this.post.desc
+      }\n\nSPEAKERS:\n${this.post.spkrs
         .toString()
         .replace(/,/g, ', ')}\n\nDATE POSTED:\n${
-        this.post.datePosted
-      }\n\nDATE CREATED:\n${this.post.dateSource}\n\nTAGS:\n${this.post.tags
+        this.post.dAdd
+      }\n\nDATE CREATED:\n${this.post.dSrc}\n\nTAGS:\n${this.post.tags
         .toString()
         .replace(/,/g, ', ')}\n\n`;
     }

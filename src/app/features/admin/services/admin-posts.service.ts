@@ -47,4 +47,7 @@ export class AdminPostsService {
     const docRef = doc(this.afs, 'posts', 'staged');
     return setDoc(docRef, { stagedPost: data });
   }
+
+  // MANUAL FUNCTIONS
+  
 }
