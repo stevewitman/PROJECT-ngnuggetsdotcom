@@ -1,1018 +1,468 @@
 [
   {
-    "slug": "2022-04-16-A",
+    "slug": "2022-04-22-G",
     "type": "video",
-    "dur": "14",
-    "title": "Angular Material: Sidenav w. Toolbar (Expandable/Collapsable) | 2022",
-    "url": "https://www.youtube.com/watch?v=FHk_RwcxJZg",
-    "desc": "",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
+    "dur": "63",
+    "title": "Building Micro-Frontends with Angular | Live Webinar | Coditas",
+    "url": "https://youtu.be/IuULsUZBgas?t=222",
+    "desc": "Micro-frontends are all the rage in the development industry right now! To understand the what, why, and how of Microfrontends with Angular, join our Director of Technology, Varun Srinivas for a knowledge-packed webinar.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Thomas Oliver",
-    "aUrl": "https://www.youtube.com/channel/UCTZMwW4pq_B-o_KkpCtotGw/videos",
+    "aName": "Coditas",
+    "aUrl": "https://www.youtube.com/c/Coditas_Solutions/videos",
     "spkrs": [
-      "Thomas Oliver"
+      "Varan Srinivas"
     ],
     "tags": [
-      "Angular Material",
-      "Sidenav"
+      "Micro Frontends"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-A?alt=media&token=0dfaa166-f0b7-4c67-9895-b2be6283da98"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-G?alt=media&token=a0ed61a2-773c-4933-b558-679dfe013973"
   },
   {
-    "slug": "2022-04-16-B",
+    "slug": "2022-04-22-F",
     "type": "blog",
-    "title": "Send data from one application to another in Angular",
-    "url": "https://yurii-k.medium.com/send-data-from-one-application-to-another-in-angular-479ca163f90a",
-    "desc": "Big companies probably have at least a couple applications. Sometimes you may need to send some data from one application to another. How can we do that? We can add data as query parameters or if applications have the same domain address we can use cookies.",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
+    "title": "Angular, Styling & View Encapsulation",
+    "url": "https://medium.com/@ConorJonOReilly/angular-styling-e6f145b13a2a",
+    "desc": "Angular has a fantastic approach to Component specific styling, which allows developers to confidently write styles without the fear of having those styles bleed over into other components or parts of the application, even if the class names that are defined are identical to those in other components. It does this via the default Emulated View Encapsulation Strategy.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Yurii K",
-    "aUrl": "https://medium.com/@yurii-k",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-B?alt=media&token=3e8e9bcb-0575-49a6-a812-61cdc8e77c33"
-  },
-  {
-    "slug": "2022-04-16-C",
-    "type": "blog",
-    "title": "Use HTTP Interceptor In Angular for Every HTTP Request",
-    "url": "https://dev.to/deepakjaiswal/use-http-interceptor-in-angular-for-every-http-request-7lo",
-    "desc": "Sometimes we are using HttpClient in Angular for API request to add some additional information through headers to send request to server. First we add HttpModule in app.module.ts imports array.",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
-    "srcSite": "DEV Community",
-    "srcUrl": "https://dev.to",
-    "aName": "Sandeep",
-    "aUrl": "https://dev.to/deepakjaiswal",
-    "spkrs": [],
-    "tags": [
-      "HttpInterceptors"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-C?alt=media&token=2dd333d5-8c10-4196-b0ba-3377f995a612"
-  },
-  {
-    "slug": "2022-04-16-D",
-    "type": "video",
-    "dur": "11",
-    "title": "How to pass JWT Token authorization header in Angular using HttpInterceptor | Angular 13 tutorial #26",
-    "url": "https://www.youtube.com/watch?v=NDCJriGKgpI",
-    "desc": "This video explains how to implement the HTTP Interceptor and pass the JWT Token for any external API request.",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Nihira Techiees",
-    "aUrl": "https://www.youtube.com/channel/UCsbmVmB_or8sVLLEq4XhE_A/videos",
-    "spkrs": [],
-    "tags": [
-      "HttpInterceptors"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-D?alt=media&token=cae12e39-7cac-49e9-9a53-fcf49f58ff5f"
-  },
-  {
-    "slug": "2022-04-16-E",
-    "type": "video",
-    "dur": "15",
-    "title": "3 RxJS English | Advance Angular 13 Tutorials | Higher-order Observables | RxJS in Angular",
-    "url": "https://www.youtube.com/watch?v=8lAshoofGfg",
-    "desc": "",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "WorldGyan",
-    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
-    "spkrs": [],
-    "tags": [
-      "RxJS"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-E?alt=media&token=71595f6f-288e-4abc-93ee-1aa09bb82610"
-  },
-  {
-    "slug": "2022-04-16-F",
-    "type": "blog",
-    "title": "Reactive programming in Angular",
-    "url": "https://medium.com/@solisarg/reactive-programming-in-angular-acdd369a7155",
-    "desc": "After 7 years of working with Angular, I faced a couple of big projects using something that actually is in the core of the other big frontend framework, React. It's named reactive programming, and consist briefly in a series of tools to manage data as stream and show only when it changes.",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Jorge Solis",
-    "aUrl": "https://medium.com/@solisarg",
+    "aName": "Conor O'Reilly",
+    "aUrl": "https://medium.com/@ConorJonOReilly",
     "spkrs": [
-      "Jorge Solis"
+      "Conor O'Reilly"
     ],
     "tags": [
-      "RxJS"
+      "ViewEncapsulation",
+      "Styles",
+      "::ng-deep"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-F?alt=media&token=5f083b04-1fb5-4e7d-a659-cae9f7d1e056"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-F?alt=media&token=833c1900-a982-45eb-96b6-893826b19238"
   },
   {
-    "slug": "2022-04-16-G",
-    "type": "blog",
-    "title": "Angular — build once, deploy everywhere",
-    "url": "https://medium.com/@anassguendef/angular-build-once-deploy-everywhere-9dfb698e781e",
-    "desc": "The delivery of an Angular project goes through several environments before landing in production. These are generally ...",
-    "dAdd": "2022-04-16",
-    "dSrc": "2022-04-16",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Anass Guendef",
-    "aUrl": "https://medium.com/@anassguendef",
-    "spkrs": [
-      "Anass Guendef"
-    ],
-    "tags": [
-      "Deployment"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-G?alt=media&token=8c34b6e8-2620-483a-bf9f-d40c93b1ca31"
-  },
-  {
-    "slug": "2022-04-17-A",
-    "type": "blog",
-    "title": "GraphQL API Service Unit Testing",
-    "url": "https://madhuwanthiaah.medium.com/graphql-api-service-unit-testing-17bce2ab57a1",
-    "desc": "Unit tests are very important to improve the code base of enterprise-level applications. In this post, I am going to show you the insertion of unit tests to Apollo GraphQL API Service in the Angular application using the Jasmine framework. There are two different approaches to applying GraphQL queries to your code. You can use queries inside your component code. But using an API service as a common class can improve the reusability of the code",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Hasini Madhuwanthi",
-    "aUrl": "https://madhuwanthiaah.medium.com",
-    "spkrs": [
-      "Hasini Madhuwanthi"
-    ],
-    "tags": [
-      "Testing",
-      "Unit Testing",
-      "GraphQL"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-A?alt=media&token=3772491f-662f-4ddc-8aa9-3bf6cf84b8e1"
-  },
-  {
-    "slug": "2022-04-17-B",
-    "type": "video",
-    "dur": "22",
-    "title": "Angular In-Depth Folder Structure: What You Need to Know - Episode 3",
-    "url": "https://www.youtube.com/watch?v=hlOsH8jfzb4",
-    "desc": "Learn an in-depth Angular project folder structure.",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Code InDepth",
-    "aUrl": "https://www.youtube.com/channel/UCZ0SiGX71htwPfJTt0-ZzLQ/videos",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-B?alt=media&token=076c4055-9740-4658-8089-7368f82bbbed"
-  },
-  {
-    "slug": "2022-04-17-C",
-    "type": "video",
-    "dur": "12",
-    "title": "Value & Status Change events | Reactive Forms | Angular 13+",
-    "url": "https://www.youtube.com/watch?v=vhifD4o1nUE",
-    "desc": "In this lecture you are going to learn about value and status change events in Angular Form. These are the events which gets raised when the value in a form control changes and when the status of form control changes.",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "procademy",
-    "aUrl": "https://www.youtube.com/c/procademyn/videos",
-    "spkrs": [],
-    "tags": [
-      "Forms",
-      "Reactive Forms"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-C?alt=media&token=11665712-5f9c-4c57-8478-c5fe137319b2"
-  },
-  {
-    "slug": "2022-04-17-D",
-    "type": "video",
-    "dur": "6",
-    "title": "Font Awesome in Angular | Angular Tutorial | Add Brand icon",
-    "url": "https://www.youtube.com/watch?v=Q8Bjmkiqe9Q",
-    "desc": "In this video I have shown how to install Font-awesome package in Angular using ng add.\nAlso how to use brand icons using font-awesome in Angular Applications",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "CodingForBeginners",
-    "aUrl": "https://www.youtube.com/channel/UCOlMw469tDYXxS-yRagay3g/videos",
-    "spkrs": [],
-    "tags": [
-      "Font Awesome"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-D?alt=media&token=59f42a49-7f20-46d8-8208-7430d432669a"
-  },
-  {
-    "slug": "2022-04-17-E",
-    "type": "video",
-    "dur": "15",
-    "title": "Create an object detection Angular web application using Tensorflow JS",
-    "url": "https://www.youtube.com/watch?v=_CX9_-BDzR8",
-    "desc": "You can learn how to add machine learning object detection model into your Angular or any other web application by using tensorflow JS",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "TechHackX",
-    "aUrl": "https://www.youtube.com/channel/UCrezcQkTKyUibAcFl-YnM3Q/videos",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-E?alt=media&token=463d1363-9e8b-4944-8675-f23fc8647f27"
-  },
-  {
-    "slug": "2022-04-17-G",
-    "type": "video",
-    "dur": "3",
-    "title": "Reload entire page in Angular application",
-    "url": "https://www.youtube.com/watch?v=iyiuPavI6UQ",
-    "desc": "in this video you will learn how entire page of an Angular application can be re-loaded on a button click.",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "E 4 E-Learning",
-    "aUrl": "https://www.youtube.com/user/E4ELearning/videos",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-G?alt=media&token=2039497a-f2f2-456a-9f3c-d0648c47218d"
-  },
-  {
-    "slug": "2022-04-17-H",
-    "type": "blog",
-    "title": "Angular:Easy trick to pass dynamic data to a nested/child <ng-template> without using ngTemplateOutlet",
-    "url": "https://medium.com/geekculture/angular-easy-trick-to-pass-dynamic-data-to-a-nested-child-ng-template-without-using-e1a88d6bceb7",
-    "desc": "I have seen this question across multiple platforms from many web developers. How to pass data to an <ng-template> which is nested inside another <ng-template> or another tag?",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "AngularEnthusiast",
-    "aUrl": "https://medium.com/@ramya-bala221190",
-    "spkrs": [],
-    "tags": [
-      "<ng-template>",
-      "ngTemplateOutlet"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-H?alt=media&token=d7599509-734d-439c-8e48-a6be8aaebf0f"
-  },
-  {
-    "slug": "2022-04-17-K",
-    "type": "blog",
-    "title": "Socket IO with Ionic 5 Angular Application",
-    "url": "https://medium.com/enappd/socket-io-with-ionic-5-angular-application-5a61e3968731",
-    "desc": "In this tutorial, we will explore and implement the socket IO library with the Ionic 5 Angular application. ngx-socket-io is one of the most used packages — we will use this package to implement the socket IO library.",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Vaibhav gehani",
-    "aUrl": "https://medium.com/@vgehani90",
-    "spkrs": [
-      "Vaibhav Gehani"
-    ],
-    "tags": [
-      "Ionic"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-K?alt=media&token=fc530f45-d4b6-4009-8819-18c0c62fd116"
-  },
-  {
-    "slug": "2022-04-17-L",
+    "slug": "2022-04-22-E",
     "type": "video",
     "dur": "4",
-    "title": "Angular 13 & Tailwind 3: configuration and usage (English)",
-    "url": "https://www.youtube.com/watch?v=15s3dCaDIjo",
-    "desc": "In this video I show you how to configure  and use Tailwind 3 in Angular (13) projects.",
-    "dAdd": "2022-04-17",
-    "dSrc": "2022-04-17",
+    "title": "Managing collections in Angular with NgRx ComponentStore and Entity",
+    "url": "https://www.youtube.com/watch?v=vFxmVpU1y6U",
+    "desc": "NgRx Entity is a package for managing CRUD operations on collections of records. It works with NgRx Component Store similar to NgRx Store.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Fabio Biondi",
-    "aUrl": "https://www.youtube.com/c/FabioBiondi/videos",
+    "aName": "Brandon Roberts",
+    "aUrl": "https://www.youtube.com/c/BrandonRobertsDev/videos",
     "spkrs": [
-      "Fabio Biondi"
+      "Brandon Roberts"
     ],
     "tags": [
-      "TailwindCSS"
+      "NgRx",
+      "ComponentStore"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-L?alt=media&token=230acb60-b7af-4ca2-be00-067bb4a55352"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-E?alt=media&token=2b477c2c-11aa-4d07-839a-46be2cbb46e9"
   },
   {
-    "slug": "2022-04-18-A",
+    "slug": "2022-04-22-D",
     "type": "blog",
-    "title": "How to switch between Angular SSR and CSR based on detecting user-agent",
-    "url": "https://blog.adnanebrahimi.com/how-to-switch-between-angular-ssr-or-csr-based-on-detecting-user-agent",
-    "desc": "Since SSR is good for SEO and crawler bots, it's not good enough for users. For example, the transitions between pages could be slowed down if your site traffics get high. there are a lot of pros and cons for SSR and CSR I'm not digging into them. What we want here is to have both of them at the same time. We want SSR for SEO and CSR for users.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "Hashnode",
-    "srcUrl": "https://hashnode.com",
-    "aName": "Adnan Ebrahimi's Blog",
-    "aUrl": "https://blog.adnanebrahimi.com",
+    "title": "Dark | Light mode in Angular",
+    "url": "https://medium.com/@teslenkooleg2017/dark-light-mode-in-angular-cc78c9a7bca5",
+    "desc": "In this article I show the simplest way to change theme in Angular application.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Teslenko Oleg",
+    "aUrl": "https://medium.com/@teslenkooleg2017",
     "spkrs": [
-      "Adnan Ebrahimi"
-    ],
-    "tags": [
-      "SSR"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-A?alt=media&token=7ad5ce20-4eb8-4b14-874d-66e9922de637"
-  },
-  {
-    "slug": "2022-04-18-B",
-    "type": "blog",
-    "title": "Ng-News: Episode 22/15",
-    "url": "https://dev.to/rainerhahnekamp/ng-news-episode-2215-bii",
-    "desc": "This is a weekly posting, covering the latest updates from the Angular community.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "DEV Community",
-    "srcUrl": "https://dev.to",
-    "aName": "Rainer Hahnekamp",
-    "aUrl": "https://dev.to/rainerhahnekamp",
-    "spkrs": [
-      "Rainer Hahnekamp"
+      "Teslenko Oleg"
     ],
     "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-B?alt=media&token=6f0e2a21-21e0-4822-8ccb-2fdb72241f48"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-D?alt=media&token=4fbe6925-aab1-434a-b814-f7bedfde455f"
   },
   {
-    "slug": "2022-04-18-C",
+    "slug": "2022-04-22-C",
     "type": "video",
-    "dur": "68",
-    "title": "Todo App - How To Create A User Profile And Navbar With Angular",
-    "url": "https://www.youtube.com/watch?v=n2Srrl6ZMjQ",
-    "desc": "In this Todo App series we will be building the user profile page and the navigation bar for out todo.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "BugArray",
-    "aUrl": "https://www.youtube.com/channel/UCIkpfwmX7PORuZdnJ0OznAA/videos",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-C?alt=media&token=c782da2c-32a9-4895-9792-bd0c804615bf"
-  },
-  {
-    "slug": "2022-04-18-D",
-    "type": "video",
-    "dur": "60",
-    "title": "HackTalk | Santosh Yadav | Angular and NgRx | IIIT Lucknow",
-    "url": "https://youtu.be/okBqyDZ33L8?t=180",
-    "desc": "Mr.Santosh is a GDE for Angular, GitHub Star, and an Auth0 Ambassador, he loves contributing to Angular and NgRx.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Equinox, IIIT Lucknow",
-    "aUrl": "https://www.youtube.com/c/EquinoxIIITLucknow/videos",
-    "spkrs": [
-      "Santosh Yadav"
-    ],
-    "tags": [
-      "NgRx"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-D?alt=media&token=ab098fac-a23a-4b45-897e-f37ca118c002"
-  },
-  {
-    "slug": "2022-04-18-E",
-    "type": "video",
-    "dur": "9",
-    "title": "setValue() & patchValue() methods | Reactive Forms | Angular 13+",
-    "url": "https://www.youtube.com/watch?v=Hw8OV4kcKgM",
-    "desc": "In this lecture, you are going to learn about setValue and patchValue method in reactive forms and what is its use and the difference between them. Both setValue and patchValue method is used to set values for form control.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
+    "dur": "17",
+    "title": "Fetching Data with Get requets | Angular HTTP | Angular 13+",
+    "url": "https://www.youtube.com/watch?v=Nuh6hTDh31s",
+    "desc": "In this lecture we will learn how to fetch data from the server and display that data in the web application. To fetch data from the server we use GET request and to send a GET request to the server, we can make use of get() method of HttpClient.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
     "aName": "procademy",
     "aUrl": "https://www.youtube.com/c/procademyn/videos",
     "spkrs": [],
     "tags": [
-      "Forms",
-      "Reactive Forms",
-      "setValue()",
-      "patchValue()"
+      "HttpClient"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-E?alt=media&token=95f35d9b-fee7-46e6-8708-7171c7e19564"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-C?alt=media&token=2b1161e3-4b91-406d-87d9-c5ee322b62ed"
   },
   {
-    "slug": "2022-04-18-F",
-    "type": "podcast",
-    "dur": "66",
-    "title": "S2E12 - Ward Bell on How to Fire Your Boss",
-    "url": "https://www.spreaker.com/user/14532324/s2e12-ward-bell-on-how-to-fire-your-boss?utm_campaign=episode-title&utm_medium=app&utm_source=widget",
-    "desc": "In today's episode of NgXP, GDE and contributor to the original Angular documentation, Ward Bell talks about how to quit your job. After first discussing how to know when it's time to move on, Ward then covers best practices for leaving a position, how to make the transition smooth, what to do when things may not be ending on the best of terms, and how to stay optimistic before and throughout all the change.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "Spreaker",
-    "srcUrl": "https://spreaker.com",
-    "aName": "Angular Experience",
-    "aUrl": "https://angular-experience.web.app/episodes",
-    "spkrs": [
-      "Ward Bell",
-      "Brooke Avery",
-      "Erik Slack"
-    ],
+    "slug": "2022-04-22-B",
+    "type": "blog",
+    "title": "How to add push notifications in Angular",
+    "url": "https://medium.com/@OneSignalDevs/how-to-add-push-notifications-in-angular-b7c150595a15",
+    "desc": "It's no secret that push notifications can help you engage and retain app users. In this tutorial, we'll show you how to integrate with OneSignal in order to leverage push notifications in your Angular app.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "OneSignal Developers",
+    "aUrl": "https://medium.com/@OneSignalDevs",
+    "spkrs": [],
     "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-F?alt=media&token=c2dc4496-caf5-4fb7-ab4c-cf765ad56e19"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-B?alt=media&token=2edacfe8-b9aa-427d-a2e2-596932f14e88"
   },
   {
-    "slug": "2022-04-18-G",
-    "type": "video",
-    "dur": "6",
-    "title": "4 RxJS English | Advance Angular 13 | RxJS : How to get output from Outer & Inner Observable",
-    "url": "https://www.youtube.com/watch?v=hbQOiXLYxcc",
-    "desc": "",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "WorldGyan",
-    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
-    "spkrs": [],
-    "tags": [
-      "RxJS"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-G?alt=media&token=6bb983b3-664c-4240-bace-010d196a7725"
-  },
-  {
-    "slug": "2022-04-18-H",
-    "type": "video",
-    "dur": "22",
-    "title": "Angular HTTP Caching using Interceptor and Refresh",
-    "url": "https://www.youtube.com/watch?v=y921lgvICnQ",
-    "desc": "Caching an HTTP request for GET calls is highly important as it will avoid making an API service calls unnecessarily.\nAn Interceptor can be used to delegate caching without disturbing your existing Http calls. Angular documentation already outlines on these subjects and can be found here",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "CodeWithSrini",
-    "aUrl": "https://www.youtube.com/c/CodeWithSrini/videos",
-    "spkrs": [],
-    "tags": [
-      "HttpInterceptors"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-H?alt=media&token=172f0623-b8e0-4cf8-bbe9-0be450cf166c"
-  },
-  {
-    "slug": "2022-04-18-J",
+    "slug": "2022-04-22-A",
     "type": "blog",
-    "title": "Angular: How to create animation using Angular Animations",
-    "url": "https://medium.com/@matsal.dev/angular-how-to-create-animation-using-angular-animations-92620d411d8e",
-    "desc": "Animations are a great way to improve the user experience. We can do them both from the style sheet and with the Angular framework. In this article, I'll show you how to do it using Angular.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
+    "title": "Conditionally lazy load modules in Angular",
+    "url": "https://dev.to/madhust/conditionally-lazy-load-modules-in-angular-4l5l",
+    "desc": "Recently, I faced a user scenario where I need to load a module for a route path conditionally. The scenario is that if a user is assigned with some permission, then load a module or load another module. The use case seems legit, but I was unable to achieve this using the current lazy loading module feature.",
+    "dAdd": "2022-04-22",
+    "dSrc": "2022-04-22",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Matsal Dev",
-    "aUrl": "https://medium.com/@matsal.dev",
-    "spkrs": [],
-    "tags": [
-      "Animations"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-J?alt=media&token=3522be18-4644-4e0e-b6b6-e77bc919d19b"
-  },
-  {
-    "slug": "2022-04-18-K",
-    "type": "blog",
-    "title": "Creating a CI pipeline for Angular",
-    "url": "https://mervyn-manilall.medium.com/creating-a-ci-pipeline-for-angular-91cb24848850",
-    "desc": "An advantage of having our repository on Azure Devops is that it allows us to run automatic tests on new codes that are pushed. To achieve this, a build (a compiled version of the code) is created and tests are run against it so as to evaluate code coverage or linting. Running various tests ensure that the code quality is acceptable and, if so, the new code can be merged.",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Mervyn Manilall",
-    "aUrl": "https://mervyn-manilall.medium.com",
+    "aName": "Madhu Sudhanan P",
+    "aUrl": "https://dev.to/madhust",
     "spkrs": [
-      "Mervyn Manilall"
+      "Madhu Sudhanan P"
     ],
     "tags": [
-      "CI/CD"
+      "Lazy Loading",
+      "Performance"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-K?alt=media&token=13269177-1af7-456c-be80-dc2b8c63030a"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-A?alt=media&token=b65c9220-a12f-4163-9209-f1d7d2e4fc0d"
   },
   {
-    "slug": "2022-04-18-L",
+    "slug": "2022-04-21-N",
     "type": "video",
-    "dur": "8",
-    "title": "Get to Know the 2022 ng-conf Speakers | Kate Sky | ng-conf 2022",
-    "url": "https://www.youtube.com/watch?v=L6dgOQUeiW0",
+    "dur": "14",
+    "title": "Get to Know the 2022 ng-conf Speakers | Lara Newsome | ng-conf 2022",
+    "url": "https://www.youtube.com/watch?v=wYoIi81llqw",
     "desc": "",
-    "dAdd": "2022-04-18",
-    "dSrc": "2022-04-18",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
     "aName": "ng-conf",
     "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
     "spkrs": [
-      "Kate Sky"
+      "Lara Newsome"
     ],
     "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-L?alt=media&token=124521b8-140d-48f8-82a6-48a9bb59d6fd"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-N?alt=media&token=63fa6f1c-7c6c-4912-bb94-5789e599a13e"
   },
   {
-    "slug": "2022-04-19-A",
+    "slug": "2022-04-21-M",
     "type": "video",
-    "dur": "41",
-    "title": "Custom Angular Schematics — Generating Custom Component (advanced)",
-    "url": "https://www.youtube.com/watch?v=dADWO1Wh6-4",
-    "desc": "In this video, we will continue to explore Angular schematics and I am going to show you have to create a schematic that will generate a custom component for you with an already pre-injected Angular service. This video is an extension of the previous one where we were implementing the ng-add schematic.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
+    "dur": "49",
+    "title": "Angular Project Tutorial - Build an Angular Weather App From Scratch - Open Weather API Tutorial",
+    "url": "https://www.youtube.com/watch?v=psZXU8PTAS8",
+    "desc": "In this video, we will build an Angular full-stack weather app with Angular 13 and we will use a public API from RapidAPI.COM to get live weather forecast values.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Decoded Frontend",
-    "aUrl": "https://www.youtube.com/c/DecodedFrontend/videos",
+    "aName": "Sameer Saini",
+    "aUrl": "https://www.youtube.com/c/SameerSaini/videos",
     "spkrs": [
-      "Dmytro Mezhenskyi"
-    ],
-    "tags": [
-      "Schematics"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-A?alt=media&token=781407ab-f744-46fe-997e-b1f2062da376"
-  },
-  {
-    "slug": "2022-04-19-B",
-    "type": "video",
-    "dur": "6",
-    "title": "Introduction to HTTP requests in Angular | Angular HTTP | Angular 13+",
-    "url": "https://www.youtube.com/watch?v=M3vN0hrKgGQ",
-    "desc": "Hello and welcome to another exciting section of this complete anular course. In this section, you will learn about how to make HTTP requests to the server.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "procademy",
-    "aUrl": "https://www.youtube.com/c/procademyn/videos",
-    "spkrs": [],
-    "tags": [
-      "HTTP",
-      "HttpClient"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-B?alt=media&token=74c7d28f-ab6f-48a5-a778-2ec0d25b7686"
-  },
-  {
-    "slug": "2022-04-19-C",
-    "type": "blog",
-    "title": "3D Model: Three.js Scene in Angular",
-    "url": "https://medium.com/geekculture/3d-model-three-js-scene-in-angular-7bcbc0d00c31",
-    "desc": "In the previous tutorial, we learnt the fundamentals of Three.js and integrated the Three.js scene in Angular. We will render a 3D Model in this tutorial.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Anurag Srivastava",
-    "aUrl": "https://medium.com/@srivastavaanurag79",
-    "spkrs": [
-      "Anurag Srivastava"
+      "Sameer Saini"
     ],
     "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-C?alt=media&token=e3edeb95-d6f1-4f8f-b551-100770fd4417"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-M?alt=media&token=1908e9bc-c26f-4dca-9bb1-d7e3bac8bf06"
   },
   {
-    "slug": "2022-04-19-D",
-    "type": "blog",
-    "title": "Generic Angular directive to handle single and double clicks on the same element",
-    "url": "https://awstip.com/generic-angular-directive-to-handle-single-and-double-clicks-on-the-same-element-b6300b890964",
-    "desc": "The logic is pretty simple, we don't want the click event to trigger when we intend to double click. Hence we will listen to both click and dblclick, but on click listener we will delay the execution by a small amount of time.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Ayush Thakur",
-    "aUrl": "https://just-another-developer.medium.com",
-    "spkrs": [
-      "Ayush Thakur"
-    ],
-    "tags": [
-      "Directives",
-      "Custom"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-D?alt=media&token=8b59ff58-cb83-44a7-bc45-339f2e16a5ee"
-  },
-  {
-    "slug": "2022-04-19-E",
+    "slug": "2022-04-21-L",
     "type": "video",
-    "dur": "13",
-    "title": "You must know this Technique for your Angular Projects! - Angular Tutorial - (Lazy Loading)",
-    "url": "https://www.youtube.com/watch?v=lT86nVocIKE",
-    "desc": "This file architecture lets you full utilize Angular's lazy loading. Implementing this will help you learn more about Angular and level up your projects.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
+    "dur": "5",
+    "title": "How to set page title dynamically in Angular | Angular | Learn Smart Coding",
+    "url": "https://www.youtube.com/watch?v=PAodQqiO59w",
+    "desc": "Hi Friends, This video is all about how to set page titles dynamically on each page in Angular. It is a simple approach to setting the page title.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "FlippinBitz",
-    "aUrl": "https://www.youtube.com/channel/UCXTbrgh_BVEyXxrX2ITSnbw/videos",
+    "aName": "Learn Smart Coding",
+    "aUrl": "https://www.youtube.com/channel/UCKUxSY2xp12QiP3c60sOc-g/videos",
     "spkrs": [],
     "tags": [
-      "Lazy Loading",
-      "Architecture",
-      "Performance"
+      "setTitle()",
+      "Custom",
+      "Dynamic"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-E?alt=media&token=344d02d8-3ca7-4e67-b8a2-126debd01222"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-L?alt=media&token=436461f7-cf16-42fb-bbb4-8e8da0ec3b20"
   },
   {
-    "slug": "2022-04-19-F",
+    "slug": "2022-04-21-K",
     "type": "blog",
-    "title": "Angular Utilities Init Directive",
-    "url": "https://medium.com/@mikekucherov92/angular-utilities-init-directive-8dc4e0a4723c",
-    "desc": "I bet if you are an Angular developer you're dealing with streams on a daily basis. Since RxJS is an essential part of the framework.\n\nThere are two ways of getting data from the stream. You either subscribe on the Observable explicitly by calling a subscribe() method, or use a built-in async pipe which is preferable cause it's handling unsubscribing for you.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
+    "title": "RxJS: Exhaust map what it is and how to use",
+    "url": "https://sergeygultyayev.medium.com/rxjs-exhaust-map-what-it-is-and-how-to-use-52e49a67814c",
+    "desc": "exhaustMap is an interesting operator which is useful in some specific scenarios and at the same time may be hard to understand on graphics shown all over the internet. In this article I'm going to explain how it works and when to use it.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Mike Kucherov",
-    "aUrl": "https://medium.com/@mikekucherov92",
+    "aName": "Sergey Gultyayev",
+    "aUrl": "https://sergeygultyayev.medium.com",
     "spkrs": [
-      "Mike Kucherov"
+      "Sergey Gultyayev"
     ],
-    "tags": [
-      "Directives"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-F?alt=media&token=dc2e640b-3a82-4e81-8be8-9ef3713d8d4f"
-  },
-  {
-    "slug": "2022-04-19-G",
-    "type": "video",
-    "dur": "6",
-    "title": "Angular ngModules and lazy loading: split applications into features, shared and core modules",
-    "url": "https://www.youtube.com/watch?v=oTgC_WS3gmA",
-    "desc": "Organizing an Angular project into ngModules has always been an obstacle for many beginners so I created this short guide to  explain and demonstrate its use.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Fabio Biondi",
-    "aUrl": "https://www.youtube.com/c/FabioBiondi/videos",
-    "spkrs": [
-      "Fabio Biondi"
-    ],
-    "tags": [
-      "Lazy Loading",
-      "Modules",
-      "Performance"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-G?alt=media&token=b387af2d-4522-4f5e-b303-bb823df955b8"
-  },
-  {
-    "slug": "2022-04-19-H",
-    "type": "video",
-    "dur": "7",
-    "title": "Observable vs Subject in Angular with example",
-    "url": "https://www.youtube.com/watch?v=QLmyp08-WvA",
-    "desc": "An RxJS Observable stream of events to which observers can subscribe. Observable is unicast.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Code at 100mph",
-    "aUrl": "https://www.youtube.com/channel/UCaEzoGLz8-TQOjIm8nL44qg/videos",
-    "spkrs": [],
     "tags": [
       "RxJS",
-      "Observables",
-      "Subject"
+      "exhaustMap()"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-H?alt=media&token=3c17d72a-b1b1-4ad1-bec1-8973be5ea706"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-K?alt=media&token=bbfcba9f-42a8-41a8-90d7-11caea0e0a98"
   },
   {
-    "slug": "2022-04-19-J",
+    "slug": "2022-04-21-J",
     "type": "blog",
-    "title": "NgRx — How to deal with large stores in Angular",
-    "url": "https://medium.com/@timgular/ngrx-how-to-deal-with-large-stores-in-angular-227b1e0fe48e",
-    "desc": "NgRx is the state of the art implementation in Angular2+ projects to handle http requests and store data in a local store. NgRx provides many benefits, especially in large projects. Unfortunately large projects use an increasing number of http requests and data objects, so that the NgRx store is increasing as well. Both the number of state objects and actions and the complexity of the store become difficult to deal with. This article introduces solutions to make store contents more clear.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
+    "title": "Passing data from Parent to Child Component on Button (click) in Angular",
+    "url": "https://medium.com/@jerry.wycoco/passing-data-from-parent-to-child-component-on-button-click-in-angular-bc8583277cdb",
+    "desc": "Let's introduce the components' folder structure and files and get right to it.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Timgular",
-    "aUrl": "https://medium.com/@timgular",
-    "spkrs": [],
-    "tags": [
-      "NgRx"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-J?alt=media&token=966307b9-1422-48b6-85c1-a4d5c8e04f2e"
-  },
-  {
-    "slug": "2022-04-19-K",
-    "type": "blog",
-    "title": "Angular: How to use @HostListener",
-    "url": "https://medium.com/@matsal.dev/angular-how-to-use-hostlistener-9ea8500128a6",
-    "desc": "In this article, I'll show you some simple examples of how to use this decorator. All the examples assume the following method names: 'on' + event name, for example, 'onScroll()'.",
-    "dAdd": "2022-04-19",
-    "dSrc": "2022-04-19",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Matsal Dev",
-    "aUrl": "https://medium.com/@matsal.dev",
-    "spkrs": [],
-    "tags": [
-      "@HostListener"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-K?alt=media&token=51834e78-83a6-4e80-87fd-7b9131d6d2bd"
-  },
-  {
-    "slug": "2022-04-20-A",
-    "type": "blog",
-    "title": "Directives in Angular",
-    "url": "https://makesh-kumar.medium.com/directives-in-angular-6160ce805416",
-    "desc": "Directives are one of the most important concepts in Angular, In this section, we will see what is a directive and its types and how to create our own directives",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Makesh Kumar",
-    "aUrl": "https://makesh-kumar.medium.com",
+    "aName": "Jerry Wycoco",
+    "aUrl": "https://medium.com/@jerry.wycoco",
     "spkrs": [
-      "Makesh Kumar"
+      "Jerry Wycoco"
     ],
     "tags": [
-      "Directives",
-      "Custom"
+      "@Input",
+      "Data Transfer"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-A?alt=media&token=00cf5e6f-1040-4d18-a3ad-8a5810da8703"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-J?alt=media&token=abf4b72b-1d49-4259-999f-460ebaafccd4"
   },
   {
-    "slug": "2022-04-20-B",
+    "slug": "2022-04-21-H",
     "type": "video",
     "dur": "4",
-    "title": "Native Shadow DOM vs Emulated Shadow DOM",
-    "url": "https://www.youtube.com/watch?v=Bcg58BxI0GM",
-    "desc": "In Angular, components styles can be encapsulated. There are three different encapsulation strategies available. None, Emulated and ShadowDom.\n\nNone is probably the least interesting. It just disables encapsulation completely. But what is the difference between Emulated and ShadowDom? Let's find out!",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Kevin Kreuzer",
-    "aUrl": "https://www.youtube.com/channel/UCFT4YVZl7AFia7rZBTEvavw/videos",
-    "spkrs": [
-      "Kevin Kreuzer"
-    ],
-    "tags": [
-      "ViewEncapsulation",
-      "Styles"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-B?alt=media&token=7db26a97-b783-4155-9b6d-4e06273422d6"
-  },
-  {
-    "slug": "2022-04-20-C",
-    "type": "video",
-    "dur": "13",
-    "title": "Should we really NEVER subscribe in Angular apps?",
-    "url": "https://www.youtube.com/watch?v=WvMxnGfqEis",
-    "desc": "In this video, we recap a discussion I had on Twitter with some awesome members of the Angular community around reactive programming and manually subscribing.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Joshua Morony",
-    "aUrl": "https://www.youtube.com/c/JoshuaMorony/videos",
-    "spkrs": [
-      "Joshua Morony"
-    ],
-    "tags": [
-      "RxJS",
-      "Observables",
-      "Subscriptions"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-C?alt=media&token=2682fb68-2b01-46e5-be01-c49fe933b51a"
-  },
-  {
-    "slug": "2022-04-20-D",
-    "type": "video",
-    "dur": "14",
-    "title": "104. Angular Project Tutorial - Content Projection",
-    "url": "https://www.youtube.com/watch?v=qGomA1TcoCw",
+    "title": "Angular 13 with PrimeNg #11 - Context Menu",
+    "url": "https://www.youtube.com/watch?v=wiBaT83UPVk",
     "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Prince Harsha",
-    "aUrl": "https://www.youtube.com/channel/UC_0jKHC_1o1djPkumW5HYHw/videos",
+    "aName": "Developer Thing",
+    "aUrl": "https://www.youtube.com/channel/UC4mIDwHdcVDNVBISPN_F5BA/videos",
     "spkrs": [],
     "tags": [
-      "Content Projection"
+      "PrimeNG"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-D?alt=media&token=a64f02e7-995c-4f24-a190-d4ff9ffa7cf0"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-H?alt=media&token=61364ac4-e4d9-4041-9cc6-43c85c5ad596"
   },
   {
-    "slug": "2022-04-20-E",
+    "slug": "2022-04-21-G",
     "type": "blog",
-    "title": "How to fix 'ng: command not found' in Angular",
-    "url": "https://medium.com/@media_9518/how-to-fix-ng-command-not-found-in-angular-31eeced14fa4",
-    "desc": "Are you new to developing with Angular or are you an Angular super star but for some reason this tiny 'ng: command not found' error is driving you crazy or spoiling your day lol. You are not alone.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "title": "Integrate AWS GraphQL in your Ionic/Angular applications using Amplify",
+    "url": "https://aosolorzano.medium.com/integrate-aws-graphql-in-your-ionic-angular-applications-using-amplify-fe4678c2060a",
+    "desc": "This tutorial will show you how to integrate your Ionic/Angular apps using AWS Amplify to access your DynamoDB tables. For this tutorial, we will create an Ionic/Angular project and we will be adding the Amplify support to integrate our Ionic app with the AppSync/GraphQL service.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Techbriel",
-    "aUrl": "https://medium.com/@media_9518",
-    "spkrs": [],
-    "tags": [
-      "Errors"
+    "aName": "Andres Solorzano",
+    "aUrl": "https://aosolorzano.medium.com",
+    "spkrs": [
+      "Andres Solorzano"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-E?alt=media&token=a673d83d-789e-4ba1-b430-20500a8097eb"
+    "tags": [
+      "Ionic",
+      "AWS",
+      "GraphQL"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-G?alt=media&token=c94071fa-7389-45ca-a214-afe7ed453991"
   },
   {
-    "slug": "2022-04-20-F",
+    "slug": "2022-04-21-F",
     "type": "blog",
-    "title": "Domain Driven Design with NgRx",
-    "url": "https://dev.to/paulmojicatech/domain-driven-design-with-ngrx-104c",
-    "desc": "In this article we showed how we can think about how the implementation to NgRx can be similar to the implementation of domain driven design. Both NgRx and Domain Driven Design rely heavily on events occurring in the system to derive the state of the system / application. We can also see how NgRx is similar to the CQRS (Command Query Responsibility Separation) that is a tenant of Domain Driven Design.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "title": "Angular: Manage RxJS Subscriptions Declaratively",
+    "url": "https://dev.to/scr2em/rxjs-manage-subscriptions-declaratively-3n2m",
+    "desc": "For the sake of discussion, I'll use Angular for my examples because it's more common to see RxJS in Angular application.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "DEV Community",
     "srcUrl": "https://dev.to",
-    "aName": "paulmojicatech",
-    "aUrl": "https://dev.to/paulmojicatech",
+    "aName": "Mohamed Abdelgwad",
+    "aUrl": "https://dev.to/scr2em",
     "spkrs": [
-      "Paul Mojica"
+      "Mohamed Abdelgwad"
     ],
     "tags": [
-      "NgRx",
-      "Architecture"
+      "RxJS",
+      "Subscriptions"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-F?alt=media&token=178741e6-1a33-4f69-baf3-60bdb7f0fe93"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-F?alt=media&token=8700b6e9-bec4-4a64-9444-2f092b3ce994"
   },
   {
-    "slug": "2022-04-20-G",
+    "slug": "2022-04-21-E",
     "type": "video",
-    "dur": "4",
-    "title": "Learn How to Deploy Your Angular App to AWS S3 - part 2",
-    "url": "https://www.youtube.com/watch?v=JtV8pkX20EM",
-    "desc": "This is the second part of a series where you will learn how to deploy your Angular application to an AWS S3 bucket. We will deploy using this NPM package https://www.npmjs.com/package/@jefioz... from the terminal",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "dur": "15",
+    "title": "1 | Angular Unit Testing with Jasmine & Karma | karma.conf.js | test.ts | Why unit testing?",
+    "url": "https://www.youtube.com/watch?v=xBSbDMV6Qpk",
+    "desc": "",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Code Shots With Profanis",
-    "aUrl": "https://www.youtube.com/c/CodeShotsWithProfanis/videos",
-    "spkrs": [
-      "Fanis Prodromou"
-    ],
-    "tags": [
-      "AWS",
-      "Deployment"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-G?alt=media&token=a7ea2064-6874-4e90-a5e4-b5bc94e3d9e7"
-  },
-  {
-    "slug": "2022-04-20-H",
-    "type": "podcast",
-    "dur": "62",
-    "title": "E077 - MFE Episode 2: Single SPA",
-    "url": "https://www.spreaker.com/user/ng-conf/ap-show-s3e5-joel-denning-single-spa-edi",
-    "desc": "In our second installment on Microfrontend (MFE) Architecture with Angular Joel Denning, the founder and core contributor for Single SPA teaches Jennifer and Brian the approach to building MFEs with Single SPA. Joel gives us a brief introduction to Single SPA and how it came about, along with the challenges he was trying to solve at the time. We also learn from Joel a few strategies for sharing dependencies, such as module federation or SystemJS.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "Spreaker",
-    "srcUrl": "https://www.spreaker.com",
-    "aName": "The Angular Plus Show",
-    "aUrl": "https://www.spreaker.com/show/angular-show",
-    "spkrs": [
-      "Joel Denning"
-    ],
-    "tags": [
-      "Micro Frontends",
-      "SingleSPA"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-H?alt=media&token=09d648b4-e50e-4f1c-bd7d-da1975e62226"
-  },
-  {
-    "slug": "2022-04-20-J",
-    "type": "video",
-    "dur": "6",
-    "title": "34. Testing multiple Http requests using HttpTestController match method - Angular Unit Testing",
-    "url": "https://www.youtube.com/watch?v=l2GfQ0bKWZc",
-    "desc": "In this video we will see how to test multiple http requests using httpTestController match method - Angular Unit Testing",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Leela Web Dev",
-    "aUrl": "https://www.youtube.com/c/LeelaWebDev/videos",
-    "spkrs": [
-      "Leela Narasimha"
-    ],
+    "aName": "WorldGyan",
+    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
+    "spkrs": [],
     "tags": [
       "Testing",
       "Unit Testing",
       "Jasmine",
       "Karma"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-J?alt=media&token=473c427c-1409-4ac0-a107-f40900f5d378"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-E?alt=media&token=6f049210-ad64-4619-a8a1-65ba655df92e"
   },
   {
-    "slug": "2022-04-20-K",
+    "slug": "2022-04-21-D",
     "type": "video",
-    "dur": "10",
-    "title": "8 | Understanding RxJS Operators: forkJoin, and zip | Advance Angular Tutorials | forkjoin vs zip",
-    "url": "https://www.youtube.com/watch?v=NqaIocPooPU",
-    "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "dur": "8",
+    "title": "Angular Unit testing- 33 | Unit testing form array removeAt method with form controls | Part 15",
+    "url": "https://www.youtube.com/watch?v=YduzAte4Qsc",
+    "desc": "In this video, you will learn How to test form array removeAt method with form controls in reactive forms",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "WorldGyan",
-    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
-    "spkrs": [],
-    "tags": [
-      "RxJS",
-      "forkJoin()",
-      "zip()"
+    "aName": "TechshareSKK",
+    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
+    "spkrs": [
+      "Sai Kumar Korthivada"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-K?alt=media&token=2f46a14e-f108-4622-b82f-5c5e0168604b"
+    "tags": [
+      "Testing",
+      "Unit Testing",
+      "Reactive Forms",
+      "FormArray"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-D?alt=media&token=bb9e425a-50b3-426a-a4c7-91bfebd6c182"
   },
   {
-    "slug": "2022-04-20-L",
+    "slug": "2022-04-21-C",
     "type": "video",
-    "dur": "15",
-    "title": "5 RxJS English | Advance Angular 13 | switchmap vs mergemap vs concatmap vs exhaustmap",
-    "url": "https://www.youtube.com/watch?v=TezvAHVHQ5c",
-    "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "dur": "17",
+    "title": "Sending a Post Request | Angular HTTP | Angular 13+",
+    "url": "https://www.youtube.com/watch?v=oTObLWih_EA",
+    "desc": "In this lecture you will learn how create and add some data in the database by sending an HTTP post request to the server. Let's learn step by step how to send a post request from an Angular application.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "WorldGyan",
-    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
+    "aName": "procademy",
+    "aUrl": "https://www.youtube.com/c/procademyn/videos",
     "spkrs": [],
     "tags": [
-      "RxJS",
-      "switchMap()",
-      "mergeMap()",
-      "concatMap()",
-      "exhaustMap()"
+      "HttpClient"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-L?alt=media&token=b59ef77f-17dc-4cf9-be80-2ef12091285e"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-C?alt=media&token=30daea85-8053-4448-8994-4b95268e0d91"
   },
   {
-    "slug": "2022-04-20-M",
-    "type": "release",
-    "title": "Angular Release: v13.3.4",
-    "url": "https://github.com/angular/angular/releases/tag/13.3.4",
-    "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "GitHub Angular",
-    "srcUrl": "https://github.com/angular/angular/releases",
-    "aName": "Dylan Hunn",
-    "aUrl": "https://github.com/dylhunn",
-    "spkrs": [],
-    "tags": [
-      "Release"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-M?alt=media&token=f0cb434a-4452-48b6-aef8-e773ce7d48f2"
-  },
-  {
-    "slug": "2022-04-20-N",
-    "type": "release",
-    "title": "Angular Release: v14.0.0-next.14",
-    "url": "https://github.com/angular/angular/releases/tag/14.0.0-next.14",
-    "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "GitHub Angular",
-    "srcUrl": "https://github.com/angular/angular/releases",
-    "aName": "Dylan Hunn",
-    "aUrl": "https://github.com/dylhunn",
-    "spkrs": [],
-    "tags": [
-      "Release"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-N?alt=media&token=5cc13ce7-207e-4adc-ac45-a57f9b44c8aa"
-  },
-  {
-    "slug": "2022-04-20-P",
+    "slug": "2022-04-21-B",
     "type": "blog",
-    "title": "Angular Universal ENV Variables with Webpack and Dotenv",
-    "url": "https://dev.to/jdgamble555/angular-universal-env-variables-with-webpack-and-dotenv-3i6o",
-    "desc": "In the last week for some reason, my Vercel Hack stopped working. The variables were not importing as expected.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
+    "title": "Easy state management in Angular",
+    "url": "https://dev.to/androizer/easy-state-management-in-angular-4ln4",
+    "desc": "To fix this problem, we need opinionated state management and vast majority of solutions are already available in OSS market like NgRx, Ngxs, Akita, Elf, RxAngular etc. But this solution comes with a cost which is their associated learning curve and boilerplate code just to have its initial setup hooked into our application.",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
     "srcSite": "DEV Community",
     "srcUrl": "https://dev.to",
-    "aName": "Jonathan Gamble",
-    "aUrl": "https://dev.to/jdgamble555",
+    "aName": "Akshay Mahajan",
+    "aUrl": "https://dev.to/androizer",
     "spkrs": [
-      "Jonathan Gamble"
+      "Akshay Mahajan"
     ],
     "tags": [
-      "Angular Universal",
-      "Webpack",
-      "Environments"
+      "State Management"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-P?alt=media&token=292f6cd6-c4f8-49c7-bd34-e45ca4509426"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-B?alt=media&token=42cf0284-0567-43d2-8577-352a3bf41059"
+  },
+  {
+    "slug": "2022-04-21-A",
+    "type": "blog",
+    "title": "How to Create Reusable & Configurable Angular Components",
+    "url": "https://javascript.plainenglish.io/creating-reusable-configurable-angular-components-b7fcba2f5f38",
+    "desc": "Create reusable Angular components with the NgTemplateOutlet and NgComponentOutlet directives.\n\nIn this article, we are going to explore two ways of creating reusable, configurable components. So brace yourselves and let's get started!",
+    "dAdd": "2022-04-21",
+    "dSrc": "2022-04-21",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Kagklis Vasileios",
+    "aUrl": "https://kagklis.medium.com",
+    "spkrs": [
+      "Kagklis Vasileios"
+    ],
+    "tags": [
+      "ngTemplateOutlet",
+      "NgComponentOutlet"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-A?alt=media&token=a59dc242-4dfe-43cc-919d-66838b571d5d"
+  },
+  {
+    "slug": "2022-04-20-T",
+    "type": "video",
+    "dur": "18",
+    "title": "Get to Know the 2022 ng-conf Speakers | Brian Love | ng-conf 2022",
+    "url": "https://www.youtube.com/watch?v=KS6GDgBxnyY",
+    "desc": "",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "ng-conf",
+    "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
+    "spkrs": [
+      "Brian Love"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-T?alt=media&token=42f95479-3ace-4a29-a250-8ea05455796f"
+  },
+  {
+    "slug": "2022-04-20-S",
+    "type": "blog",
+    "title": "Angular: How to pass data object from child to parent component using @Output",
+    "url": "https://medium.com/@matsal.dev/anguar-how-to-pass-data-object-from-child-to-parent-component-using-output-23086d0d31c0",
+    "desc": "Passing data between components is common in almost every application. One of the methods of communication between components is to use the services and share certain data. Moreover, we can also use the @Output directive, which I will describe in the article below.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Matsal Dev",
+    "aUrl": "https://medium.com/@matsal.dev",
+    "spkrs": [],
+    "tags": [
+      "@Output"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-S?alt=media&token=3abd4a88-daf9-4624-8b41-31e597353b89"
+  },
+  {
+    "slug": "2022-04-20-R",
+    "type": "blog",
+    "title": "How to build Copy to Clipboard functionality in Angular",
+    "url": "https://medium.com/@akshathaa/how-to-build-copy-to-clipboard-functionality-in-angular-786b7014231",
+    "desc": "We are going to take a look into implementing copy to clipboard using Clipboard API and button as a method of invocation.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Akshatha Anantharamu",
+    "aUrl": "https://akshathaa.medium.com",
+    "spkrs": [
+      "Akshatha Anantharamu"
+    ],
+    "tags": [
+      "Clipboard"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-R?alt=media&token=4ad39dbb-2852-4821-a463-9dbbd029fe00"
   },
   {
     "slug": "2022-04-20-Q",
@@ -1040,468 +490,1018 @@
     "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-Q?alt=media&token=df7128aa-9976-4898-91d6-1ce7ea58826b"
   },
   {
-    "slug": "2022-04-20-R",
+    "slug": "2022-04-20-P",
     "type": "blog",
-    "title": "How to build Copy to Clipboard functionality in Angular",
-    "url": "https://medium.com/@akshathaa/how-to-build-copy-to-clipboard-functionality-in-angular-786b7014231",
-    "desc": "We are going to take a look into implementing copy to clipboard using Clipboard API and button as a method of invocation.",
+    "title": "Angular Universal ENV Variables with Webpack and Dotenv",
+    "url": "https://dev.to/jdgamble555/angular-universal-env-variables-with-webpack-and-dotenv-3i6o",
+    "desc": "In the last week for some reason, my Vercel Hack stopped working. The variables were not importing as expected.",
     "dAdd": "2022-04-20",
     "dSrc": "2022-04-20",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Akshatha Anantharamu",
-    "aUrl": "https://akshathaa.medium.com",
-    "spkrs": [
-      "Akshatha Anantharamu"
-    ],
-    "tags": [
-      "Clipboard"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-R?alt=media&token=4ad39dbb-2852-4821-a463-9dbbd029fe00"
-  },
-  {
-    "slug": "2022-04-20-S",
-    "type": "blog",
-    "title": "Angular: How to pass data object from child to parent component using @Output",
-    "url": "https://medium.com/@matsal.dev/anguar-how-to-pass-data-object-from-child-to-parent-component-using-output-23086d0d31c0",
-    "desc": "Passing data between components is common in almost every application. One of the methods of communication between components is to use the services and share certain data. Moreover, we can also use the @Output directive, which I will describe in the article below.",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Matsal Dev",
-    "aUrl": "https://medium.com/@matsal.dev",
-    "spkrs": [],
-    "tags": [
-      "@Output"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-S?alt=media&token=3abd4a88-daf9-4624-8b41-31e597353b89"
-  },
-  {
-    "slug": "2022-04-20-T",
-    "type": "video",
-    "dur": "18",
-    "title": "Get to Know the 2022 ng-conf Speakers | Brian Love | ng-conf 2022",
-    "url": "https://www.youtube.com/watch?v=KS6GDgBxnyY",
-    "desc": "",
-    "dAdd": "2022-04-20",
-    "dSrc": "2022-04-20",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "ng-conf",
-    "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": [
-      "Brian Love"
-    ],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-T?alt=media&token=42f95479-3ace-4a29-a250-8ea05455796f"
-  },
-  {
-    "slug": "2022-04-21-A",
-    "type": "blog",
-    "title": "How to Create Reusable & Configurable Angular Components",
-    "url": "https://javascript.plainenglish.io/creating-reusable-configurable-angular-components-b7fcba2f5f38",
-    "desc": "Create reusable Angular components with the NgTemplateOutlet and NgComponentOutlet directives.\n\nIn this article, we are going to explore two ways of creating reusable, configurable components. So brace yourselves and let's get started!",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Kagklis Vasileios",
-    "aUrl": "https://kagklis.medium.com",
-    "spkrs": [
-      "Kagklis Vasileios"
-    ],
-    "tags": [
-      "ngTemplateOutlet",
-      "NgComponentOutlet"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-A?alt=media&token=a59dc242-4dfe-43cc-919d-66838b571d5d"
-  },
-  {
-    "slug": "2022-04-21-B",
-    "type": "blog",
-    "title": "Easy state management in Angular",
-    "url": "https://dev.to/androizer/easy-state-management-in-angular-4ln4",
-    "desc": "To fix this problem, we need opinionated state management and vast majority of solutions are already available in OSS market like NgRx, Ngxs, Akita, Elf, RxAngular etc. But this solution comes with a cost which is their associated learning curve and boilerplate code just to have its initial setup hooked into our application.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
     "srcSite": "DEV Community",
     "srcUrl": "https://dev.to",
-    "aName": "Akshay Mahajan",
-    "aUrl": "https://dev.to/androizer",
+    "aName": "Jonathan Gamble",
+    "aUrl": "https://dev.to/jdgamble555",
     "spkrs": [
-      "Akshay Mahajan"
+      "Jonathan Gamble"
     ],
     "tags": [
-      "State Management"
+      "Angular Universal",
+      "Webpack",
+      "Environments"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-B?alt=media&token=42cf0284-0567-43d2-8577-352a3bf41059"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-P?alt=media&token=292f6cd6-c4f8-49c7-bd34-e45ca4509426"
   },
   {
-    "slug": "2022-04-21-C",
-    "type": "video",
-    "dur": "17",
-    "title": "Sending a Post Request | Angular HTTP | Angular 13+",
-    "url": "https://www.youtube.com/watch?v=oTObLWih_EA",
-    "desc": "In this lecture you will learn how create and add some data in the database by sending an HTTP post request to the server. Let's learn step by step how to send a post request from an Angular application.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "procademy",
-    "aUrl": "https://www.youtube.com/c/procademyn/videos",
+    "slug": "2022-04-20-N",
+    "type": "release",
+    "title": "Angular Release: v14.0.0-next.14",
+    "url": "https://github.com/angular/angular/releases/tag/14.0.0-next.14",
+    "desc": "",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "GitHub Angular",
+    "srcUrl": "https://github.com/angular/angular/releases",
+    "aName": "Dylan Hunn",
+    "aUrl": "https://github.com/dylhunn",
     "spkrs": [],
     "tags": [
-      "HttpClient"
+      "Release"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-C?alt=media&token=30daea85-8053-4448-8994-4b95268e0d91"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-N?alt=media&token=5cc13ce7-207e-4adc-ac45-a57f9b44c8aa"
   },
   {
-    "slug": "2022-04-21-D",
-    "type": "video",
-    "dur": "8",
-    "title": "Angular Unit testing- 33 | Unit testing form array removeAt method with form controls | Part 15",
-    "url": "https://www.youtube.com/watch?v=YduzAte4Qsc",
-    "desc": "In this video, you will learn How to test form array removeAt method with form controls in reactive forms",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "TechshareSKK",
-    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
-    "spkrs": [
-      "Sai Kumar Korthivada"
-    ],
+    "slug": "2022-04-20-M",
+    "type": "release",
+    "title": "Angular Release: v13.3.4",
+    "url": "https://github.com/angular/angular/releases/tag/13.3.4",
+    "desc": "",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "GitHub Angular",
+    "srcUrl": "https://github.com/angular/angular/releases",
+    "aName": "Dylan Hunn",
+    "aUrl": "https://github.com/dylhunn",
+    "spkrs": [],
     "tags": [
-      "Testing",
-      "Unit Testing",
-      "Reactive Forms",
-      "FormArray"
+      "Release"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-D?alt=media&token=bb9e425a-50b3-426a-a4c7-91bfebd6c182"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-M?alt=media&token=f0cb434a-4452-48b6-aef8-e773ce7d48f2"
   },
   {
-    "slug": "2022-04-21-E",
+    "slug": "2022-04-20-L",
     "type": "video",
     "dur": "15",
-    "title": "1 | Angular Unit Testing with Jasmine & Karma | karma.conf.js | test.ts | Why unit testing?",
-    "url": "https://www.youtube.com/watch?v=xBSbDMV6Qpk",
+    "title": "5 RxJS English | Advance Angular 13 | switchmap vs mergemap vs concatmap vs exhaustmap",
+    "url": "https://www.youtube.com/watch?v=TezvAHVHQ5c",
     "desc": "",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
     "aName": "WorldGyan",
     "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
     "spkrs": [],
     "tags": [
+      "RxJS",
+      "switchMap()",
+      "mergeMap()",
+      "concatMap()",
+      "exhaustMap()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-L?alt=media&token=b59ef77f-17dc-4cf9-be80-2ef12091285e"
+  },
+  {
+    "slug": "2022-04-20-K",
+    "type": "video",
+    "dur": "10",
+    "title": "8 | Understanding RxJS Operators: forkJoin, and zip | Advance Angular Tutorials | forkjoin vs zip",
+    "url": "https://www.youtube.com/watch?v=NqaIocPooPU",
+    "desc": "",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WorldGyan",
+    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
+    "spkrs": [],
+    "tags": [
+      "RxJS",
+      "forkJoin()",
+      "zip()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-K?alt=media&token=2f46a14e-f108-4622-b82f-5c5e0168604b"
+  },
+  {
+    "slug": "2022-04-20-J",
+    "type": "video",
+    "dur": "6",
+    "title": "34. Testing multiple Http requests using HttpTestController match method - Angular Unit Testing",
+    "url": "https://www.youtube.com/watch?v=l2GfQ0bKWZc",
+    "desc": "In this video we will see how to test multiple http requests using httpTestController match method - Angular Unit Testing",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Leela Web Dev",
+    "aUrl": "https://www.youtube.com/c/LeelaWebDev/videos",
+    "spkrs": [
+      "Leela Narasimha"
+    ],
+    "tags": [
       "Testing",
       "Unit Testing",
       "Jasmine",
       "Karma"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-E?alt=media&token=6f049210-ad64-4619-a8a1-65ba655df92e"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-J?alt=media&token=473c427c-1409-4ac0-a107-f40900f5d378"
   },
   {
-    "slug": "2022-04-21-F",
-    "type": "blog",
-    "title": "Angular: Manage RxJS Subscriptions Declaratively",
-    "url": "https://dev.to/scr2em/rxjs-manage-subscriptions-declaratively-3n2m",
-    "desc": "For the sake of discussion, I'll use Angular for my examples because it's more common to see RxJS in Angular application.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "DEV Community",
-    "srcUrl": "https://dev.to",
-    "aName": "Mohamed Abdelgwad",
-    "aUrl": "https://dev.to/scr2em",
+    "slug": "2022-04-20-H",
+    "type": "podcast",
+    "dur": "62",
+    "title": "E077 - MFE Episode 2: Single SPA",
+    "url": "https://www.spreaker.com/user/ng-conf/ap-show-s3e5-joel-denning-single-spa-edi",
+    "desc": "In our second installment on Microfrontend (MFE) Architecture with Angular Joel Denning, the founder and core contributor for Single SPA teaches Jennifer and Brian the approach to building MFEs with Single SPA. Joel gives us a brief introduction to Single SPA and how it came about, along with the challenges he was trying to solve at the time. We also learn from Joel a few strategies for sharing dependencies, such as module federation or SystemJS.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "Spreaker",
+    "srcUrl": "https://www.spreaker.com",
+    "aName": "The Angular Plus Show",
+    "aUrl": "https://www.spreaker.com/show/angular-show",
     "spkrs": [
-      "Mohamed Abdelgwad"
+      "Joel Denning"
     ],
     "tags": [
-      "RxJS",
-      "Subscriptions"
+      "Micro Frontends",
+      "SingleSPA"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-F?alt=media&token=8700b6e9-bec4-4a64-9444-2f092b3ce994"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-H?alt=media&token=09d648b4-e50e-4f1c-bd7d-da1975e62226"
   },
   {
-    "slug": "2022-04-21-G",
-    "type": "blog",
-    "title": "Integrate AWS GraphQL in your Ionic/Angular applications using Amplify",
-    "url": "https://aosolorzano.medium.com/integrate-aws-graphql-in-your-ionic-angular-applications-using-amplify-fe4678c2060a",
-    "desc": "This tutorial will show you how to integrate your Ionic/Angular apps using AWS Amplify to access your DynamoDB tables. For this tutorial, we will create an Ionic/Angular project and we will be adding the Amplify support to integrate our Ionic app with the AppSync/GraphQL service.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Andres Solorzano",
-    "aUrl": "https://aosolorzano.medium.com",
-    "spkrs": [
-      "Andres Solorzano"
-    ],
-    "tags": [
-      "Ionic",
-      "AWS",
-      "GraphQL"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-G?alt=media&token=c94071fa-7389-45ca-a214-afe7ed453991"
-  },
-  {
-    "slug": "2022-04-21-H",
+    "slug": "2022-04-20-G",
     "type": "video",
     "dur": "4",
-    "title": "Angular 13 with PrimeNg #11 - Context Menu",
-    "url": "https://www.youtube.com/watch?v=wiBaT83UPVk",
-    "desc": "",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
+    "title": "Learn How to Deploy Your Angular App to AWS S3 - part 2",
+    "url": "https://www.youtube.com/watch?v=JtV8pkX20EM",
+    "desc": "This is the second part of a series where you will learn how to deploy your Angular application to an AWS S3 bucket. We will deploy using this NPM package https://www.npmjs.com/package/@jefioz... from the terminal",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Developer Thing",
-    "aUrl": "https://www.youtube.com/channel/UC4mIDwHdcVDNVBISPN_F5BA/videos",
+    "aName": "Code Shots With Profanis",
+    "aUrl": "https://www.youtube.com/c/CodeShotsWithProfanis/videos",
+    "spkrs": [
+      "Fanis Prodromou"
+    ],
+    "tags": [
+      "AWS",
+      "Deployment"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-G?alt=media&token=a7ea2064-6874-4e90-a5e4-b5bc94e3d9e7"
+  },
+  {
+    "slug": "2022-04-20-F",
+    "type": "blog",
+    "title": "Domain Driven Design with NgRx",
+    "url": "https://dev.to/paulmojicatech/domain-driven-design-with-ngrx-104c",
+    "desc": "In this article we showed how we can think about how the implementation to NgRx can be similar to the implementation of domain driven design. Both NgRx and Domain Driven Design rely heavily on events occurring in the system to derive the state of the system / application. We can also see how NgRx is similar to the CQRS (Command Query Responsibility Separation) that is a tenant of Domain Driven Design.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "paulmojicatech",
+    "aUrl": "https://dev.to/paulmojicatech",
+    "spkrs": [
+      "Paul Mojica"
+    ],
+    "tags": [
+      "NgRx",
+      "Architecture"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-F?alt=media&token=178741e6-1a33-4f69-baf3-60bdb7f0fe93"
+  },
+  {
+    "slug": "2022-04-20-E",
+    "type": "blog",
+    "title": "How to fix 'ng: command not found' in Angular",
+    "url": "https://medium.com/@media_9518/how-to-fix-ng-command-not-found-in-angular-31eeced14fa4",
+    "desc": "Are you new to developing with Angular or are you an Angular super star but for some reason this tiny 'ng: command not found' error is driving you crazy or spoiling your day lol. You are not alone.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Techbriel",
+    "aUrl": "https://medium.com/@media_9518",
     "spkrs": [],
     "tags": [
-      "PrimeNG"
+      "Errors"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-H?alt=media&token=61364ac4-e4d9-4041-9cc6-43c85c5ad596"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-E?alt=media&token=a673d83d-789e-4ba1-b430-20500a8097eb"
   },
   {
-    "slug": "2022-04-21-J",
-    "type": "blog",
-    "title": "Passing data from Parent to Child Component on Button (click) in Angular",
-    "url": "https://medium.com/@jerry.wycoco/passing-data-from-parent-to-child-component-on-button-click-in-angular-bc8583277cdb",
-    "desc": "Let's introduce the components' folder structure and files and get right to it.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Jerry Wycoco",
-    "aUrl": "https://medium.com/@jerry.wycoco",
-    "spkrs": [
-      "Jerry Wycoco"
-    ],
+    "slug": "2022-04-20-D",
+    "type": "video",
+    "dur": "14",
+    "title": "104. Angular Project Tutorial - Content Projection",
+    "url": "https://www.youtube.com/watch?v=qGomA1TcoCw",
+    "desc": "",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Prince Harsha",
+    "aUrl": "https://www.youtube.com/channel/UC_0jKHC_1o1djPkumW5HYHw/videos",
+    "spkrs": [],
     "tags": [
-      "@Input",
-      "Data Transfer"
+      "Content Projection"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-J?alt=media&token=abf4b72b-1d49-4259-999f-460ebaafccd4"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-D?alt=media&token=a64f02e7-995c-4f24-a190-d4ff9ffa7cf0"
   },
   {
-    "slug": "2022-04-21-K",
-    "type": "blog",
-    "title": "RxJS: Exhaust map what it is and how to use",
-    "url": "https://sergeygultyayev.medium.com/rxjs-exhaust-map-what-it-is-and-how-to-use-52e49a67814c",
-    "desc": "exhaustMap is an interesting operator which is useful in some specific scenarios and at the same time may be hard to understand on graphics shown all over the internet. In this article I'm going to explain how it works and when to use it.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Sergey Gultyayev",
-    "aUrl": "https://sergeygultyayev.medium.com",
+    "slug": "2022-04-20-C",
+    "type": "video",
+    "dur": "13",
+    "title": "Should we really NEVER subscribe in Angular apps?",
+    "url": "https://www.youtube.com/watch?v=WvMxnGfqEis",
+    "desc": "In this video, we recap a discussion I had on Twitter with some awesome members of the Angular community around reactive programming and manually subscribing.",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Joshua Morony",
+    "aUrl": "https://www.youtube.com/c/JoshuaMorony/videos",
     "spkrs": [
-      "Sergey Gultyayev"
+      "Joshua Morony"
     ],
     "tags": [
       "RxJS",
-      "exhaustMap()"
+      "Observables",
+      "Subscriptions"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-K?alt=media&token=bbfcba9f-42a8-41a8-90d7-11caea0e0a98"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-C?alt=media&token=2682fb68-2b01-46e5-be01-c49fe933b51a"
   },
   {
-    "slug": "2022-04-21-L",
+    "slug": "2022-04-20-B",
     "type": "video",
-    "dur": "5",
-    "title": "How to set page title dynamically in Angular | Angular | Learn Smart Coding",
-    "url": "https://www.youtube.com/watch?v=PAodQqiO59w",
-    "desc": "Hi Friends, This video is all about how to set page titles dynamically on each page in Angular. It is a simple approach to setting the page title.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
+    "dur": "4",
+    "title": "Native Shadow DOM vs Emulated Shadow DOM",
+    "url": "https://www.youtube.com/watch?v=Bcg58BxI0GM",
+    "desc": "In Angular, components styles can be encapsulated. There are three different encapsulation strategies available. None, Emulated and ShadowDom.\n\nNone is probably the least interesting. It just disables encapsulation completely. But what is the difference between Emulated and ShadowDom? Let's find out!",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Learn Smart Coding",
-    "aUrl": "https://www.youtube.com/channel/UCKUxSY2xp12QiP3c60sOc-g/videos",
-    "spkrs": [],
+    "aName": "Kevin Kreuzer",
+    "aUrl": "https://www.youtube.com/channel/UCFT4YVZl7AFia7rZBTEvavw/videos",
+    "spkrs": [
+      "Kevin Kreuzer"
+    ],
     "tags": [
-      "setTitle()",
-      "Custom",
-      "Dynamic"
+      "ViewEncapsulation",
+      "Styles"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-L?alt=media&token=436461f7-cf16-42fb-bbb4-8e8da0ec3b20"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-B?alt=media&token=7db26a97-b783-4155-9b6d-4e06273422d6"
   },
   {
-    "slug": "2022-04-21-M",
-    "type": "video",
-    "dur": "49",
-    "title": "Angular Project Tutorial - Build an Angular Weather App From Scratch - Open Weather API Tutorial",
-    "url": "https://www.youtube.com/watch?v=psZXU8PTAS8",
-    "desc": "In this video, we will build an Angular full-stack weather app with Angular 13 and we will use a public API from RapidAPI.COM to get live weather forecast values.",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Sameer Saini",
-    "aUrl": "https://www.youtube.com/c/SameerSaini/videos",
-    "spkrs": [
-      "Sameer Saini"
-    ],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-M?alt=media&token=1908e9bc-c26f-4dca-9bb1-d7e3bac8bf06"
-  },
-  {
-    "slug": "2022-04-21-N",
-    "type": "video",
-    "dur": "14",
-    "title": "Get to Know the 2022 ng-conf Speakers | Lara Newsome | ng-conf 2022",
-    "url": "https://www.youtube.com/watch?v=wYoIi81llqw",
-    "desc": "",
-    "dAdd": "2022-04-21",
-    "dSrc": "2022-04-21",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "ng-conf",
-    "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
-    "spkrs": [
-      "Lara Newsome"
-    ],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-21-N?alt=media&token=63fa6f1c-7c6c-4912-bb94-5789e599a13e"
-  },
-  {
-    "slug": "2022-04-22-A",
+    "slug": "2022-04-20-A",
     "type": "blog",
-    "title": "Conditionally lazy load modules in Angular",
-    "url": "https://dev.to/madhust/conditionally-lazy-load-modules-in-angular-4l5l",
-    "desc": "Recently, I faced a user scenario where I need to load a module for a route path conditionally. The scenario is that if a user is assigned with some permission, then load a module or load another module. The use case seems legit, but I was unable to achieve this using the current lazy loading module feature.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
+    "title": "Directives in Angular",
+    "url": "https://makesh-kumar.medium.com/directives-in-angular-6160ce805416",
+    "desc": "Directives are one of the most important concepts in Angular, In this section, we will see what is a directive and its types and how to create our own directives",
+    "dAdd": "2022-04-20",
+    "dSrc": "2022-04-20",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Madhu Sudhanan P",
-    "aUrl": "https://dev.to/madhust",
+    "aName": "Makesh Kumar",
+    "aUrl": "https://makesh-kumar.medium.com",
     "spkrs": [
-      "Madhu Sudhanan P"
+      "Makesh Kumar"
+    ],
+    "tags": [
+      "Directives",
+      "Custom"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-20-A?alt=media&token=00cf5e6f-1040-4d18-a3ad-8a5810da8703"
+  },
+  {
+    "slug": "2022-04-19-K",
+    "type": "blog",
+    "title": "Angular: How to use @HostListener",
+    "url": "https://medium.com/@matsal.dev/angular-how-to-use-hostlistener-9ea8500128a6",
+    "desc": "In this article, I'll show you some simple examples of how to use this decorator. All the examples assume the following method names: 'on' + event name, for example, 'onScroll()'.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Matsal Dev",
+    "aUrl": "https://medium.com/@matsal.dev",
+    "spkrs": [],
+    "tags": [
+      "@HostListener"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-K?alt=media&token=51834e78-83a6-4e80-87fd-7b9131d6d2bd"
+  },
+  {
+    "slug": "2022-04-19-J",
+    "type": "blog",
+    "title": "NgRx — How to deal with large stores in Angular",
+    "url": "https://medium.com/@timgular/ngrx-how-to-deal-with-large-stores-in-angular-227b1e0fe48e",
+    "desc": "NgRx is the state of the art implementation in Angular2+ projects to handle http requests and store data in a local store. NgRx provides many benefits, especially in large projects. Unfortunately large projects use an increasing number of http requests and data objects, so that the NgRx store is increasing as well. Both the number of state objects and actions and the complexity of the store become difficult to deal with. This article introduces solutions to make store contents more clear.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Timgular",
+    "aUrl": "https://medium.com/@timgular",
+    "spkrs": [],
+    "tags": [
+      "NgRx"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-J?alt=media&token=966307b9-1422-48b6-85c1-a4d5c8e04f2e"
+  },
+  {
+    "slug": "2022-04-19-H",
+    "type": "video",
+    "dur": "7",
+    "title": "Observable vs Subject in Angular with example",
+    "url": "https://www.youtube.com/watch?v=QLmyp08-WvA",
+    "desc": "An RxJS Observable stream of events to which observers can subscribe. Observable is unicast.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Code at 100mph",
+    "aUrl": "https://www.youtube.com/channel/UCaEzoGLz8-TQOjIm8nL44qg/videos",
+    "spkrs": [],
+    "tags": [
+      "RxJS",
+      "Observables",
+      "Subject"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-H?alt=media&token=3c17d72a-b1b1-4ad1-bec1-8973be5ea706"
+  },
+  {
+    "slug": "2022-04-19-G",
+    "type": "video",
+    "dur": "6",
+    "title": "Angular ngModules and lazy loading: split applications into features, shared and core modules",
+    "url": "https://www.youtube.com/watch?v=oTgC_WS3gmA",
+    "desc": "Organizing an Angular project into ngModules has always been an obstacle for many beginners so I created this short guide to  explain and demonstrate its use.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Fabio Biondi",
+    "aUrl": "https://www.youtube.com/c/FabioBiondi/videos",
+    "spkrs": [
+      "Fabio Biondi"
     ],
     "tags": [
       "Lazy Loading",
+      "Modules",
       "Performance"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-A?alt=media&token=b65c9220-a12f-4163-9209-f1d7d2e4fc0d"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-G?alt=media&token=b387af2d-4522-4f5e-b303-bb823df955b8"
   },
   {
-    "slug": "2022-04-22-B",
+    "slug": "2022-04-19-F",
     "type": "blog",
-    "title": "How to add push notifications in Angular",
-    "url": "https://medium.com/@OneSignalDevs/how-to-add-push-notifications-in-angular-b7c150595a15",
-    "desc": "It's no secret that push notifications can help you engage and retain app users. In this tutorial, we'll show you how to integrate with OneSignal in order to leverage push notifications in your Angular app.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
+    "title": "Angular Utilities Init Directive",
+    "url": "https://medium.com/@mikekucherov92/angular-utilities-init-directive-8dc4e0a4723c",
+    "desc": "I bet if you are an Angular developer you're dealing with streams on a daily basis. Since RxJS is an essential part of the framework.\n\nThere are two ways of getting data from the stream. You either subscribe on the Observable explicitly by calling a subscribe() method, or use a built-in async pipe which is preferable cause it's handling unsubscribing for you.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "OneSignal Developers",
-    "aUrl": "https://medium.com/@OneSignalDevs",
-    "spkrs": [],
-    "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-B?alt=media&token=2edacfe8-b9aa-427d-a2e2-596932f14e88"
+    "aName": "Mike Kucherov",
+    "aUrl": "https://medium.com/@mikekucherov92",
+    "spkrs": [
+      "Mike Kucherov"
+    ],
+    "tags": [
+      "Directives"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-F?alt=media&token=dc2e640b-3a82-4e81-8be8-9ef3713d8d4f"
   },
   {
-    "slug": "2022-04-22-C",
+    "slug": "2022-04-19-E",
     "type": "video",
-    "dur": "17",
-    "title": "Fetching Data with Get requets | Angular HTTP | Angular 13+",
-    "url": "https://www.youtube.com/watch?v=Nuh6hTDh31s",
-    "desc": "In this lecture we will learn how to fetch data from the server and display that data in the web application. To fetch data from the server we use GET request and to send a GET request to the server, we can make use of get() method of HttpClient.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
+    "dur": "13",
+    "title": "You must know this Technique for your Angular Projects! - Angular Tutorial - (Lazy Loading)",
+    "url": "https://www.youtube.com/watch?v=lT86nVocIKE",
+    "desc": "This file architecture lets you full utilize Angular's lazy loading. Implementing this will help you learn more about Angular and level up your projects.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "FlippinBitz",
+    "aUrl": "https://www.youtube.com/channel/UCXTbrgh_BVEyXxrX2ITSnbw/videos",
+    "spkrs": [],
+    "tags": [
+      "Lazy Loading",
+      "Architecture",
+      "Performance"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-E?alt=media&token=344d02d8-3ca7-4e67-b8a2-126debd01222"
+  },
+  {
+    "slug": "2022-04-19-D",
+    "type": "blog",
+    "title": "Generic Angular directive to handle single and double clicks on the same element",
+    "url": "https://awstip.com/generic-angular-directive-to-handle-single-and-double-clicks-on-the-same-element-b6300b890964",
+    "desc": "The logic is pretty simple, we don't want the click event to trigger when we intend to double click. Hence we will listen to both click and dblclick, but on click listener we will delay the execution by a small amount of time.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Ayush Thakur",
+    "aUrl": "https://just-another-developer.medium.com",
+    "spkrs": [
+      "Ayush Thakur"
+    ],
+    "tags": [
+      "Directives",
+      "Custom"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-D?alt=media&token=8b59ff58-cb83-44a7-bc45-339f2e16a5ee"
+  },
+  {
+    "slug": "2022-04-19-C",
+    "type": "blog",
+    "title": "3D Model: Three.js Scene in Angular",
+    "url": "https://medium.com/geekculture/3d-model-three-js-scene-in-angular-7bcbc0d00c31",
+    "desc": "In the previous tutorial, we learnt the fundamentals of Three.js and integrated the Three.js scene in Angular. We will render a 3D Model in this tutorial.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Anurag Srivastava",
+    "aUrl": "https://medium.com/@srivastavaanurag79",
+    "spkrs": [
+      "Anurag Srivastava"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-C?alt=media&token=e3edeb95-d6f1-4f8f-b551-100770fd4417"
+  },
+  {
+    "slug": "2022-04-19-B",
+    "type": "video",
+    "dur": "6",
+    "title": "Introduction to HTTP requests in Angular | Angular HTTP | Angular 13+",
+    "url": "https://www.youtube.com/watch?v=M3vN0hrKgGQ",
+    "desc": "Hello and welcome to another exciting section of this complete anular course. In this section, you will learn about how to make HTTP requests to the server.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
     "aName": "procademy",
     "aUrl": "https://www.youtube.com/c/procademyn/videos",
     "spkrs": [],
     "tags": [
+      "HTTP",
       "HttpClient"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-C?alt=media&token=2b1161e3-4b91-406d-87d9-c5ee322b62ed"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-B?alt=media&token=74c7d28f-ab6f-48a5-a778-2ec0d25b7686"
   },
   {
-    "slug": "2022-04-22-D",
-    "type": "blog",
-    "title": "Dark | Light mode in Angular",
-    "url": "https://medium.com/@teslenkooleg2017/dark-light-mode-in-angular-cc78c9a7bca5",
-    "desc": "In this article I show the simplest way to change theme in Angular application.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Teslenko Oleg",
-    "aUrl": "https://medium.com/@teslenkooleg2017",
+    "slug": "2022-04-19-A",
+    "type": "video",
+    "dur": "41",
+    "title": "Custom Angular Schematics — Generating Custom Component (advanced)",
+    "url": "https://www.youtube.com/watch?v=dADWO1Wh6-4",
+    "desc": "In this video, we will continue to explore Angular schematics and I am going to show you have to create a schematic that will generate a custom component for you with an already pre-injected Angular service. This video is an extension of the previous one where we were implementing the ng-add schematic.",
+    "dAdd": "2022-04-19",
+    "dSrc": "2022-04-19",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Decoded Frontend",
+    "aUrl": "https://www.youtube.com/c/DecodedFrontend/videos",
     "spkrs": [
-      "Teslenko Oleg"
+      "Dmytro Mezhenskyi"
+    ],
+    "tags": [
+      "Schematics"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-19-A?alt=media&token=781407ab-f744-46fe-997e-b1f2062da376"
+  },
+  {
+    "slug": "2022-04-18-L",
+    "type": "video",
+    "dur": "8",
+    "title": "Get to Know the 2022 ng-conf Speakers | Kate Sky | ng-conf 2022",
+    "url": "https://www.youtube.com/watch?v=L6dgOQUeiW0",
+    "desc": "",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "ng-conf",
+    "aUrl": "https://www.youtube.com/c/ngconfonline/videos",
+    "spkrs": [
+      "Kate Sky"
     ],
     "tags": [],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-D?alt=media&token=4fbe6925-aab1-434a-b814-f7bedfde455f"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-L?alt=media&token=124521b8-140d-48f8-82a6-48a9bb59d6fd"
   },
   {
-    "slug": "2022-04-22-E",
-    "type": "video",
-    "dur": "4",
-    "title": "Managing collections in Angular with NgRx ComponentStore and Entity",
-    "url": "https://www.youtube.com/watch?v=vFxmVpU1y6U",
-    "desc": "NgRx Entity is a package for managing CRUD operations on collections of records. It works with NgRx Component Store similar to NgRx Store.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Brandon Roberts",
-    "aUrl": "https://www.youtube.com/c/BrandonRobertsDev/videos",
-    "spkrs": [
-      "Brandon Roberts"
-    ],
-    "tags": [
-      "NgRx",
-      "ComponentStore"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-E?alt=media&token=2b477c2c-11aa-4d07-839a-46be2cbb46e9"
-  },
-  {
-    "slug": "2022-04-22-F",
+    "slug": "2022-04-18-K",
     "type": "blog",
-    "title": "Angular, Styling & View Encapsulation",
-    "url": "https://medium.com/@ConorJonOReilly/angular-styling-e6f145b13a2a",
-    "desc": "Angular has a fantastic approach to Component specific styling, which allows developers to confidently write styles without the fear of having those styles bleed over into other components or parts of the application, even if the class names that are defined are identical to those in other components. It does this via the default Emulated View Encapsulation Strategy.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
+    "title": "Creating a CI pipeline for Angular",
+    "url": "https://mervyn-manilall.medium.com/creating-a-ci-pipeline-for-angular-91cb24848850",
+    "desc": "An advantage of having our repository on Azure Devops is that it allows us to run automatic tests on new codes that are pushed. To achieve this, a build (a compiled version of the code) is created and tests are run against it so as to evaluate code coverage or linting. Running various tests ensure that the code quality is acceptable and, if so, the new code can be merged.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
     "srcSite": "Medium",
     "srcUrl": "https://medium.com",
-    "aName": "Conor O'Reilly",
-    "aUrl": "https://medium.com/@ConorJonOReilly",
+    "aName": "Mervyn Manilall",
+    "aUrl": "https://mervyn-manilall.medium.com",
     "spkrs": [
-      "Conor O'Reilly"
+      "Mervyn Manilall"
     ],
     "tags": [
-      "ViewEncapsulation",
-      "Styles",
-      "::ng-deep"
+      "CI/CD"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-F?alt=media&token=833c1900-a982-45eb-96b6-893826b19238"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-K?alt=media&token=13269177-1af7-456c-be80-dc2b8c63030a"
   },
   {
-    "slug": "2022-04-22-G",
+    "slug": "2022-04-18-J",
+    "type": "blog",
+    "title": "Angular: How to create animation using Angular Animations",
+    "url": "https://medium.com/@matsal.dev/angular-how-to-create-animation-using-angular-animations-92620d411d8e",
+    "desc": "Animations are a great way to improve the user experience. We can do them both from the style sheet and with the Angular framework. In this article, I'll show you how to do it using Angular.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Matsal Dev",
+    "aUrl": "https://medium.com/@matsal.dev",
+    "spkrs": [],
+    "tags": [
+      "Animations"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-J?alt=media&token=3522be18-4644-4e0e-b6b6-e77bc919d19b"
+  },
+  {
+    "slug": "2022-04-18-H",
     "type": "video",
-    "dur": "63",
-    "title": "Building Micro-Frontends with Angular | Live Webinar | Coditas",
-    "url": "https://youtu.be/IuULsUZBgas?t=222",
-    "desc": "Micro-frontends are all the rage in the development industry right now! To understand the what, why, and how of Microfrontends with Angular, join our Director of Technology, Varun Srinivas for a knowledge-packed webinar.",
-    "dAdd": "2022-04-22",
-    "dSrc": "2022-04-22",
+    "dur": "22",
+    "title": "Angular HTTP Caching using Interceptor and Refresh",
+    "url": "https://www.youtube.com/watch?v=y921lgvICnQ",
+    "desc": "Caching an HTTP request for GET calls is highly important as it will avoid making an API service calls unnecessarily.\nAn Interceptor can be used to delegate caching without disturbing your existing Http calls. Angular documentation already outlines on these subjects and can be found here",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
     "srcSite": "YouTube",
     "srcUrl": "https://youtube.com",
-    "aName": "Coditas",
-    "aUrl": "https://www.youtube.com/c/Coditas_Solutions/videos",
+    "aName": "CodeWithSrini",
+    "aUrl": "https://www.youtube.com/c/CodeWithSrini/videos",
+    "spkrs": [],
+    "tags": [
+      "HttpInterceptors"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-H?alt=media&token=172f0623-b8e0-4cf8-bbe9-0be450cf166c"
+  },
+  {
+    "slug": "2022-04-18-G",
+    "type": "video",
+    "dur": "6",
+    "title": "4 RxJS English | Advance Angular 13 | RxJS : How to get output from Outer & Inner Observable",
+    "url": "https://www.youtube.com/watch?v=hbQOiXLYxcc",
+    "desc": "",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WorldGyan",
+    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
+    "spkrs": [],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-G?alt=media&token=6bb983b3-664c-4240-bace-010d196a7725"
+  },
+  {
+    "slug": "2022-04-18-F",
+    "type": "podcast",
+    "dur": "66",
+    "title": "S2E12 - Ward Bell on How to Fire Your Boss",
+    "url": "https://www.spreaker.com/user/14532324/s2e12-ward-bell-on-how-to-fire-your-boss?utm_campaign=episode-title&utm_medium=app&utm_source=widget",
+    "desc": "In today's episode of NgXP, GDE and contributor to the original Angular documentation, Ward Bell talks about how to quit your job. After first discussing how to know when it's time to move on, Ward then covers best practices for leaving a position, how to make the transition smooth, what to do when things may not be ending on the best of terms, and how to stay optimistic before and throughout all the change.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "Spreaker",
+    "srcUrl": "https://spreaker.com",
+    "aName": "Angular Experience",
+    "aUrl": "https://angular-experience.web.app/episodes",
     "spkrs": [
-      "Varan Srinivas"
+      "Ward Bell",
+      "Brooke Avery",
+      "Erik Slack"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-F?alt=media&token=c2dc4496-caf5-4fb7-ab4c-cf765ad56e19"
+  },
+  {
+    "slug": "2022-04-18-E",
+    "type": "video",
+    "dur": "9",
+    "title": "setValue() & patchValue() methods | Reactive Forms | Angular 13+",
+    "url": "https://www.youtube.com/watch?v=Hw8OV4kcKgM",
+    "desc": "In this lecture, you are going to learn about setValue and patchValue method in reactive forms and what is its use and the difference between them. Both setValue and patchValue method is used to set values for form control.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "procademy",
+    "aUrl": "https://www.youtube.com/c/procademyn/videos",
+    "spkrs": [],
+    "tags": [
+      "Forms",
+      "Reactive Forms",
+      "setValue()",
+      "patchValue()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-E?alt=media&token=95f35d9b-fee7-46e6-8708-7171c7e19564"
+  },
+  {
+    "slug": "2022-04-18-D",
+    "type": "video",
+    "dur": "60",
+    "title": "HackTalk | Santosh Yadav | Angular and NgRx | IIIT Lucknow",
+    "url": "https://youtu.be/okBqyDZ33L8?t=180",
+    "desc": "Mr.Santosh is a GDE for Angular, GitHub Star, and an Auth0 Ambassador, he loves contributing to Angular and NgRx.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Equinox, IIIT Lucknow",
+    "aUrl": "https://www.youtube.com/c/EquinoxIIITLucknow/videos",
+    "spkrs": [
+      "Santosh Yadav"
     ],
     "tags": [
-      "Micro Frontends"
+      "NgRx"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-22-G?alt=media&token=a0ed61a2-773c-4933-b558-679dfe013973"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-D?alt=media&token=ab098fac-a23a-4b45-897e-f37ca118c002"
+  },
+  {
+    "slug": "2022-04-18-C",
+    "type": "video",
+    "dur": "68",
+    "title": "Todo App - How To Create A User Profile And Navbar With Angular",
+    "url": "https://www.youtube.com/watch?v=n2Srrl6ZMjQ",
+    "desc": "In this Todo App series we will be building the user profile page and the navigation bar for out todo.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "BugArray",
+    "aUrl": "https://www.youtube.com/channel/UCIkpfwmX7PORuZdnJ0OznAA/videos",
+    "spkrs": [],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-C?alt=media&token=c782da2c-32a9-4895-9792-bd0c804615bf"
+  },
+  {
+    "slug": "2022-04-18-B",
+    "type": "blog",
+    "title": "Ng-News: Episode 22/15",
+    "url": "https://dev.to/rainerhahnekamp/ng-news-episode-2215-bii",
+    "desc": "This is a weekly posting, covering the latest updates from the Angular community.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Rainer Hahnekamp",
+    "aUrl": "https://dev.to/rainerhahnekamp",
+    "spkrs": [
+      "Rainer Hahnekamp"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-B?alt=media&token=6f0e2a21-21e0-4822-8ccb-2fdb72241f48"
+  },
+  {
+    "slug": "2022-04-18-A",
+    "type": "blog",
+    "title": "How to switch between Angular SSR and CSR based on detecting user-agent",
+    "url": "https://blog.adnanebrahimi.com/how-to-switch-between-angular-ssr-or-csr-based-on-detecting-user-agent",
+    "desc": "Since SSR is good for SEO and crawler bots, it's not good enough for users. For example, the transitions between pages could be slowed down if your site traffics get high. there are a lot of pros and cons for SSR and CSR I'm not digging into them. What we want here is to have both of them at the same time. We want SSR for SEO and CSR for users.",
+    "dAdd": "2022-04-18",
+    "dSrc": "2022-04-18",
+    "srcSite": "Hashnode",
+    "srcUrl": "https://hashnode.com",
+    "aName": "Adnan Ebrahimi's Blog",
+    "aUrl": "https://blog.adnanebrahimi.com",
+    "spkrs": [
+      "Adnan Ebrahimi"
+    ],
+    "tags": [
+      "SSR"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-18-A?alt=media&token=7ad5ce20-4eb8-4b14-874d-66e9922de637"
+  },
+  {
+    "slug": "2022-04-17-L",
+    "type": "video",
+    "dur": "4",
+    "title": "Angular 13 & Tailwind 3: configuration and usage (English)",
+    "url": "https://www.youtube.com/watch?v=15s3dCaDIjo",
+    "desc": "In this video I show you how to configure  and use Tailwind 3 in Angular (13) projects.",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Fabio Biondi",
+    "aUrl": "https://www.youtube.com/c/FabioBiondi/videos",
+    "spkrs": [
+      "Fabio Biondi"
+    ],
+    "tags": [
+      "TailwindCSS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-L?alt=media&token=230acb60-b7af-4ca2-be00-067bb4a55352"
+  },
+  {
+    "slug": "2022-04-17-K",
+    "type": "blog",
+    "title": "Socket IO with Ionic 5 Angular Application",
+    "url": "https://medium.com/enappd/socket-io-with-ionic-5-angular-application-5a61e3968731",
+    "desc": "In this tutorial, we will explore and implement the socket IO library with the Ionic 5 Angular application. ngx-socket-io is one of the most used packages — we will use this package to implement the socket IO library.",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Vaibhav gehani",
+    "aUrl": "https://medium.com/@vgehani90",
+    "spkrs": [
+      "Vaibhav Gehani"
+    ],
+    "tags": [
+      "Ionic"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-K?alt=media&token=fc530f45-d4b6-4009-8819-18c0c62fd116"
+  },
+  {
+    "slug": "2022-04-17-H",
+    "type": "blog",
+    "title": "Angular:Easy trick to pass dynamic data to a nested/child <ng-template> without using ngTemplateOutlet",
+    "url": "https://medium.com/geekculture/angular-easy-trick-to-pass-dynamic-data-to-a-nested-child-ng-template-without-using-e1a88d6bceb7",
+    "desc": "I have seen this question across multiple platforms from many web developers. How to pass data to an <ng-template> which is nested inside another <ng-template> or another tag?",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "AngularEnthusiast",
+    "aUrl": "https://medium.com/@ramya-bala221190",
+    "spkrs": [],
+    "tags": [
+      "<ng-template>",
+      "ngTemplateOutlet"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-H?alt=media&token=d7599509-734d-439c-8e48-a6be8aaebf0f"
+  },
+  {
+    "slug": "2022-04-17-G",
+    "type": "video",
+    "dur": "3",
+    "title": "Reload entire page in Angular application",
+    "url": "https://www.youtube.com/watch?v=iyiuPavI6UQ",
+    "desc": "in this video you will learn how entire page of an Angular application can be re-loaded on a button click.",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "E 4 E-Learning",
+    "aUrl": "https://www.youtube.com/user/E4ELearning/videos",
+    "spkrs": [],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-G?alt=media&token=2039497a-f2f2-456a-9f3c-d0648c47218d"
+  },
+  {
+    "slug": "2022-04-17-E",
+    "type": "video",
+    "dur": "15",
+    "title": "Create an object detection Angular web application using Tensorflow JS",
+    "url": "https://www.youtube.com/watch?v=_CX9_-BDzR8",
+    "desc": "You can learn how to add machine learning object detection model into your Angular or any other web application by using tensorflow JS",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "TechHackX",
+    "aUrl": "https://www.youtube.com/channel/UCrezcQkTKyUibAcFl-YnM3Q/videos",
+    "spkrs": [],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-E?alt=media&token=463d1363-9e8b-4944-8675-f23fc8647f27"
+  },
+  {
+    "slug": "2022-04-17-D",
+    "type": "video",
+    "dur": "6",
+    "title": "Font Awesome in Angular | Angular Tutorial | Add Brand icon",
+    "url": "https://www.youtube.com/watch?v=Q8Bjmkiqe9Q",
+    "desc": "In this video I have shown how to install Font-awesome package in Angular using ng add.\nAlso how to use brand icons using font-awesome in Angular Applications",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "CodingForBeginners",
+    "aUrl": "https://www.youtube.com/channel/UCOlMw469tDYXxS-yRagay3g/videos",
+    "spkrs": [],
+    "tags": [
+      "Font Awesome"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-D?alt=media&token=59f42a49-7f20-46d8-8208-7430d432669a"
+  },
+  {
+    "slug": "2022-04-17-C",
+    "type": "video",
+    "dur": "12",
+    "title": "Value & Status Change events | Reactive Forms | Angular 13+",
+    "url": "https://www.youtube.com/watch?v=vhifD4o1nUE",
+    "desc": "In this lecture you are going to learn about value and status change events in Angular Form. These are the events which gets raised when the value in a form control changes and when the status of form control changes.",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "procademy",
+    "aUrl": "https://www.youtube.com/c/procademyn/videos",
+    "spkrs": [],
+    "tags": [
+      "Forms",
+      "Reactive Forms"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-C?alt=media&token=11665712-5f9c-4c57-8478-c5fe137319b2"
+  },
+  {
+    "slug": "2022-04-17-B",
+    "type": "video",
+    "dur": "22",
+    "title": "Angular In-Depth Folder Structure: What You Need to Know - Episode 3",
+    "url": "https://www.youtube.com/watch?v=hlOsH8jfzb4",
+    "desc": "Learn an in-depth Angular project folder structure.",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Code InDepth",
+    "aUrl": "https://www.youtube.com/channel/UCZ0SiGX71htwPfJTt0-ZzLQ/videos",
+    "spkrs": [],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-B?alt=media&token=076c4055-9740-4658-8089-7368f82bbbed"
+  },
+  {
+    "slug": "2022-04-17-A",
+    "type": "blog",
+    "title": "GraphQL API Service Unit Testing",
+    "url": "https://madhuwanthiaah.medium.com/graphql-api-service-unit-testing-17bce2ab57a1",
+    "desc": "Unit tests are very important to improve the code base of enterprise-level applications. In this post, I am going to show you the insertion of unit tests to Apollo GraphQL API Service in the Angular application using the Jasmine framework. There are two different approaches to applying GraphQL queries to your code. You can use queries inside your component code. But using an API service as a common class can improve the reusability of the code",
+    "dAdd": "2022-04-17",
+    "dSrc": "2022-04-17",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Hasini Madhuwanthi",
+    "aUrl": "https://madhuwanthiaah.medium.com",
+    "spkrs": [
+      "Hasini Madhuwanthi"
+    ],
+    "tags": [
+      "Testing",
+      "Unit Testing",
+      "GraphQL"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-17-A?alt=media&token=3772491f-662f-4ddc-8aa9-3bf6cf84b8e1"
+  },
+  {
+    "slug": "2022-04-16-G",
+    "type": "blog",
+    "title": "Angular — build once, deploy everywhere",
+    "url": "https://medium.com/@anassguendef/angular-build-once-deploy-everywhere-9dfb698e781e",
+    "desc": "The delivery of an Angular project goes through several environments before landing in production. These are generally ...",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Anass Guendef",
+    "aUrl": "https://medium.com/@anassguendef",
+    "spkrs": [
+      "Anass Guendef"
+    ],
+    "tags": [
+      "Deployment"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-G?alt=media&token=8c34b6e8-2620-483a-bf9f-d40c93b1ca31"
+  },
+  {
+    "slug": "2022-04-16-F",
+    "type": "blog",
+    "title": "Reactive programming in Angular",
+    "url": "https://medium.com/@solisarg/reactive-programming-in-angular-acdd369a7155",
+    "desc": "After 7 years of working with Angular, I faced a couple of big projects using something that actually is in the core of the other big frontend framework, React. It's named reactive programming, and consist briefly in a series of tools to manage data as stream and show only when it changes.",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Jorge Solis",
+    "aUrl": "https://medium.com/@solisarg",
+    "spkrs": [
+      "Jorge Solis"
+    ],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-F?alt=media&token=5f083b04-1fb5-4e7d-a659-cae9f7d1e056"
+  },
+  {
+    "slug": "2022-04-16-E",
+    "type": "video",
+    "dur": "15",
+    "title": "3 RxJS English | Advance Angular 13 Tutorials | Higher-order Observables | RxJS in Angular",
+    "url": "https://www.youtube.com/watch?v=8lAshoofGfg",
+    "desc": "",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WorldGyan",
+    "aUrl": "https://www.youtube.com/channel/UCL-ACPCQnKbT2nWadQuqt2w/videos",
+    "spkrs": [],
+    "tags": [
+      "RxJS"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-E?alt=media&token=71595f6f-288e-4abc-93ee-1aa09bb82610"
+  },
+  {
+    "slug": "2022-04-16-D",
+    "type": "video",
+    "dur": "11",
+    "title": "How to pass JWT Token authorization header in Angular using HttpInterceptor | Angular 13 tutorial #26",
+    "url": "https://www.youtube.com/watch?v=NDCJriGKgpI",
+    "desc": "This video explains how to implement the HTTP Interceptor and pass the JWT Token for any external API request.",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Nihira Techiees",
+    "aUrl": "https://www.youtube.com/channel/UCsbmVmB_or8sVLLEq4XhE_A/videos",
+    "spkrs": [],
+    "tags": [
+      "HttpInterceptors"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-D?alt=media&token=cae12e39-7cac-49e9-9a53-fcf49f58ff5f"
+  },
+  {
+    "slug": "2022-04-16-C",
+    "type": "blog",
+    "title": "Use HTTP Interceptor In Angular for Every HTTP Request",
+    "url": "https://dev.to/deepakjaiswal/use-http-interceptor-in-angular-for-every-http-request-7lo",
+    "desc": "Sometimes we are using HttpClient in Angular for API request to add some additional information through headers to send request to server. First we add HttpModule in app.module.ts imports array.",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Sandeep",
+    "aUrl": "https://dev.to/deepakjaiswal",
+    "spkrs": [],
+    "tags": [
+      "HttpInterceptors"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-C?alt=media&token=2dd333d5-8c10-4196-b0ba-3377f995a612"
+  },
+  {
+    "slug": "2022-04-16-B",
+    "type": "blog",
+    "title": "Send data from one application to another in Angular",
+    "url": "https://yurii-k.medium.com/send-data-from-one-application-to-another-in-angular-479ca163f90a",
+    "desc": "Big companies probably have at least a couple applications. Sometimes you may need to send some data from one application to another. How can we do that? We can add data as query parameters or if applications have the same domain address we can use cookies.",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Yurii K",
+    "aUrl": "https://medium.com/@yurii-k",
+    "spkrs": [],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-B?alt=media&token=3e8e9bcb-0575-49a6-a812-61cdc8e77c33"
+  },
+  {
+    "slug": "2022-04-16-A",
+    "type": "video",
+    "dur": "14",
+    "title": "Angular Material: Sidenav w. Toolbar (Expandable/Collapsable) | 2022",
+    "url": "https://www.youtube.com/watch?v=FHk_RwcxJZg",
+    "desc": "",
+    "dAdd": "2022-04-16",
+    "dSrc": "2022-04-16",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Thomas Oliver",
+    "aUrl": "https://www.youtube.com/channel/UCTZMwW4pq_B-o_KkpCtotGw/videos",
+    "spkrs": [
+      "Thomas Oliver"
+    ],
+    "tags": [
+      "Angular Material",
+      "Sidenav"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F016%2F2022-04-16-A?alt=media&token=0dfaa166-f0b7-4c67-9895-b2be6283da98"
   }
 ]

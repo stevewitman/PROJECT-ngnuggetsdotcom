@@ -1,41 +1,44 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Firestore } from '@angular/fire/firestore';
+import { Firestore, doc, docData } from '@angular/fire/firestore';
+import {
+  Observable,
+  of,
+  from,
+  map,
+  mergeMap,
+  groupBy,
+  zip,
+  toArray,
+  tap,
+} from 'rxjs';
 
 import { Post } from '../models/post';
 @Injectable({
   providedIn: 'root',
 })
 export class PostsService {
-  constructor(private firestore: Firestore,
-    private http: HttpClient) {
-    // this.addPosts(posts2);
+  constructor(
+    private firestore: Firestore
+  ) {}
+
+  loadPostsByWeek(week: string): Observable<Post[]> {
+    const ref = doc(this.firestore, 'postsByWeek', week);
+    const postData$ = docData(ref).pipe(map((data) => data?.['posts']));
+    return postData$;
   }
 
-  // loadPostsByWeek(week: string): Post[] {
-  loadPostsByWeek(week: string): any {
-  //   const posts$ = this.http.get<Post[]>(`assets/json/${week}.json`);
-  //   posts$.subscribe((data) => {
-  //     console.log('isArray?', data);
-  //   });
-    // console.log('isArray?', posts.isArray());
-
-    return this.http.get<Post[]>(`assets/json/${week}.json`);
+  groupPostsByDay(posts$: Observable<Post[]>) { 
+    return posts$.pipe(
+      mergeMap((data: any) => from(data)),
+      groupBy((post: any) => post.dAdd),
+      mergeMap((group: any) => zip(of(group.key), group.pipe(toArray()))),
+      map((res: any) => ({
+        date: res[0],
+        dailyPosts: res[1],
+      })),
+      toArray()
+    );
   }
 
-  async getTodaysPosts() {
-    // const userRef = doc(this.firestore, `posts/${posts.date}`);
-  }
-
-  async addPosts(posts: any) {
-    // const userRef = doc(this.firestore, `posts/${posts.date}`);
-    // return await setDoc(userRef, posts, { merge: true });
-  }
-
-  // load posts-wk999
-  // find previous week from todays date
-  // load latest posts-wk025
-  // load authorName (authorU)
-  //
 }

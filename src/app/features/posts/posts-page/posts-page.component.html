@@ -1,6 +1,6 @@
 <div class="page-container-wide">
-  <h1 class="page-title">Daily, Hastily-Curated, ANGULAR News, Blogs, Videos and More ...</h1>
-  <h3>Reinforce what you know, learn something new, discover some new content creators, and monitor the pulse of the Angular community</h3>
+  <h1 class="page-title">Daily, Hastily-Curated, ANGULAR News, Blogs, Videos and more</h1>
+  <h3 class="subtitle">Learn something new, reinforce what you already know, discover new content creators, and monitor the pulse of the Angular community</h3>
 
   <ng-container *ngIf="postsByDay$; else loading">
     <div *ngFor="let dayGroup of postsByDay$ | async" class="daily-section">
@@ -18,7 +18,6 @@
       </ng-container>
     </div>
   </ng-container>
-
 
   <!-- <button (click)="getMorePosts()">MORE</button> -->
   <ng-template #loading>
