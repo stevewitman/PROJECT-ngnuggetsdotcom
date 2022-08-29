@@ -1,3 +1,2 @@
-<app-toolbar [drawerOpen]="sidenav.drawerRef" (toggleDrawer)="sidenav.drawerRef.toggle()"></app-toolbar>
-
+<app-toolbar [drawerOpen]="sidenav.drawerRef?.opened" (toggleDrawer)="sidenav.drawerRef.toggle()"></app-toolbar>
 <app-sidenav #sidenav></app-sidenav>

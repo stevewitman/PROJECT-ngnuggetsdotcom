@@ -43,6 +43,8 @@ export class SidenavComponent implements OnInit, OnDestroy {
     this.isHandset$$ = this.breakpointService.isHandset$?.subscribe(val => {
       this.isHandset = val;
     });
+    console.log(this.drawerRef);
+    
   }
 
   ngOnDestroy() {

@@ -9,13 +9,13 @@
     <mat-nav-list>
       <a
         mat-list-item
-        [routerLink]="['/']"
+        [routerLink]="['/posts']"
         (click)="isHandset && drawer.close()"
         routerLinkActive="link-active"
         ><mat-icon class="list-item-icon">home</mat-icon
         ><span class="list-item-text">Home</span></a
       >
-      <a
+      <!-- <a
         mat-list-item
         
         (click)="onClickFilters()"
@@ -24,46 +24,44 @@
         <mat-icon class="list-item-icon">filter_alt</mat-icon>
         <span class="list-item-text">Filter By</span>
         <mat-icon class="menu-expand">expand_more</mat-icon></a
-      >
-      <mat-nav-list class="sub-menu" *ngIf="showFilters" @staggerList>
+      > -->
+      <!-- <mat-nav-list class="sub-menu" *ngIf="showFilters" @staggerList>
         <a mat-list-item><span class="list-item-text">Hide Videos</span></a>
         <a mat-list-item><span class="list-item-text">Hide Blogs</span></a>
         <a mat-list-item><span class="list-item-text">Hide Podcasts</span></a>
         <a mat-list-item><span class="list-item-text">Hide Releases</span></a>
         <a mat-list-item><span class="list-item-text">Hide Community</span></a>
-        <!-- <a mat-list-item><span class="list-item-text">My Favorites</span></a> -->
-        <!-- <a mat-list-item><span class="list-item-text">Search</span></a> -->
-      </mat-nav-list>
+      </mat-nav-list> -->
 
       <hr />
 
-      <a
+      <!-- <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">mail</mat-icon
         ><span class="list-item-text">Newsletter</span></a
-      >
-      <a
+      > -->
+      <!-- <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">note_add</mat-icon
         ><span class="list-item-text">Submit Link</span></a
-      >
-      <a
+      > -->
+      <!-- <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">settings</mat-icon
         ><span class="list-item-text">Settings</span></a
-      >
+      > -->
       <a
         mat-list-item
-
+        [routerLink]="['/about']"
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">info</mat-icon
@@ -79,35 +77,35 @@
       >
 
 
-      <hr />
+      <!-- <hr /> -->
 
-      <a
+      <!-- <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">star</mat-icon
         ><span class="list-item-text">Sponsors</span></a
-      >
-      <a
+      > -->
+      <!-- <a
         mat-list-item
 
         routerLinkActive="link-active"
         (click)="isHandset && drawer.close()"
         ><mat-icon class="list-item-icon">attach_money</mat-icon
         ><span class="list-item-text">Donate</span></a
-      >
+      > -->
 
-      <hr />
+      <!-- <hr /> -->
 
-      <a mat-list-item>
+      <!-- <a mat-list-item>
         <mat-icon class="angularmentors-light-icon">people_outline</mat-icon>
         <span class="list-item-text">
           <span class="angularmentors-light-angular">ANGULAR</span>
           <span class="angularmentors-light-mentors">MENTORS</span>
           <span class="angularmentors-light-dotcom">.COM</span>
         </span>
-      </a>
+      </a> -->
     </mat-nav-list>
   </mat-sidenav>
 
