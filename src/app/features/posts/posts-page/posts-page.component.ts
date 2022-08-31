@@ -13,9 +13,8 @@ import { PostsService } from 'src/app/core/services/posts.service';
 export class PostsPageComponent implements OnInit {
   disableLoadButton$ = of(false);
 
-  posts$: Observable<Post[]> = of([]);
+  // posts$: Observable<Post[]> = of([]);
   postsByDay$: Observable<DailyPost[]> = of([]);
-
 
   constructor(
     private postsService: PostsService,
@@ -23,7 +22,7 @@ export class PostsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.postsService.loadPosts();
-    this.posts$ = this.postsService.getPosts();
+    // this.posts$ = this.postsService.getPosts();
     this.postsByDay$ = this.postsService.getPostsByDay()
     this.disableLoadButton$ = this.postsService.getdisableLoadButton();
   }
