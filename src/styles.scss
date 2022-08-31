@@ -197,3 +197,8 @@ section {
     padding-right: 12px;
   }
 }
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: var(--color-orange500);
+}

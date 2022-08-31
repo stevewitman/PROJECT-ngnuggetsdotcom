@@ -17,11 +17,15 @@
       </div>
       </ng-container>
     </div>
+    <div class="actions">
+      <button [disabled]="disableLoadButton$ | async" mat-raised-button class="load-week" (click)="loadAnotherWeek()">Load Another Week</button>
+
+    </div>
   </ng-container>
 
-  <!-- <button (click)="getMorePosts()">MORE</button> -->
   <ng-template #loading>
-    <div>L o a d i n g . . .</div>
+    <div class="spinner-wrapper">
+      <mat-spinner class="spinner"></mat-spinner>
+    </div>
   </ng-template>
 </div>
-

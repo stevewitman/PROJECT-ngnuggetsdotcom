@@ -1,0 +1,528 @@
+[
+  {
+    "slug": "2022-08-29-J",
+    "type": "video",
+    "dur": "10",
+    "title": "ngOnChanges lifecycle hook in Angular | ngOnChanges Angular example | Angular Tutorial",
+    "url": "https://www.youtube.com/watch?v=ohMIUiHaV5M",
+    "desc": "",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WebGentle",
+    "aUrl": "https://www.youtube.com/c/WebGentle/videos",
+    "spkrs": [
+      "Nitish Kumar"
+    ],
+    "tags": [
+      "ngOnChanges()",
+      "Lifecycle Hooks"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-J?alt=media&token=33cfafd0-18c3-447c-8b85-ba2c82eed845"
+  },
+  {
+    "slug": "2022-08-29-H",
+    "type": "blog",
+    "title": "Theming Angular Material Components - Introduction",
+    "url": "https://dev.to/hunzaboy/theming-angular-material-components-introduction-4ab",
+    "desc": "In this series, I will explain how to customize the Angular Material theme, components in particular (that's usually the most irritating part) and your own components using the Angular Material Way. I hope this series will help, new developers or anyone who has struggled, to get a better understanding and perspective on the topic.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Aslam Shah",
+    "aUrl": "https://dev.to/hunzaboy",
+    "spkrs": [
+      "Aslam Shah"
+    ],
+    "tags": [
+      "Angular Material",
+      "Theming"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-H?alt=media&token=a098e38c-39a9-4c92-996d-dd6d4ad86236"
+  },
+  {
+    "slug": "2022-08-29-G",
+    "type": "blog",
+    "title": "Bringing Angular Components to Astro Islands",
+    "url": "https://dev.to/brandontroberts/bringing-angular-components-to-astro-islands-52jp",
+    "desc": "Astro is a relatively new web framework that has a focus on helping you build faster websites. It also has a very interesting extension point in that you can bring your own UI framework of choice, including React, Svelte, Vue, and more. I even rewrote my Angular blog to use Astro in its alpha release days. This post is about bringing things full circle and using Angular components inside an Astro project.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Brandon Roberts",
+    "aUrl": "https://dev.to/brandontroberts",
+    "spkrs": [
+      "Brandon Roberts"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-G?alt=media&token=e83ebe26-02f5-4325-adad-c03555877e9b"
+  },
+  {
+    "slug": "2022-08-29-F",
+    "type": "video",
+    "dur": "10",
+    "title": "View child decorator on HTML elements | Child to Parent communication | Angular 14 | Part 6",
+    "url": "https://www.youtube.com/watch?v=ffs9mIH7aU4",
+    "desc": "In this video we will learn How to use view child decorator on native elements and how to communicate from parent to child components.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "TechshareSKK",
+    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ],
+    "tags": [
+      "@ViewChild"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-F?alt=media&token=4c0bd6da-5430-42ed-afa5-5288c7d095ce"
+  },
+  {
+    "slug": "2022-08-29-E",
+    "type": "blog",
+    "title": "Angular Basics: How To Use the Angular Mouseenter Event",
+    "url": "https://www.telerik.com/blogs/angular-basics-how-to-use-angular-mouseenter-event",
+    "desc": "The mouseenter event allows us to trigger a behavior when the user mouses over an element. Learn more about this and other mouse events.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "Progress Telerik Blog",
+    "srcUrl": "https://www.telerik.com/blogs/web-angular",
+    "aName": "John Au-Yeung",
+    "aUrl": "https://www.telerik.com/blogs/author/john-au-yeung",
+    "spkrs": [
+      "John Au-Yeung"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-E?alt=media&token=96e0b274-f339-4011-80e2-9aa73c2cc3e3"
+  },
+  {
+    "slug": "2022-08-29-D",
+    "type": "podcast",
+    "dur": "49",
+    "title": "AMP 31: Alex Okrushko on Enterprise Frontend for Success",
+    "url": "https://open.spotify.com/episode/0hORjY21GJqf1et2HQK0uk",
+    "desc": "",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "Spotify",
+    "srcUrl": "https://open.spotify.com",
+    "aName": "Angular Master Podcast",
+    "aUrl": "https://open.spotify.com/show/1wgZAEEIoRZ8eP78LTbyZf",
+    "spkrs": [
+      "Alex Okrushko"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-D?alt=media&token=d225166a-ad3a-4fd6-af83-1b0809dc73fd"
+  },
+  {
+    "slug": "2022-08-29-C",
+    "type": "video",
+    "dur": "20",
+    "title": "Angular HTTP Interceptor - Build An Authentication Interceptor Step by Step Implementation",
+    "url": "https://www.youtube.com/watch?v=1po58WGmqB4",
+    "desc": "In this lesson we are going to implement an HTTP Interceptor using the new Angular HTTP Client module, which will send with each request back to the server our authentication JWT.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "BugArray",
+    "aUrl": "https://www.youtube.com/channel/UCIkpfwmX7PORuZdnJ0OznAA/videos",
+    "spkrs": [
+      "Sibolelo Vilakazi"
+    ],
+    "tags": [
+      "HttpInterceptors",
+      "JWT",
+      "Auth"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-C?alt=media&token=2074b9aa-a193-4ac5-85e1-2ab11e44be89"
+  },
+  {
+    "slug": "2022-08-29-B",
+    "type": "blog",
+    "title": "Use directives to extend third-party components",
+    "url": "https://medium.com/@stellar_aquamarine_cricket_607/use-angular-directives-to-extend-third-party-components-17d7a19c46b7",
+    "desc": "On my current project we're using Kirby Design UI Library and kirby-form-field component doesn't handle prefix or suffix, so I have to find a solution to modify the existing kirby-form-field component, to support prefix or suffix.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-29",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Jamal Soueidan",
+    "aUrl": "https://medium.com/@stellar_aquamarine_cricket_607",
+    "spkrs": [
+      "Jamal Soueidan"
+    ],
+    "tags": [
+      "Directives"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-B?alt=media&token=093c9939-6912-4964-9268-40b92784f4a1"
+  },
+  {
+    "slug": "2022-08-29-A",
+    "type": "video",
+    "dur": "30",
+    "title": "Angular Sudoku 5 - Storybook, Modules, CSS and HTML Attributes",
+    "url": "https://www.youtube.com/watch?v=wqGHCp-XtBs",
+    "desc": " We fix issues with our components in Storybook by importing the needed modules. We try multiple ways of highlighting a row in the sudoku grid. Lots of help from the community and discussions on how to accomplish our tasks.",
+    "dAdd": "2022-08-29",
+    "dSrc": "2022-08-28",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Jason Warner",
+    "aUrl": "https://www.youtube.com/channel/UCzF8hdwni3db3UZ7P3uKBkQ/videos",
+    "spkrs": [
+      "Jason Warner"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-29-A?alt=media&token=d020f895-4b2c-405c-84db-a230690f9019"
+  },
+  {
+    "slug": "2022-08-28-F",
+    "dAdd": "2022-08-28",
+    "url": "https://www.youtube.com/watch?v=ICAqbJDfrLU",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-F?alt=media&token=a091d7f2-9c1f-4621-97ff-488b327d5523",
+    "desc": "",
+    "srcUrl": "https://youtube.com",
+    "title": "ng-news 22/34",
+    "tags": [],
+    "dur": "2",
+    "srcSite": "YouTube",
+    "aUrl": "https://www.youtube.com/channel/UCpNgAFB5-_3WSHD_olBv7nw/videos",
+    "aName": "ng-news",
+    "spkrs": [
+      "Rainer Hahnekamp"
+    ],
+    "dSrc": "2022-08-28",
+    "type": "video"
+  },
+  {
+    "dSrc": "2022-08-28",
+    "tags": [
+      "Pipes"
+    ],
+    "aUrl": "https://dev.to/devashishsarmah",
+    "slug": "2022-08-28-E",
+    "desc": "Pipes are simple functions to use in template expressions to accept an input value and return a transformed value.",
+    "dAdd": "2022-08-28",
+    "srcUrl": "https://dev.to",
+    "spkrs": [],
+    "url": "https://dev.to/this-is-angular/a-dive-into-angular-pipes-1eg4",
+    "aName": "devashishSarmah",
+    "title": "A Dive Into Angular Pipes",
+    "srcSite": "DEV Community",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-E?alt=media&token=3737e26f-bd8e-465c-8b2a-2ffd15a207a4",
+    "type": "blog"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DiqQhDGoraE",
+    "dAdd": "2022-08-28",
+    "srcUrl": "https://youtube.com",
+    "srcSite": "YouTube",
+    "aUrl": "https://www.youtube.com/c/TeddySmithNC/videos",
+    "dSrc": "2022-08-28",
+    "slug": "2022-08-28-D",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-D?alt=media&token=2167ffdc-0768-43eb-b24b-b046404d0a15",
+    "desc": "",
+    "dur": "7",
+    "aName": "Teddy Smith",
+    "type": "video",
+    "spkrs": [
+      "Teddy Smith"
+    ],
+    "title": "RxJS For Beginners - 4. of()",
+    "tags": [
+      "RxJS",
+      "of()"
+    ]
+  },
+  {
+    "slug": "2022-08-28-C",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-C?alt=media&token=3f723708-efb3-4b83-8944-9ac40b3f474c",
+    "srcSite": "YouTube",
+    "title": "Hooks in Angular | Angular hook life cycle | Angular Tutorial",
+    "url": "https://www.youtube.com/watch?v=hn1c8F51UVA",
+    "desc": "",
+    "tags": [
+      "Lifecycle Hooks"
+    ],
+    "aUrl": "https://www.youtube.com/c/WebGentle/videos",
+    "dur": "5",
+    "aName": "WebGentle",
+    "dSrc": "2022-08-28",
+    "spkrs": [
+      "Nitish Kumar"
+    ],
+    "srcUrl": "https://youtube.com",
+    "type": "video",
+    "dAdd": "2022-08-28"
+  },
+  {
+    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
+    "tags": [
+      "Testing",
+      "Unit Testing",
+      "@Output",
+      "Data Transfer"
+    ],
+    "dAdd": "2022-08-28",
+    "srcSite": "YouTube",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-B?alt=media&token=0705efe0-8316-4e7a-81a2-f9c5e9ec774e",
+    "slug": "2022-08-28-B",
+    "dSrc": "2022-08-28",
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ],
+    "desc": "In this video we will learn How to test output decorator with Event Emitter when we have child to parent communication between the components",
+    "aName": "TechshareSKK",
+    "url": "https://www.youtube.com/watch?v=COqpv8dnzAY",
+    "title": "Unit Test Output decorator | Child to parent communication | Event Emitters | Angular 14 | Part 2",
+    "dur": "13",
+    "srcUrl": "https://youtube.com",
+    "type": "video"
+  },
+  {
+    "aName": "Srikanth Y",
+    "tags": [
+      "Lazy Loading"
+    ],
+    "type": "blog",
+    "desc": "Here the lazy load means we can't dump data at once. Either we will load data based on an event (on scroll, paginator)in that way the user won't wait for the entire response. Instead, just user needs to perform the event in the way the data will be updated on UI.\n(photo: by Manja Vitolic on Unsplash)",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-28-A?alt=media&token=d54cd107-af71-46b9-a30b-de48a5880a1d",
+    "url": "https://mryenagandula.medium.com/angular-lazy-load-data-based-on-scroll-16-steps-e8056f4d2852",
+    "srcSite": "Medium",
+    "slug": "2022-08-28-A",
+    "title": "Angular lazy load data based on scroll (16 Steps)",
+    "srcUrl": "https://medium.com",
+    "spkrs": [],
+    "dSrc": "2022-08-27",
+    "aUrl": "https://mryenagandula.medium.com",
+    "dAdd": "2022-08-28"
+  },
+  {
+    "slug": "2022-08-27-L",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-L?alt=media&token=56bf36ba-675d-4c86-bbca-002814b2f0e7",
+    "aName": "JS Frameworks",
+    "dSrc": "2022-08-27",
+    "aUrl": "https://www.youtube.com/c/JSFrameworks/videos",
+    "tags": [
+      "RxJS"
+    ],
+    "desc": "We explore the different tranformation operators which are available with the latest version of RxJS using an Angular 14 applications. The below operators are explored: filter, elementAt, first, last, single, ignoreElements, take, takeLast, takeUntil, takeWhile, skip, skipLast, skipUntil, skipWhile, distinct, distinctUntilChanged, distinctUntilKeyChanged, auditTime, throttleTime, sampleTime, debounceTime, audit/throttle/sample/debounce",
+    "dur": "29",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=vyO0Z6zZY6w",
+    "title": "filter/take*/skip*/distinct*/debounce - RxJS Filtering operators in Angular 14 tutorial",
+    "srcUrl": "https://youtube.com",
+    "dAdd": "2022-08-27",
+    "spkrs": [],
+    "srcSite": "YouTube"
+  },
+  {
+    "dur": "4",
+    "dAdd": "2022-08-27",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-K?alt=media&token=66b8701e-2e56-4d53-97da-ce1d9c3216f8",
+    "dSrc": "2022-08-27",
+    "type": "video",
+    "spkrs": [
+      "Nitish Kumar"
+    ],
+    "title": "Sharing data between sibling components Angular | Sharing data using a Service in Angular",
+    "url": "https://www.youtube.com/watch?v=wRY0TwKADPc",
+    "tags": [
+      "Data Transfer",
+      "Services"
+    ],
+    "srcUrl": "https://youtube.com",
+    "slug": "2022-08-27-K",
+    "desc": "",
+    "aUrl": "https://www.youtube.com/c/WebGentle/videos",
+    "srcSite": "YouTube",
+    "aName": "WebGentle"
+  },
+  {
+    "aUrl": "https://www.youtube.com/channel/UCGUKXx5HYoEIiZ5Me2QDvTw/videos",
+    "dSrc": "2022-08-27",
+    "srcSite": "YouTube",
+    "url": "https://www.youtube.com/watch?v=G4BBNq1tgwE",
+    "tags": [
+      "Auth"
+    ],
+    "desc": "Adding Google Sign In to your application brings so many benefits. You get to add the trusted logo of one of the biggest tech companies in the world to your application. It also brings all the security and convenience users already to know to an application that might be new to them. Today we will be adding to a Angular 14 application the ability to create the Google Sign In button as well as Sign in with it.",
+    "srcUrl": "https://youtube.com",
+    "type": "video",
+    "slug": "2022-08-27-J",
+    "spkrs": [
+      "Israel Quiroz"
+    ],
+    "title": "How To Add Google Sign In With Angular Correctly! | 2022 Full Tutorial With Angular 14 .Net 6 App",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-J?alt=media&token=66d7edba-34a5-4240-95cd-bcc8c1fc6850",
+    "dur": "36",
+    "dAdd": "2022-08-27",
+    "aName": "Israel Quiroz"
+  },
+  {
+    "spkrs": [
+      "Ganesh Pilli"
+    ],
+    "slug": "2022-08-27-H",
+    "url": "https://www.youtube.com/watch?v=dHIyDAhg57o",
+    "desc": "",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "title": "Plan and Architect an Angular App | How to Design Angualr App",
+    "type": "video",
+    "tags": [
+      "Architecture"
+    ],
+    "aUrl": "https://www.youtube.com/c/GaneshPilli/videos",
+    "aName": "Ganesh Pilli",
+    "dAdd": "2022-08-27",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-H?alt=media&token=003f4f71-4482-4d49-8e3e-9a870e6fac2d",
+    "dSrc": "2022-08-27",
+    "dur": "44"
+  },
+  {
+    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
+    "tags": [
+      "Data Transfer",
+      "@Output",
+      "EventEmitter"
+    ],
+    "srcSite": "YouTube",
+    "dAdd": "2022-08-27",
+    "dSrc": "2022-08-27",
+    "desc": "In this video we will learn How to use output decorator and how to communicate from child to parent components using event emitters",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=hxMW4b3fLyk",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-G?alt=media&token=efa62598-bf25-49b0-9f7b-10d52eb13743",
+    "srcUrl": "https://youtube.com",
+    "dur": "12",
+    "slug": "2022-08-27-G",
+    "title": "Child to Parent communication | Output decorator | Event Emitters | Angular 14 | Part 5",
+    "aName": "TechshareSKK",
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ]
+  },
+  {
+    "dAdd": "2022-08-27",
+    "title": "Scam Pattern In Angular",
+    "aUrl": "https://www.youtube.com/channel/UCMH0AhcXA8Jkyqq4y3D2olA/videos",
+    "type": "video",
+    "srcSite": "YouTube",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-F?alt=media&token=9240a7d6-d2ed-4770-a873-e5becc187f4d",
+    "url": "https://www.youtube.com/watch?v=5s2sTLZ_u6g",
+    "slug": "2022-08-27-F",
+    "dSrc": "2022-08-27",
+    "aName": "Programing With Hamid",
+    "srcUrl": "https://youtube.com",
+    "spkrs": [
+      "Hamid Hassani"
+    ],
+    "tags": [],
+    "desc": "Single Angular Component Module, or SCAM for short, is the idea of creating a module and attaching a component to it for doing specific duty in your project. By following this approach we can reach to better coding style and smart import in our modules.",
+    "dur": "8"
+  },
+  {
+    "srcUrl": "https://dev.to",
+    "tags": [
+      "Standalone Components"
+    ],
+    "type": "blog",
+    "title": "Angular's Mission To Make DX Better With Standalone Components",
+    "dSrc": "2022-08-26",
+    "slug": "2022-08-27-E",
+    "desc": "This article to highlight Angular 14's new feature for allowing standalone components and how it can be implemented to replace Angular Modules. This feature was delivered to improve developer experience as well as make the framework more approachable for newer developers.",
+    "srcSite": "DEV Community",
+    "url": "https://dev.to/paulmojicatech/angulars-mission-to-make-dx-better-with-standalone-components-4ab7",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-E?alt=media&token=7b4fe823-af8a-4cab-bf9c-a5364d2e0043",
+    "aUrl": "https://dev.to/paulmojicatech",
+    "spkrs": [
+      "Paul Mojica"
+    ],
+    "aName": "paulmojicatech",
+    "dAdd": "2022-08-27"
+  },
+  {
+    "dAdd": "2022-08-27",
+    "aName": "David",
+    "spkrs": [],
+    "aUrl": "https://medium.com/@davidjohnakim",
+    "title": "Using CesiumJS with Angular",
+    "srcUrl": "https://medium.com",
+    "type": "blog",
+    "tags": [
+      "Maps"
+    ],
+    "url": "https://medium.com/@davidjohnakim/using-cesiumjs-with-angular-f246c1d1b26a",
+    "slug": "2022-08-27-D",
+    "desc": "In this lesson, we will go through the steps of integrating CesiumJS with Angular. CesiumJS is an open source JavaScript library for creating 3D globes and maps. At the end of the lesson you should be able to do a simple plot with CesiumJS.",
+    "srcSite": "Medium",
+    "dSrc": "2022-08-26",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-D?alt=media&token=d48d31d6-ffc1-4d5d-b174-f16fe1c975c8"
+  },
+  {
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-C?alt=media&token=b875a459-a938-4fb5-a27f-761384324afb",
+    "type": "video",
+    "srcUrl": "https://youtube.com",
+    "dSrc": "2022-08-26",
+    "dur": "5",
+    "title": "Angular custom validator: sync and async",
+    "tags": [
+      "Validation",
+      "Custom"
+    ],
+    "aName": "Rui Wang",
+    "spkrs": [
+      "Rui Wang"
+    ],
+    "srcSite": "YouTube",
+    "slug": "2022-08-27-C",
+    "url": "https://www.youtube.com/watch?v=dRT97FfqrKo",
+    "aUrl": "https://www.youtube.com/user/turingcs2001/videos",
+    "dAdd": "2022-08-27",
+    "desc": ""
+  },
+  {
+    "desc": "We are going to discuss microservice asynchronous communication using the Ocelot API gateway and RabbitMQ Message Queue and containerization of the client application",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-B?alt=media&token=c43928cb-00f6-4cd9-a66c-42220753a14d",
+    "srcSite": "Medium",
+    "dAdd": "2022-08-27",
+    "srcUrl": "https://medium.com",
+    "dSrc": "2022-08-26",
+    "url": "https://medium.com/@jaydeepvpatil225/microservices-async-communication-using-ocelot-gateway-rabbitmq-docker-and-angular-14-b3716e8503e4",
+    "aName": "Jaydeep Patil",
+    "spkrs": [
+      "Jaydeep Patil"
+    ],
+    "slug": "2022-08-27-B",
+    "tags": [],
+    "title": "Microservices Async Communication using Ocelot Gateway, RabbitMQ, Docker, and Angular 14",
+    "aUrl": "https://medium.com/@jaydeepvpatil225",
+    "type": "blog"
+  },
+  {
+    "type": "blog",
+    "dAdd": "2022-08-27",
+    "slug": "2022-08-27-A",
+    "spkrs": [
+      "Dragos Becsan"
+    ],
+    "desc": "You've probably already tried doing this in the ngOnInit function of the app.component, but realised your data needed to be loaded even sooner than that. You've also maybe tried implementing a resolver, but realised that they are a better fit in the context of individual routes.\n(photo: by Mike van den Bos on Unsplash)",
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F035%2F2022-08-27-A?alt=media&token=e21fc9c0-8780-44e2-85cd-76f90f78ec2c",
+    "title": "Simple way of loading data before page load in Angular",
+    "srcSite": "Medium",
+    "tags": [
+      "APP_INITIALIZER"
+    ],
+    "srcUrl": "https://medium.com",
+    "aUrl": "https://medium.com/@dragosbecsan",
+    "url": "https://medium.com/@dragosbecsan/simple-way-of-loading-data-before-page-load-in-angular-f98c079cff55",
+    "dSrc": "2022-08-26",
+    "aName": "Dragos Becsan"
+  }
+]

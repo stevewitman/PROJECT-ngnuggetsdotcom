@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
+import { Observable, of, take } from 'rxjs';
 
-import { Post } from 'src/app/core/models/post';
+import { DailyPost, Post } from 'src/app/core/models/post';
 import { PostsService } from 'src/app/core/services/posts.service';
 
 @Component({
@@ -11,30 +11,25 @@ import { PostsService } from 'src/app/core/services/posts.service';
   styleUrls: ['./posts-page.component.scss'],
 })
 export class PostsPageComponent implements OnInit {
+  disableLoadButton$ = of(false);
 
-  currentWeek = '035'
-  postsAll$: Observable<Post[]> = of([]);
-  postsByDay$: any;
+  posts$: Observable<Post[]> = of([]);
+  postsByDay$: Observable<DailyPost[]> = of([]);
 
-  constructor(private postsService: PostsService) {}
+
+  constructor(
+    private postsService: PostsService,
+  ) {}
 
   ngOnInit(): void {
-    this.postsAll$ = this.getPostsByWeek(this.currentWeek);
-    this.postsAll$.subscribe({
-      next:(res) => {
-        this.postsByDay$ = this.groupPostsByDay(of(res));
-      },
-      error:(err) => {console.error(err)},
-      complete:() => {console.log('observable complete')}
-    });
+    this.postsService.loadPosts();
+    this.posts$ = this.postsService.getPosts();
+    this.postsByDay$ = this.postsService.getPostsByDay()
+    this.disableLoadButton$ = this.postsService.getdisableLoadButton();
   }
 
-  getPostsByWeek(week: string): Observable<Post[]> {
-    return this.postsService.loadPostsByWeek(week);
-  }
-
-  groupPostsByDay(posts$: Observable<Post[]>) {
-    return this.postsService.groupPostsByDay(posts$);
+  loadAnotherWeek() {
+    this.postsService.loadPosts();
   }
 
 }

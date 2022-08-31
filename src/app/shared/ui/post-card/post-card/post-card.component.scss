@@ -75,11 +75,16 @@ a {
 }
 
 .post-title-text {
+  color: black;
   margin: 8px 0;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  &:hover {
+    text-decoration: none;
+    color: var(--color-turquoise700);
+  }
 }
 
 .post-source {

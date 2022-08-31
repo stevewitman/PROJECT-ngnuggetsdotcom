@@ -17,7 +17,7 @@ export class UtilsService {
 
   // weekNumberBy
 
-  getWeekNumberFromDateRange(startDate: string, endDate: string) {
+  getWeekNumberFromDateRange(startDate: string, endDate: string): number {
     const firstDate = new Date(startDate);
     const lastDate = new Date(endDate);
     const deltaDays = Math.floor(
@@ -25,5 +25,9 @@ export class UtilsService {
     );
     const weekNumber = Math.floor(deltaDays / 7) + 1;
     return weekNumber;
+  }
+
+  numberToPaddedString(n: number): string {
+    return String(n).padStart(3, '0');
   }
 }

@@ -16,7 +16,7 @@ export interface Post {
   imgUrl?: string;
 }
 
-export interface DailyPosts {
+export interface DailyPost {
   date: string;
-  dailyPosts: Post[];
+  dailyPosts: Post[] | [];
 }

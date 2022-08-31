@@ -14,17 +14,11 @@ export class PostCardComponent implements OnInit {
 
   ngOnInit() {
     if (this.post) {
-      this.tooltip = `${this.post.slug}\n\nTITLE:\n${
-        this.post.title
-      }\n\nDESCRIPTION:\n${
-        this.post.desc
-      }\n\nSPEAKERS:\n${this.post.spkrs
-        .toString()
-        .replace(/,/g, ', ')}\n\nDATE POSTED:\n${
-        this.post.dAdd
-      }\n\nDATE CREATED:\n${this.post.dSrc}\n\nTAGS:\n${this.post.tags
-        .toString()
-        .replace(/,/g, ', ')}\n\n`;
+      let tooltipText = '';
+      if (this.post.desc) { tooltipText += `DESCRIPTION:\n${this.post.desc}\n\n`}
+      if (this.post.spkrs.length != 0) { tooltipText += `SPEAKERS:\n${this.post.spkrs.toString().replace(/,/g, ', ')}\n\n`}
+      if (this.post.tags.length != 0) { tooltipText += `TAGS:\n${this.post.tags.toString().replace(/,/g, ', ')}\n\n`}
+      this.tooltip = tooltipText;
     }
   }
 
