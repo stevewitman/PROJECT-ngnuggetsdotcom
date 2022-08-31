@@ -1,5 +1,304 @@
 [
   {
+    "slug": "2022-08-30-Q",
+    "type": "blog",
+    "title": "Angular with Bazel",
+    "url": "https://blog.aspect.dev/angular-with-bazel",
+    "desc": "We recently released rules_js 1.0.0, a faster and more compatible approach to integrating JavaScript tooling under Bazel.\n(photo: by Teemu Paananen on Unsplash)",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "Hashnode",
+    "srcUrl": "https://hashnode.com",
+    "aName": "Jason Bedard",
+    "aUrl": "https://hashnode.com/@jbedard",
+    "spkrs": [
+      "Jason Bedard"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-Q?alt=media&token=c7ee72ce-9e21-4757-b9f1-503ca4b0f8a3"
+  },
+  {
+    "slug": "2022-08-30-P",
+    "type": "podcast",
+    "dur": "39",
+    "title": "Supper Club - Self Hosted Backend-as-a-service with Brandon Roberts",
+    "url": "https://syntax.fm/show/502/supper-club-self-hosted-backend-as-a-service-with-brandon-roberts",
+    "desc": "In this supper club episode of Syntax, Wes and Scott talk with Brandon Roberts about Appwrite, how Appwrite works, who it's for, as well as his thoughts on Angular, Remix, and more.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "Syntax",
+    "srcUrl": "syntax.fm",
+    "aName": "Brandon Roberts",
+    "aUrl": "https://twitter.com/brandontroberts",
+    "spkrs": [
+      "Brandon Roberts"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-P?alt=media&token=146d0c5e-033b-4c62-8621-5e593de888d7"
+  },
+  {
+    "slug": "2022-08-30-N",
+    "type": "blog",
+    "title": "Scully - Angular Static Site Generator",
+    "url": "https://dev.to/codingcatdev/scully-angular-static-site-generator-5ech",
+    "desc": "Just like the other frameworks what Scully offers is the ability to pre-render pages and then create HTML and CSS that loads highly performant pages for your browser to utilize without the SPA effect and whitescreen where you get loading times in the mix.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Alex Patterson",
+    "aUrl": "https://dev.to/codercatdev",
+    "spkrs": [
+      "Alex Patterson"
+    ],
+    "tags": [
+      "Scully"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-N?alt=media&token=ff312ae1-01a4-4497-8972-6127da209afb"
+  },
+  {
+    "slug": "2022-08-30-M",
+    "type": "video",
+    "dur": "39",
+    "title": "Configure authentication in Angular and WEB API by using Azure Active Directory B2C | LSC",
+    "url": "https://www.youtube.com/watch?v=vEwLQYgQvGI",
+    "desc": "This video demonstrates how to configure authentication in a sample Angular single-page application and DOTNET CORE WEB API application by using Azure Active Directory B2C.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Learn Smart Coding",
+    "aUrl": "https://www.youtube.com/channel/UCKUxSY2xp12QiP3c60sOc-g/videos",
+    "spkrs": [],
+    "tags": [
+      "Auth",
+      "Azure"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-M?alt=media&token=c84423f3-6b51-4875-9da1-dbf3a8c8fad9"
+  },
+  {
+    "slug": "2022-08-30-L",
+    "type": "video",
+    "dur": "7",
+    "title": "ngOnInit angular | ngOnInit vs constructor | Angular Tutorial",
+    "url": "https://www.youtube.com/watch?v=JqgT3Zx0eN4",
+    "desc": "",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WebGentle",
+    "aUrl": "https://www.youtube.com/c/WebGentle/videos",
+    "spkrs": [
+      "Nitish Kumar"
+    ],
+    "tags": [
+      "ngOnInit()",
+      "Lifecycle Hooks"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-L?alt=media&token=35352820-0160-416d-8131-629769f6a854"
+  },
+  {
+    "slug": "2022-08-30-K",
+    "type": "blog",
+    "title": "Creating a Micro Frontend App with Angular Module Federation",
+    "url": "https://dev.to/henriquecustodia/creating-a-micro-frontend-app-with-angular-module-federation-ah9",
+    "desc": "I've been listening much about the micro frontend concept lately. A lot of companies are adopting this solution as a way to make the apps smaller and easier to deploy.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Henrique Custodia",
+    "aUrl": "https://dev.to/henriquecustodia",
+    "spkrs": [
+      "Henrique Custodia"
+    ],
+    "tags": [
+      "Micro Frontends",
+      "Module Federation"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-K?alt=media&token=5c435f08-a2b3-434a-bdea-672ff7ff5ad9"
+  },
+  {
+    "slug": "2022-08-30-J",
+    "type": "blog",
+    "title": "Angular Revisited: Standalone Angular applications, the replacement for NgModules",
+    "url": "https://dev.to/this-is-angular/angular-revisited-standalone-angular-applications-the-replacement-for-ngmodules-238m",
+    "desc": "It's been 4 years since I started looking into standalone Angular applications, that is Angular applications that unlike classic Angular applications have no Angular modules.\n(photo: by Laura Cleffman on Unsplash)",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Lars Gyrup Brink Nielsen",
+    "aUrl": "https://dev.to/layzee",
+    "spkrs": [
+      "Lars Gyrup Brink Nielsen"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-J?alt=media&token=207045fb-48e8-4465-bd51-448d6f549cbb"
+  },
+  {
+    "slug": "2022-08-30-H",
+    "type": "video",
+    "dur": "8",
+    "title": "Unit Test View Child decorator | View Child on native HTML elements | Angular 14 | Part 4",
+    "url": "https://www.youtube.com/watch?v=6dv6IvdlJto",
+    "desc": "In this video we will learn How to test View Child decorator with HTML element\nHow to test view child decorator with HTML elements\nHow to test view child decorator using input elements\nHow to test applied styles using view child decorator in Angular\nTesting ngAfterViewInit when using view-child decorator",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "TechshareSKK",
+    "aUrl": "https://www.youtube.com/channel/UCD8gC85u512FeCFzRV4Ll-A/videos",
+    "spkrs": [
+      "Sai Kumar Korthivada"
+    ],
+    "tags": [
+      "Testing",
+      "@ViewChild"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-H?alt=media&token=6fccdabc-ca02-42f9-b256-435540bceab2"
+  },
+  {
+    "slug": "2022-08-30-G",
+    "type": "podcast",
+    "dur": "54",
+    "title": "S4 E3 - Creating Technical Articles and Content with Preston Lamb",
+    "url": "https://www.spreaker.com/user/ng-conf/ap-show-s4e3-preston-lamb",
+    "desc": "In this episode, we dig into writing about code with Preston Lamb. Preston started off with a personal blog and now writes articles for the ng-conf blog, ng-Champions, and has created courses on thinkster.io! We discuss the importance of asking 'stupid' questions, building on previous experience, and learning in public.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "Spreaker",
+    "srcUrl": "https://www.spreaker.com",
+    "aName": "The Angular Plus Show",
+    "aUrl": "https://www.spreaker.com/show/angular-show",
+    "spkrs": [
+      "Preston Lamb"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-G?alt=media&token=ebc20e22-ba80-4208-b790-09fb0932430b"
+  },
+  {
+    "slug": "2022-08-30-F",
+    "type": "blog",
+    "title": "Building Custom Structural and Attribute Directives in Angular",
+    "url": "https://dev.to/syncfusion/building-custom-structural-and-attribute-directives-in-angular-bm7",
+    "desc": "Angular directives assist us in manipulating the DOM. We may customize a DOM element's look, behavior, or layout using directives. In addition, they help us extend the power of HTML via actions, reactions, and interactions. For example, directives will accept arguments, perform some action with them, and then produce a reactive action on your HTML.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Rajeshwari Pandinagarajan",
+    "aUrl": "https://dev.to/rajiumapandi",
+    "spkrs": [
+      "Rajeshwari Pandinagarajan"
+    ],
+    "tags": [
+      "Directives",
+      "Custom"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-F?alt=media&token=721b1afc-9c94-4389-b707-b5919c6ecc8e"
+  },
+  {
+    "slug": "2022-08-30-E",
+    "type": "blog",
+    "title": "Using React in Angular Applications",
+    "url": "https://netbasal.com/using-react-in-angular-applications-1bb907ecac91",
+    "desc": "Two scenarios call for the use of React in an Angular application. First, there is a component in the React ecosystem that will take us weeks to develop, for example, a Timeline component. Second, we may have acquired a company that uses React and need to integrate it into our existing application.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Netanel Basal",
+    "aUrl": "https://netbasal.medium.com",
+    "spkrs": [
+      "Netanel Basal"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-E?alt=media&token=a3a0175f-a6b0-48b5-9d4d-710c0fb5ed98"
+  },
+  {
+    "slug": "2022-08-30-D",
+    "type": "blog",
+    "title": "Deploying SVG Icons on Angular: Fast, Lossless, and Independent",
+    "url": "https://homeville.tech/deploying-svg-icons-on-angular-fast-lossless-and-independent-7f55bdfc4c39",
+    "desc": "Icons are an integral part of the user interface on any website, app, or even road signs. But when it comes to Angular, there are a million ways a developer can implement them. One could save the icon file in the server directory and call it when needed, fetch it from a third-party service like Font Awesome, or create a class within a master file to call it conveniently when needed.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-30",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Shivam Vahia",
+    "aUrl": "https://medium.com/@ShivamVahia",
+    "spkrs": [
+      "Shivam Vahia"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-D?alt=media&token=4a163fa9-e9f0-4528-a7b7-edd503c516a3"
+  },
+  {
+    "slug": "2022-08-30-C",
+    "type": "blog",
+    "title": "InDepth Guide for Creating Nested and Reusable Forms",
+    "url": "https://blog.shhdharmen.me/indepth-guide-for-creating-nested-and-reusable-forms",
+    "desc": "In this tutorial you will learn how to create and use form-groups. And we will also learn how to achieve complete reusability.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-29",
+    "srcSite": "Hashnode",
+    "srcUrl": "https://hashnode.com",
+    "aName": "Dharmen Shah",
+    "aUrl": "https://hashnode.com/@shhdharmen",
+    "spkrs": [
+      "Dharmen Shah"
+    ],
+    "tags": [
+      "Forms",
+      "FormGroup"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-C?alt=media&token=f482e724-bde7-46e2-827c-a1da84614fec"
+  },
+  {
+    "slug": "2022-08-30-B",
+    "type": "blog",
+    "title": "How to publish an angular library to NPM",
+    "url": "https://medium.com/@armen_stepanyan/how-to-publish-an-angular-library-to-npm-ec3a50244434",
+    "desc": "With Angular 6+ it's very easy to generate and publish package in NPM. In this example we will create and publish star rating component.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-29",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Armen Stepanyan",
+    "aUrl": "https://medium.com/@armen_stepanyan",
+    "spkrs": [
+      "Armen Stepanyan"
+    ],
+    "tags": [
+      "Libraries",
+      "NPM"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-B?alt=media&token=7a08384d-2c38-4889-abf0-61e73e471aef"
+  },
+  {
+    "slug": "2022-08-30-A",
+    "type": "blog",
+    "title": "Automate migrations with Nx schematics",
+    "url": "https://medium.com/hibob-engineering/automate-migrations-with-nx-schematics-863bd511993",
+    "desc": "In a world where client technologies keep changing and moving forward, we want an easy way to maintain and keep our projects up-to-date. That is exactly what custom CLI gives us: a convenient way to do repetitive tasks like migrations or adding new parts to our project that can be automated.",
+    "dAdd": "2022-08-30",
+    "dSrc": "2022-08-29",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "Ofir Sayag",
+    "aUrl": "https://medium.com/@ofir.sayag",
+    "spkrs": [
+      "Ofir Sayag"
+    ],
+    "tags": [
+      "Nx",
+      "Schematics"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F999%2F2022-08-30-A?alt=media&token=b5536a0c-dc76-4742-bb28-66df2affdd41"
+  },
+  {
     "slug": "2022-08-29-J",
     "type": "video",
     "dur": "10",
