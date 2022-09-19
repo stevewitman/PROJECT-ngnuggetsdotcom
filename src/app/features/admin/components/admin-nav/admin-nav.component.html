@@ -1,0 +1,18 @@
+<mat-toolbar class="admin-toolbar">
+  <button mat-button routerLink="dashboard" routerLinkActive="link-active-admin">Dashboard</button>
+  <button mat-button routerLinkActive="link-active-admin" [matMenuTriggerFor]="posts">Posts</button>
+  <button mat-button routerLinkActive="link-active-admin" [matMenuTriggerFor]="manual">Manual</button>
+
+  <!-- % POSTS SUBMENU -->
+  <mat-menu #posts="matMenu">
+    <button mat-menu-item routerLink="posts/add">Add Post</button>
+  </mat-menu>
+
+  <!-- ? MANUAL SUBMENU -->
+  <mat-menu #manual="matMenu">
+    <button mat-menu-item routerLink="manual/reverse-json">Reverse JSON</button>
+    <button mat-menu-item routerLink="manual/upload-post-thumbs">Upload Images</button>
+    <button mat-menu-item routerLink="manual/upload-week-json">Upload JSON</button>
+  </mat-menu>
+</mat-toolbar>
+    

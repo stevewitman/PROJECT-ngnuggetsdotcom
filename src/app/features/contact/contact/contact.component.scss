@@ -1,19 +1,31 @@
- a:link {
-   text-decoration: none;
- }
- 
- ul {
-   list-style-type: none;
-   padding: 0;
- }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
 
- li {
-   margin: 0 0 12px 0;
-   font-size: larger;
- }
- 
- .title {
+/* mouse over link */
+a:hover {
+  color: var(--color-turquoise500);
+}
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  margin: 0 0 12px 0;
+  font-size: larger;
+}
+
+.title {
+  width: 90px;
+}
+.title-long {
+  width: 260px;
 }
 
 .subtitle {

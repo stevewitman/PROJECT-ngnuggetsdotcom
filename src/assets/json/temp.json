@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "2022-09-18-A",
+    "type": "blog",
+    "title": "Angular: How could you use Concat RxJS operator to get the results of all inner observables at the same time",
+    "url": "https://ramya-bala221190.medium.com/angular-how-could-you-use-concat-rxjs-operator-to-get-the-results-of-all-inner-observables-at-the-d96699bd995e",
+    "desc": "I had a scenario in my work project, where I required the results of all inner observables inside the concat operator at the same time, similar to forkJoin operator.",
+    "dAdd": "2022-09-18",
+    "dSrc": "2022-09-17",
+    "srcSite": "Medium",
+    "srcUrl": "https://medium.com",
+    "aName": "AngularEnthusiast",
+    "aUrl": "https://ramya-bala221190.medium.com",
+    "spkrs": [],
+    "tags": [
+      "RxJS",
+      "concat()"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F038%2F2022-09-18-A?alt=media&token=8738aeb0-71e1-4071-9661-77b20c3ab8b4"
+  },
+  {
+    "slug": "2022-09-18-B",
+    "type": "blog",
+    "title": "Angular - Logout when Token is expired",
+    "url": "https://dev.to/tienbku/angular-logout-when-token-is-expired-4151",
+    "desc": "In this Angular 14 tutorial, I will show you how to logout when JWT Token is expired. You also know two approaches to checking if JWT token is expired or not in Angular.",
+    "dAdd": "2022-09-18",
+    "dSrc": "2022-09-18",
+    "srcSite": "DEV Community",
+    "srcUrl": "https://dev.to",
+    "aName": "Tien Nguyen",
+    "aUrl": "https://dev.to/tienbku",
+    "spkrs": [
+      "Tien Nguyen"
+    ],
+    "tags": [
+      "JWT"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F038%2F2022-09-18-B?alt=media&token=3a7add94-d64e-467f-859b-719f2c3b25d6"
+  },
+  {
+    "slug": "2022-09-18-C",
+    "type": "video",
+    "dur": "116",
+    "title": "Angular Community Meetup | August 23rd, 2022 | ng-conf Speaker Panel & InnoVint",
+    "url": "https://www.youtube.com/watch?v=fMAbFKG-qKQ",
+    "desc": "PART 1:\nA discussion panel with speakers from ng-conf 2022, where expert Angular developers share insights, advice, humor, & honest opinions on how to navigate the ups and downs of being a software engineer.  Panelists included Deborah Kurata, Erik Slack, Kate Sky, Craig Spence, Alisa Duncan, Preston Lamb, & Jordan Powell.\n\nPART 2:\nDan Strengier & Valentin Funk | InnoVint. Talk: Replacing a native iOS app with an Angular PWA- A case study and technical overview",
+    "dAdd": "2022-09-18",
+    "dSrc": "2022-09-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "Angular Community Meetup",
+    "aUrl": "https://www.youtube.com/channel/UCvzHWtPcYjtEKe3CUU9JLtQ/videos",
+    "spkrs": [
+      "Deborah Kurata",
+      "Jordan Powell",
+      "Alisa Duncan",
+      "Preston Lamb",
+      "Brooke Avery",
+      "Erik Slack",
+      "Kate Sky",
+      "Craig Spence",
+      "Dan Strengier",
+      "Valentin Funk"
+    ],
+    "tags": [],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F038%2F2022-09-18-C?alt=media&token=9e737791-6f77-44d2-8ed4-27bb529328ae"
+  },
+  {
+    "slug": "2022-09-18-D",
+    "type": "video",
+    "dur": "4",
+    "title": "Validation in Reactive Forms in Angular | Angular Tutorial",
+    "url": "https://www.youtube.com/watch?v=eF8CX1MD0hA",
+    "desc": "",
+    "dAdd": "2022-09-18",
+    "dSrc": "2022-09-18",
+    "srcSite": "YouTube",
+    "srcUrl": "https://youtube.com",
+    "aName": "WebGentle",
+    "aUrl": "https://www.youtube.com/c/WebGentle/videos",
+    "spkrs": [
+      "Nitish Kumar"
+    ],
+    "tags": [
+      "Forms",
+      "Reactive Forms",
+      "Validation"
+    ],
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F038%2F2022-09-18-D?alt=media&token=16b7d78b-d355-4082-9296-b8e236950c33"
+  }
+]

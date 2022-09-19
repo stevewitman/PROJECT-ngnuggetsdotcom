@@ -13,6 +13,10 @@
   }
 }
 
+.admin-indicator {
+  background: var(--color-orange300);
+}
+
 .toolbar-middle {
   display: flex;
   width: 100%;
@@ -30,9 +34,21 @@
   padding: 0 8px 2px 8px;
 }
 
+.logo-home-button-admin {
+  background-color: var(--color-orange300);
+}
+
 .logo-image {
   margin: 0 5px;
   height: 26px;
+}
+
+.ngnuggets-image {
+  height: 31px;
+  width: auto;
+  @media screen and (max-width: 599px) {
+    height: 28px;
+  }
 }
 
 .logo-text {
@@ -45,4 +61,8 @@
 
 .logo-text-orange {
   color: #FF7F00;
+}
+
+.search-button {
+  color: var(--color-gray-F);
 }

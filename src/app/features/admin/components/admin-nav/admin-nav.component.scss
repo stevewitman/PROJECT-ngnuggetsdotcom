@@ -1,0 +1,17 @@
+.admin-toolbar {
+  position: fixed;
+    top: 56px;
+  background-color: var(--color-orange400);
+  color: white;
+  padding: 0 7px;
+  height: 36px;
+}
+
+.link-active-admin {
+  color: var(--color-primary);
+}
+
+button.mat-menu-item {
+  height: 36px;
+  line-height: 36px;
+}

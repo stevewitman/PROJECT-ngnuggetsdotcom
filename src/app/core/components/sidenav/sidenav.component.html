@@ -8,6 +8,18 @@
     >
     <mat-nav-list>
       <a
+        *ngIf="isAdmin$ | async"
+        class="mat-list-item"
+        mat-list-item
+        (click)="isHandset && drawer.close()"
+        routerLinkActive="link-active"
+        [routerLink]="['/admin']"
+        >
+        <mat-icon class="list-item-icon">lock</mat-icon>
+        <span class="list-item-text">Admin</span></a
+      >
+      <hr *ngIf="isAdmin$ | async" />
+      <a
         mat-list-item
         [routerLink]="['/posts']"
         (click)="isHandset && drawer.close()"
@@ -114,7 +126,7 @@
     <div
       class="page-container"
       [ngClass]="{ 'page-container-handset': isHandset }"
-      [@routeAnimations]="prepareRoute(outlet)"
+      [@routeAnimations]
     >
       <router-outlet #outlet="outlet"></router-outlet>
     </div>

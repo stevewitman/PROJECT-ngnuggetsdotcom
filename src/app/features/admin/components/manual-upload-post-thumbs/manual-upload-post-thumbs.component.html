@@ -6,10 +6,10 @@
   <li>Allows admin to select thumb to upload for each post</li>
   <li>Image is uploaded to storage thumbs/'week' and Image Url with token is returned</li>
   <li>Output at bottom of page is updated with new "imgUrl"</li>
-  <li>Note: Firestore is not directly updated by this utility, copy/paste only</li>
+  <li>Note: json in Firestore is not directly updated by this utility, copy/paste only</li>
   <li class="error">REMOVE JSON FROM ASSETS WHEN FINISHED</li>
 </ol>
-<h2>assets/json/{{ week }}.json - <span *ngIf="posts">{{posts.length}}</span> posts</h2>
+<h2>Reads from temp.json and uploads to Firebase Storage: assets/json/{{ week }}.json - <span *ngIf="posts">{{posts.length}}</span> posts</h2>
 <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 <div *ngFor="let post of posts; let i = index">
   <div>

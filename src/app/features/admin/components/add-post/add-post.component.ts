@@ -107,10 +107,6 @@ export class AddPostComponent implements OnInit, OnDestroy {
         tag ? this._tagFilter(tag) : this.allTags.slice()
       )
     );
-    console.log(
-      'WEEK',
-      this.utils.getWeekNumberFromDateRange('2022-01-01', '2022-08-20')
-    );
   }
 
   ngOnDestroy() {

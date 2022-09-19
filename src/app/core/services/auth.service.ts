@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Firestore, doc, setDoc } from '@angular/fire/firestore';
-import { Observable, of } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
 
 import {
   Auth,
@@ -21,7 +22,8 @@ export class AuthService {
 
   constructor(
     private auth: Auth,
-    private firestore: Firestore
+    private firestore: Firestore,
+    private router: Router
   ) {
     this.userAuthState$ = authState(this.auth);
   }
@@ -30,25 +32,38 @@ export class AuthService {
     return this.userAuthState$;
   }
 
+  get isAdmin(): Observable<boolean> {
+    return this.userAuthState$.pipe(
+      map((user) => {
+        if (user?.email === 'stevewitman@gmail.com') {
+          return true;
+        } else {
+          return false;
+        }
+      })
+    );
+  }
+
   async signInWithGoogle() {
     const googleAuthProvider = new GoogleAuthProvider();
     const googleAuth = getAuth();
     await signInWithPopup(googleAuth, googleAuthProvider)
       .then((result) => {
         console.log('Signed in successfully');
-        return this.updateUserData(result.user);
+        this.updateUserData(result.user);
+        return this.router.navigate(['/admin']);
       })
       .catch((error) => {
         console.log('ERROR while signing in:', error);
       });
   }
 
-  async updateUserData(user: User) { 
+  async updateUserData(user: User) {
     const data = {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
-      photoUrl: user.photoURL
+      photoUrl: user.photoURL,
     };
     const userRef = doc(this.firestore, `users/${user.uid}`);
     return await setDoc(userRef, data, { merge: true });

@@ -10,7 +10,7 @@ export class ManualReverseJsonComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
 
-  week = '035';
+  week = 'temp';
   posts: any;
   postsReversed: any;
   error = false;
@@ -25,12 +25,11 @@ export class ManualReverseJsonComponent implements OnInit {
       (val) => {
         this.posts = val;
         this.posts.reverse();
-        console.log(this.posts);
-
+        // console.log(this.posts);
       },
       (err) => {
         this.errorMessage = err.message;
-        console.log(err);
+        // console.log(err);
       }
     );
   }

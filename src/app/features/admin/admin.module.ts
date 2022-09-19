@@ -9,7 +9,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AdminRoutingModule } from './admin-routing.module';
@@ -20,6 +22,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { ManualReverseJsonComponent } from './components/manual-reverse-json/manual-reverse-json.component';
 import { ManualUploadPostThumbsComponent } from './components/manual-upload-post-thumbs/manual-upload-post-thumbs.component';
 import { ManualUploadWeekJsonComponent } from './components/manual-upload-week-json/manual-upload-week-json.component';
+import { AdminNavComponent } from './components/admin-nav/admin-nav.component';
+import { AdminShellComponent } from './components/admin-shell/admin-shell.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,8 @@ import { ManualUploadWeekJsonComponent } from './components/manual-upload-week-j
     ManualUploadPostThumbsComponent,
     ManualReverseJsonComponent,
     ManualUploadWeekJsonComponent,
+    AdminNavComponent,
+    AdminShellComponent,
   ],
   imports: [
     CommonModule,
@@ -40,9 +46,11 @@ import { ManualUploadWeekJsonComponent } from './components/manual-upload-week-j
     MatChipsModule,
     MatDividerModule,
     MatIconModule,
+    MatMenuModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatToolbarModule,
     MatTooltipModule,
   ],
 })

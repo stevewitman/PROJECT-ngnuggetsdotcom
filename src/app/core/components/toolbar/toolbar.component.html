@@ -1,4 +1,4 @@
-<mat-toolbar class="toolbar-main">
+<mat-toolbar class="toolbar-main" [ngClass]="{ 'admin-indicator': (isAdmin$ | async)}">
   <!-- ***** SIDENAV TOGGLE BUTTON ***** -->
   <button
     mat-icon-button
@@ -15,69 +15,18 @@
 
   <!-- ***** LOGO ***** -->
   <div class="toolbar-middle">
-    <button mat-flat-button class="logo-home-button" [routerLink]="['/']">
-      <!-- <img src="./assets/images/ngnuggets-transparent.png" class="logo-image"> -->
-      <!-- <span class="logo-text">ng<span class="logo-text-orange">Nuggets</span></span>  -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="148"
-        height="27"
-        viewBox="0 0 1477 270"
-      >
-        <defs>
-          <clipPath id="clip-Web_1920_112">
-            <rect width="1477" height="270" />
-          </clipPath>
-        </defs>
-        <g
-          id="Web_1920_112"
-          data-name="Web 1920 – 112"
-          clip-path="url(#clip-Web_1920_112)"
-        >
-          <path
-            id="Path_57"
-            data-name="Path 57"
-            d="M-4034.5-8222.04l28.074-54.913,73.535,18.1,21.391,51.567-32.138,44.446-76.638-.178Z"
-            transform="translate(4053.537 8387.298)"
-            fill="none"
-            stroke="#ff7f00"
-            stroke-width="18"
-          />
-          <path
-            id="Path_58"
-            data-name="Path 58"
-            d="M-4034.5-8234.54l21.683-42.412,56.8,13.981,16.521,39.828-24.822,34.329-59.192-.137Z"
-            transform="translate(-8904.843 717.171) rotate(112.5)"
-            fill="none"
-            stroke="#ff7f00"
-            stroke-width="18"
-          />
-          <path
-            id="Path_59"
-            data-name="Path 59"
-            d="M-4034.5-8242.576l17.575-34.376,46.034,11.332,13.391,32.282-20.119,27.824-47.977-.111Z"
-            transform="matrix(0.122, 0.993, -0.993, 0.122, -7524.599, 5041.026)"
-            fill="none"
-            stroke="#ff7f00"
-            stroke-width="18"
-          />
-          <text
-            id="ngNuggets"
-            transform="translate(349 201)"
-            fill="#fff"
-            font-size="264"
-            font-family="RobotoCondensed-Light, Roboto Condensed"
-            font-weight="300"
-          >
-            <tspan x="0" y="0">ng</tspan>
-            <tspan y="0" fill="#ff7f00">Nuggets</tspan>
-          </text>
-        </g>
-      </svg>
+    <button mat-flat-button class="logo-home-button" [ngClass]="{ 'logo-home-button-admin': (isAdmin$ | async)}" [routerLink]="['/']">
+      <img src="./assets/images/ngnuggets.png" class="ngnuggets-image" />
     </button>
   </div>
 
   <!-- ***** AUTH STATUS ***** -->
+  <!-- <div class="search-button">
+    <button
+      mat-stroked-button
+    >
+      <mat-icon>search</mat-icon>
+    </button>
+  </div> -->
   <app-auth></app-auth>
 </mat-toolbar>

@@ -19,16 +19,17 @@ export class ManualUploadPostThumbsComponent implements OnInit {
 
   constructor(private http: HttpClient, private storage: Storage) {}
 
-  week = '999';
+  week = '038';
   posts: any;
   error = false;
   errorMessage = '';  
 
   ngOnInit(): void {
-    this.getPostsFromJson(this.week);
+    this.getPostsFromJson('temp');
   }
 
   getPostsFromJson(week: string) {
+    console.log(`Getting posts from assets/json/${week}.json`);
     this.http.get(`assets/json/${week}.json`).subscribe(
       (val) => {
         this.posts = val;
@@ -42,6 +43,8 @@ export class ManualUploadPostThumbsComponent implements OnInit {
   }
 
   uploadImage(event: any, index: number) {
+    console.log(`Uploading image to thumbs/${this.week}/${this.posts[index].slug}`);
+
     this.error = false;
     let stripedFileName = event.target.files[0].name.replace('.jpg', '');
     if (stripedFileName === this.posts[index].slug) {

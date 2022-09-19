@@ -1,25 +1,29 @@
-<div class="page-container-wide">
-  <h1 class="page-title">Daily, Hastily-Curated ANGULAR News, Blogs, Videos and more</h1>
-  <h3 class="subtitle">Learn something new, reinforce what you already know, discover new content creators, and monitor the pulse of the Angular community</h3>
-
+<div class="page-container-wide" [@routeAnimations]>
+  <h1 class="page-title">
+    Daily, Hastily-Curated ANGULAR News, Blogs, Videos and more
+  </h1>
   <ng-container *ngIf="postsByDay$; else loading">
     <div *ngFor="let dayGroup of postsByDay$ | async" class="daily-section">
       <div class="divider-line">
         <span class="divider-text">{{ dayGroup.date }}</span>
       </div>
       <ng-container *ngIf="dayGroup; else loading">
-      <div class="flex-container">
-        <div *ngFor="let post of dayGroup.dailyPosts">
-          <app-post-card
-            [post]="post"
-          ></app-post-card>
+        <div class="flex-container">
+          <div *ngFor="let post of dayGroup.dailyPosts">
+            <app-post-card [post]="post"></app-post-card>
+          </div>
         </div>
-      </div>
       </ng-container>
     </div>
     <div class="actions">
-      <button [disabled]="disableLoadButton$ | async" mat-raised-button class="load-week" (click)="loadAnotherWeek()">Load Another Week</button>
-
+      <button
+        [disabled]="disableLoadButton$ | async"
+        mat-raised-button
+        class="load-week"
+        (click)="loadAnotherWeek()"
+      >
+        Load Another Week
+      </button>
     </div>
   </ng-container>
 

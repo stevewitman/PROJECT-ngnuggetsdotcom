@@ -1,22 +1,47 @@
-import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { Component, OnInit, OnDestroy, ViewChild, Input } from '@angular/core';
+import { ChildrenOutletContexts, NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import {
+  animate,
+  animateChild,
+  group,
+  query,
+  stagger,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
-import { Observable, Subscription } from 'rxjs';
+import { Observable, of, Subscription } from 'rxjs';
 import { MatSidenav } from '@angular/material/sidenav';
 
 import { BreakpointService } from '../../services/breakpoint.service';
-import { Animations } from '../../../shared/animations'
+import { Animations } from '../../../shared/animations';
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
-  animations: [
-    Animations.staggerList,
-    Animations.routeAnimation
-  ],
+  animations: [Animations.routeAnimations],
+  // animations: [
+  //   trigger('fadeInOut', [
+  //     state(
+  //       'void',
+  //       style({
+  //         opacity: 0,
+  //       })
+  //     ),
+  //     transition('void <=> *', animate(3000)),
+  //   ]),
+  // ],
+  // animations: [
+  //   trigger('routeAnimations', [
+  //     transition('* <=> *', [style({ opacity: 0 }), animate('1400ms ease-in')]),
+  //   ]),
+  // ],
 })
 export class SidenavComponent implements OnInit, OnDestroy {
+  @Input() isAdmin$ = of(false);
   @ViewChild('drawer') drawerRef!: MatSidenav;
 
   isHandset: boolean | undefined;
@@ -27,7 +52,8 @@ export class SidenavComponent implements OnInit, OnDestroy {
 
   constructor(
     public breakpointService: BreakpointService,
-    private router: Router
+    private router: Router,
+    private contexts: ChildrenOutletContexts
   ) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd && location.pathname == '/') {
@@ -40,22 +66,20 @@ export class SidenavComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.isHandset$$ = this.breakpointService.isHandset$?.subscribe(val => {
+    this.isHandset$$ = this.breakpointService.isHandset$?.subscribe((val) => {
       this.isHandset = val;
     });
-    console.log(this.drawerRef);
-    
   }
 
   ngOnDestroy() {
-    this.isHandset$$?.unsubscribe()
+    this.isHandset$$?.unsubscribe();
   }
 
   prepareRoute(outlet: RouterOutlet) {
     return (
       outlet &&
       outlet.activatedRouteData &&
-      outlet.activatedRouteData['position']
+      outlet.activatedRouteData['animation']
     );
   }
 

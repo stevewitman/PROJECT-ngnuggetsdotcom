@@ -12,6 +12,7 @@ export class ManualUploadWeekJsonComponent implements OnInit {
   constructor(private http: HttpClient, private firestore: Firestore) {}
 
   week = '999';
+  // week = '037';
   posts: any;
   errorMessage = '';
   postsFromFirestore: any;
@@ -39,21 +40,21 @@ export class ManualUploadWeekJsonComponent implements OnInit {
 
   overwritePostsByWeek() {
     // Backup existing doc to oldPostsByWeek
-    this.getPostsFromFirestore().pipe(
-      take(1)
-    ).subscribe((res) => {
-      console.log('RES:', res);
-      if (res) {
-        console.log(
-          `week/${this.week} document already exists ... copying to oldPostsByWeek.`
-        );
-        console.log(res);
-        const oldPostsRef = collection(this.firestore, 'oldPostsByWeek');
-        addDoc(oldPostsRef, res);
-      } else {
-        console.log('No existing document exists');
-      }
-    });
+    // this.getPostsFromFirestore().pipe(
+    //   take(1)
+    // ).subscribe((res) => {
+    //   console.log('RES:', res);
+    //   if (res) {
+    //     console.log(
+    //       `week/${this.week} document already exists ... copying to oldPostsByWeek.`
+    //     );
+    //     console.log(res);
+    //     const oldPostsRef = collection(this.firestore, 'oldPostsByWeek');
+    //     addDoc(oldPostsRef, res);
+    //   } else {
+    //     console.log('No existing document exists');
+    //   }
+    // });
 
     // OVERWRITE doc with new data
     console.log('OVERWRITING postsByWeek/' + this.week);

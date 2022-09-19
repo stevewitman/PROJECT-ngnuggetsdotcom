@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '@angular/fire/auth';
+import { Router } from '@angular/router';
+
 import { Observable, of } from 'rxjs';
+import { User } from '@angular/fire/auth';
+
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -13,6 +16,7 @@ export class AuthComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -25,14 +29,14 @@ export class AuthComponent implements OnInit {
       .signInWithGoogle()
       .then((res) => {
         // Sign-in successful.
-        // console.log('AUTH COMPONENT: Signed In With Google !!!');        
+        console.log('AUTH COMPONENT: Signed In With Google');        
       })
       .catch((error) => {
         // An error happened.
-        console.log(
-          // 'AUTH COMPONENT: ERROR occurred while Signing In With Google...'
-        );
-        console.log('AUTH COMPONENT: ERROR message:', error);
+        // console.log(
+        //   'AUTH COMPONENT: ERROR occurred while Signing In With Google...'
+        // );
+        // console.log('AUTH COMPONENT: ERROR message:', error);
       });
   }
 
@@ -40,15 +44,16 @@ export class AuthComponent implements OnInit {
     this.authService
       .signOutWithGoogle()
       .then(() => {
+        this.router.navigate([''])
         // Sign-out successful.
-        // console.log('AUTH COMPONENT: Signed Out With Google');
+        console.log('AUTH COMPONENT: Signed Out With Google');
       })
       .catch((error) => {
         // An error happened.
-        console.log(
-          // 'AUTH COMPONENT: ERROR occurred while Signing Out With Google...'
-        );
-        console.log('AUTH COMPONENT: ERROR message:', error);
+        // console.log(
+        //   'AUTH COMPONENT: ERROR occurred while Signing Out With Google'
+        // );
+        // console.log('AUTH COMPONENT: ERROR message:', error);
       });
   }
 }

@@ -1,2 +1,2 @@
-<app-toolbar [drawerOpen]="sidenav.drawerRef?.opened" (toggleDrawer)="sidenav.drawerRef.toggle()"></app-toolbar>
-<app-sidenav #sidenav></app-sidenav>
+<app-toolbar [drawerOpen]="sidenav.drawerRef?.opened" [isAdmin$]="isAdmin$" (toggleDrawer)="sidenav.drawerRef.toggle()"></app-toolbar>
+<app-sidenav #sidenav [isAdmin$]="isAdmin$"></app-sidenav>
