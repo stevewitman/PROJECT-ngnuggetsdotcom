@@ -24,7 +24,7 @@ export class PostsService {
   postsLoadedByDayArray: DailyPost[] = [];
   private posts$ = new BehaviorSubject<Post[]>([]);
   private postsByDay$ = new BehaviorSubject<DailyPost[]>([]);
-  private disableLoadButton$ = new BehaviorSubject<boolean>(false);
+  private isLoadingPosts$ = new BehaviorSubject<boolean>(false);
 
   constructor(
     private firestore: Firestore,
@@ -39,36 +39,37 @@ export class PostsService {
     return this.postsByDay$;
   }
 
-  getdisableLoadButton(): Observable<boolean> {
-    return this.disableLoadButton$;
+  getIsLoadingPosts(): Observable<boolean> {
+    return this.isLoadingPosts$;
   }
 
   loadPosts(): void {
-    this.disableLoadButton$.next(true);
+    this.isLoadingPosts$.next(true);
     if (this.nextWeekToLoad === 999) {
+      console.log('Loading current week');
       this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
         this.postsLoadedArray = data;
         this.posts$.next(this.postsLoadedArray);
         this.groupPostsByDay(this.postsLoadedArray);
         this.postsByDay$.next(this.postsLoadedByDayArray);
         this.nextWeekToLoad =
-          this.utilsService.getWeekNumberFromDateRange(
-            '2022-01-01',
-            data[0].dAdd
-          ) - 1;
-
-        this.disableLoadButton$.next(false);
+        this.utilsService.getWeekNumberFromDateRange('2022-01-01', data[0].dAdd) - 1;
+        this.isLoadingPosts$.next(false);
       });
     } else if (this.nextWeekToLoad > 0) {
+      console.log('Loading week', this.nextWeekToLoad);
       this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
         this.postsLoadedArray.push(...data);
         this.posts$.next(this.postsLoadedArray);
         this.groupPostsByDay(this.postsLoadedArray);
         this.postsByDay$.next(this.postsLoadedByDayArray);
         this.nextWeekToLoad = this.nextWeekToLoad - 1;
-        this.disableLoadButton$.next(false);
-        return this.posts$;
+        this.isLoadingPosts$.next(false);
+        // return this.posts$;
       });
+    } else {
+      console.log('No more posts.');
+      this.isLoadingPosts$.next(false);
     }
   }
 
@@ -83,19 +84,21 @@ export class PostsService {
   }
 
   groupPostsByDay(posts: Post[]) {
-    of(posts).pipe(
-      mergeMap((data: any) => from(data)),
-      groupBy((post: any) => post.dAdd),
-      mergeMap((group: any) => zip(of(group.key), group.pipe(toArray()))),
-      map((res: any) => ({
-        date: res[0],
-        dailyPosts: res[1],
-      })),
-      toArray(),
-    ).subscribe(val => {
-      this.postsLoadedByDayArray = val
-      this.postsByDay$.next(this.postsLoadedByDayArray);
-    });
+    of(posts)
+      .pipe(
+        mergeMap((data: any) => from(data)),
+        groupBy((post: any) => post.dAdd),
+        mergeMap((group: any) => zip(of(group.key), group.pipe(toArray()))),
+        map((res: any) => ({
+          date: res[0],
+          dailyPosts: res[1],
+        })),
+        toArray()
+      )
+      .subscribe((val) => {
+        this.postsLoadedByDayArray = val;
+        this.postsByDay$.next(this.postsLoadedByDayArray);
+      });
   }
 
   groupBy(arrayObjects: any[], key: string | number) {

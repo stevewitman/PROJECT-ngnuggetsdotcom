@@ -1,325 +1,396 @@
-<div class="form-preview-container">
-  <div class="form-column">
-    <form [formGroup]="postForm">
-      <!-- ROW ONE -->
-      <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>URL</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="url"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-      </div>
-      <!-- ROW TWO -->
-      <div class="form-row">
-        <mat-form-field appearance="fill">
-          <mat-label>Slug</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="slug"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Date Posted</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="dAdd"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Date of Source</mat-label>
-          <div class="field-with-buttons">
+<div class="add-form-page">
+  <div class="form-preview-container">
+    <div class="form-column">
+      <form [formGroup]="postForm">
+        <!-- ROW ONE -->
+        <div class="form-row">
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>URL</mat-label>
             <input
               type="text"
               class="admin-form-input-text"
-              formControlName="dSrc"
+              formControlName="url"
               matInput
               autocomplete="off"
             />
-            <mat-icon class="offset-buttons" (click)="adjSrcDate(-1)"
-              >arrow_left</mat-icon
-            >
-            <mat-icon
-              class="offset-buttons"
-              [class.inc-disabled]="srcDateOffset >= 0"
-              (click)="adjSrcDate(1)"
-              >arrow_right</mat-icon
-            >
-          </div>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Type</mat-label>
-          <mat-select formControlName="type" class="admin-form-input-text">
-            <mat-option
-              *ngFor="let type of constants.postTypes"
-              [value]="type.value"
-            >
-              {{ type.value | uppercase }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Duration</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="dur"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-      </div>
-
-      <!-- ROW THREE -->
-      <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Title</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="title"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-      </div>
-
-      <!-- ROW FOUR -->
-      <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Description</mat-label>
-          <textarea
-            type="text"
-            class="admin-form-textarea-text"
-            formControlName="desc"
-            matInput
-            autocomplete="off"
-            cdkTextareaAutosize
-            #autosize="cdkTextareaAutosize"
-          ></textarea>
-        </mat-form-field>
-      </div>
-
-      <!-- ROW FIVE -->
-      <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Source Site</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="srcSite"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Source URL</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="srcUrl"
-            matInput
-            id="sourceUrl"
-            #sourceUrl
-            autocomplete="off"
-          />
-        </mat-form-field>
-      </div>
-
-      <!-- ROW SIX -->
-      <div class="form-row">
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Author Name</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="aName"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-        <mat-form-field
-          appearance="fill"
-          class="form-field-full"
-        >
-          <mat-label>Author URL</mat-label>
-          <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="aUrl"
-            matInput
-            autocomplete="off"
-          />
-        </mat-form-field>
-      </div>
-
-      <!-- ROW SEVEN -->
-      <div class="form-row">
-        <mat-form-field appearance="fill">
-          <mat-label>Speakers</mat-label>
-          <mat-chip-list #speakerChipList>
-            <mat-chip *ngFor="let speaker of speakerChips" (removed)="removeSpeaker(speaker)">
-              {{ speaker }}
-              <button matChipRemove>
-                <mat-icon>cancel</mat-icon>
-              </button>
-            </mat-chip>
+          </mat-form-field>
+        </div>
+        <!-- ROW TWO -->
+        <div class="form-row">
+          <mat-form-field appearance="fill">
+            <mat-label>Slug</mat-label>
             <input
+              type="text"
               class="admin-form-input-text"
-              [matChipInputFor]="speakerChipList"
-              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-              [matChipInputAddOnBlur]="addSpeakerOnBlur"
-              (matChipInputTokenEnd)="addSpeaker($event)"
+              formControlName="slug"
+              matInput
               autocomplete="off"
             />
-          </mat-chip-list>
-        </mat-form-field>
-        <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="spkrs"
-            matInput
-            autocomplete="off"
-            hidden
-          />
-      </div>
-
-      <!-- ROW EIGHT -->
-      <div class="form-row">
-        <mat-form-field appearance="fill">
-          <mat-label>Tags</mat-label>
-          <mat-chip-list #tagChipList>
-            <mat-chip *ngFor="let tag of selectedTags" (removed)="removeTag(tag)">
-              {{ tag }}
-              <button matChipRemove>
-                <mat-icon>cancel</mat-icon>
-              </button>
-            </mat-chip>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Date Posted</mat-label>
             <input
-              #tagInput
+              type="text"
               class="admin-form-input-text"
-              [formControl]="tagsCtrl"
-              [matAutocomplete]="tagAuto"
-              [matChipInputFor]="tagChipList"
-              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-              (matChipInputTokenEnd)="addTag($event)"
+              formControlName="dAdd"
+              matInput
               autocomplete="off"
             />
-          </mat-chip-list>
-          <mat-autocomplete #tagAuto="matAutocomplete" (optionSelected)="tagSelected($event)">
-            <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
-              {{tag}}
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field>
-        <input
-            type="text"
-            class="admin-form-input-text"
-            formControlName="tags"
-            matInput
-            autocomplete="off"
-            hidden
-          />
-      </div>
-      <!-- <button mat-raised-button color="primary" (click)="stagePost()">Stage Post</button> -->
-    </form>
-  </div>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Date of Source</mat-label>
+            <div class="field-with-buttons">
+              <input
+                type="text"
+                class="admin-form-input-text"
+                formControlName="dSrc"
+                matInput
+                autocomplete="off"
+              />
+              <mat-icon class="offset-buttons" (click)="adjSrcDate(-1)"
+                >arrow_left</mat-icon
+              >
+              <mat-icon
+                class="offset-buttons"
+                [class.inc-disabled]="srcDateOffset >= 0"
+                (click)="adjSrcDate(1)"
+                >arrow_right</mat-icon
+              >
+            </div>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Type</mat-label>
+            <mat-select formControlName="type" class="admin-form-input-text">
+              <mat-option
+                *ngFor="let type of constants.postTypes"
+                [value]="type.value"
+              >
+                {{ type.value | uppercase }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Duration</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="dur"
+              matInput
+              autocomplete="off"
+            />
+          </mat-form-field>
+        </div>
 
-  <!-- ***** PREVIEW COLUMN ***** -->
-  <div class="preview-column">
-    <div class="card" *ngIf="postForm.value as post">
-      <a [href]="post.url">
-        <div>
-          <img src="assets/images/placeholder.jpg" class="card-image" />
-          <div class="card-part post-title">
-            <h3 class="post-title-text">{{ post.title }}</h3>
+        <!-- ROW THREE -->
+        <div class="form-row">
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Title</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="title"
+              matInput
+              autocomplete="off"
+            />
+          </mat-form-field>
+        </div>
+
+        <!-- ROW FOUR -->
+        <div class="form-row">
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Description</mat-label>
+            <textarea
+              type="text"
+              class="admin-form-textarea-text"
+              formControlName="desc"
+              matInput
+              autocomplete="off"
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+            ></textarea>
+          </mat-form-field>
+        </div>
+
+        <!-- ROW FIVE -->
+        <div class="form-row">
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Source Site</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="srcSite"
+              matInput
+              autocomplete="off"
+            />
+          </mat-form-field>
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Source URL</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="srcUrl"
+              matInput
+              id="sourceUrl"
+              #sourceUrl
+              autocomplete="off"
+            />
+          </mat-form-field>
+        </div>
+
+        <!-- ROW SIX -->
+        <div class="form-row">
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Author Name</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="aName"
+              matInput
+              autocomplete="off"
+            />
+          </mat-form-field>
+          <mat-form-field
+            appearance="fill"
+            class="form-field-full"
+          >
+            <mat-label>Author URL</mat-label>
+            <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="aUrl"
+              matInput
+              autocomplete="off"
+            />
+          </mat-form-field>
+        </div>
+
+        <!-- ROW SEVEN -->
+        <div class="form-row">
+          <mat-form-field appearance="fill">
+            <mat-label>Speakers</mat-label>
+            <mat-chip-list #speakerChipList>
+              <mat-chip *ngFor="let speaker of speakerChips" (removed)="removeSpeaker(speaker)">
+                {{ speaker }}
+                <button matChipRemove>
+                  <mat-icon>cancel</mat-icon>
+                </button>
+              </mat-chip>
+              <input
+                class="admin-form-input-text"
+                [matChipInputFor]="speakerChipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                [matChipInputAddOnBlur]="addSpeakerOnBlur"
+                (matChipInputTokenEnd)="addSpeaker($event)"
+                autocomplete="off"
+              />
+            </mat-chip-list>
+          </mat-form-field>
+          <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="spkrs"
+              matInput
+              autocomplete="off"
+              hidden
+            />
+        </div>
+
+        <!-- ROW EIGHT -->
+        <div class="form-row">
+          <mat-form-field appearance="fill">
+            <mat-label>Tags</mat-label>
+            <mat-chip-list #tagChipList>
+              <mat-chip *ngFor="let tag of selectedTags" (removed)="removeTag(tag)">
+                {{ tag }}
+                <button matChipRemove>
+                  <mat-icon>cancel</mat-icon>
+                </button>
+              </mat-chip>
+              <input
+                #tagInput
+                class="admin-form-input-text"
+                [formControl]="tagsCtrl"
+                [matAutocomplete]="tagAuto"
+                [matChipInputFor]="tagChipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="addTag($event)"
+                autocomplete="off"
+              />
+            </mat-chip-list>
+            <mat-autocomplete #tagAuto="matAutocomplete" (optionSelected)="tagSelected($event)">
+              <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
+                {{tag}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+          <input
+              type="text"
+              class="admin-form-input-text"
+              formControlName="tags"
+              matInput
+              autocomplete="off"
+              hidden
+            />
+        </div>
+        <!-- <button mat-raised-button color="primary" (click)="stagePost()">Stage Post</button> -->
+      </form>
+    </div>
+
+    <!-- ***** PREVIEW COLUMN ***** -->
+    <div class="preview-column">
+      <div class="card" *ngIf="postForm.value as post">
+        <a [href]="post.url">
+          <div>
+            <img src="assets/images/placeholder.jpg" class="card-image" />
+            <div class="card-part post-title">
+              <h3 class="post-title-text">{{ post.title }}</h3>
+            </div>
+          </div>
+        </a>
+        <div class="card-part card-row-source">
+          <div class="post-source">
+            <a
+              class="post-source-link"
+              href="{{ post.aUrl }}"
+              target="_blank"
+            >
+              {{ post.aName }}
+            </a>
+            <span *ngIf="post.aName && post.srcSite"
+              >&nbsp;&nbsp;|&nbsp;&nbsp;</span
+            >
+            <a
+              class="post-source-link"
+              href="{{ post.srcUrl }}"
+              target="_blank"
+            >
+              {{ post.srcSite }}
+            </a>
           </div>
         </div>
-      </a>
-      <div class="card-part card-row-source">
-        <div class="post-source">
-          <a
-            class="post-source-link"
-            href="{{ post.aUrl }}"
-            target="_blank"
-          >
-            {{ post.aName }}
-          </a>
-          <span *ngIf="post.aName && post.srcSite"
-            >&nbsp;&nbsp;|&nbsp;&nbsp;</span
-          >
-          <a
-            class="post-source-link"
-            href="{{ post.srcUrl }}"
-            target="_blank"
-          >
-            {{ post.srcSite }}
-          </a>
+
+        <div class="card-part card-row-bottom">
+          <div class="content-type">
+            <span
+              *ngIf="post.type === 'video'"
+              class="material-icons content-type-icon video-icon"
+              >smart_display</span
+            >
+            <span
+              *ngIf="post.type === 'blog'"
+              class="material-icons content-type-icon blog-icon"
+              >article</span
+            >
+            <span
+              *ngIf="post.type === 'podcast'"
+              class="material-icons content-type-icon podcast-icon"
+              >podcasts</span
+            >
+            <span
+              *ngIf="post.type === 'release'"
+              class="material-icons content-type-icon release-icon"
+              >sell</span
+            >
+            <span>
+              {{ post.type | uppercase }}
+              <span *ngIf="post.dur"> - {{ post.dur }}m</span>
+            </span>
+          </div>
         </div>
       </div>
-
-      <div class="card-part card-row-bottom">
-        <div class="content-type">
-          <span
-            *ngIf="post.type === 'video'"
-            class="material-icons content-type-icon video-icon"
-            >smart_display</span
-          >
-          <span
-            *ngIf="post.type === 'blog'"
-            class="material-icons content-type-icon blog-icon"
-            >article</span
-          >
-          <span
-            *ngIf="post.type === 'podcast'"
-            class="material-icons content-type-icon podcast-icon"
-            >podcasts</span
-          >
-          <span
-            *ngIf="post.type === 'release'"
-            class="material-icons content-type-icon release-icon"
-            >sell</span
-          >
-          <span>
-            {{ post.type | uppercase }}
-            <span *ngIf="post.dur"> - {{ post.dur }}m</span>
-          </span>
+      <hr>
+      <!-- SECONDARY PREVIEW -->
+      <div class="card card-secondary" *ngIf="postForm.value as post">
+        <a [href]="post.url">
+          <div>
+            <img src="assets/images/placeholder.jpg" class="card-image" />
+            <div class="card-part post-title">
+              <h3 class="post-title-text">{{ post.title }}</h3>
+            </div>
+          </div>
+        </a>
+        <div class="card-part card-row-source">
+          <div class="post-source">
+            <a
+              class="post-source-link"
+              href="{{ post.aUrl }}"
+              target="_blank"
+            >
+              {{ post.aName }}
+            </a>
+            <span *ngIf="post.aName && post.srcSite"
+              >&nbsp;&nbsp;|&nbsp;&nbsp;</span
+            >
+            <a
+              class="post-source-link"
+              href="{{ post.srcUrl }}"
+              target="_blank"
+            >
+              {{ post.srcSite }}
+            </a>
+          </div>
         </div>
+
+        <div class="card-part card-row-bottom">
+          <div class="content-type">
+            <span
+              *ngIf="post.type === 'video'"
+              class="material-icons content-type-icon video-icon"
+              >smart_display</span
+            >
+            <span
+              *ngIf="post.type === 'blog'"
+              class="material-icons content-type-icon blog-icon"
+              >article</span
+            >
+            <span
+              *ngIf="post.type === 'podcast'"
+              class="material-icons content-type-icon podcast-icon"
+              >podcasts</span
+            >
+            <span
+              *ngIf="post.type === 'release'"
+              class="material-icons content-type-icon release-icon"
+              >sell</span
+            >
+            <span>
+              {{ post.type | uppercase }}
+              <span *ngIf="post.dur"> - {{ post.dur }}m</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="actions">
+        <button mat-raised-button class="btn-cancel">Cancel</button>
+        <button mat-raised-button class="btn-add">Add Post</button>
       </div>
     </div>
-    <mat-divider></mat-divider>
-
-    <!-- <pre>
-{{ postForm.value | json}}
-    </pre> -->
-
   </div>
 </div>
+<h4>Form Values:</h4>
+<pre>
+{{ postForm.value | json}}
+</pre>
+<h4>Today's Posts:</h4>
+<pre>
+{{ todaysPosts$ | async | json }}
+</pre>

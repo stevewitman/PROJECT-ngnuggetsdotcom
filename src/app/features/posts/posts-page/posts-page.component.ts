@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 import { Observable, of, take } from 'rxjs';
 
@@ -12,19 +12,43 @@ import { Animations } from 'src/app/shared/animations';
   styleUrls: ['./posts-page.component.scss'],
   animations: [Animations.routeAnimations],
 })
-export class PostsPageComponent implements OnInit {
-  disableLoadButton$ = of(false);
+export class PostsPageComponent implements OnInit, AfterViewInit {
+  @ViewChildren('loadMorePosts', { read: ElementRef })
+  loadMorePosts!: QueryList<ElementRef>;
+
+  isLoadingPosts$ = of(false);
   postsByDay$: Observable<DailyPost[]> = of([]);
+  observer: any;
+  isLoadingMorePosts = false;
 
   constructor(private postsService: PostsService) {}
 
   ngOnInit(): void {
     this.postsService.loadPosts();
     this.postsByDay$ = this.postsService.getPostsByDay();
-    this.disableLoadButton$ = this.postsService.getdisableLoadButton();
+    this.isLoadingPosts$ = this.postsService.getIsLoadingPosts();
+    this.intersectionObserver();
   }
 
-  loadAnotherWeek() {
-    this.postsService.loadPosts();
+  ngAfterViewInit(): void {
+    this.loadMorePosts.changes.subscribe((d) => {
+      if (d.last) {
+        this.observer.observe(d.last.nativeElement);
+      }
+    });
+  }
+
+  intersectionObserver() {
+    const intersectionObserverOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    this.observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        this.postsService.loadPosts();
+      }
+    });
   }
 }

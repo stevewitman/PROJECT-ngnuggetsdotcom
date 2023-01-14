@@ -21,15 +21,13 @@
   font-size: 14px;
   color: #8F8F8F;
   color: var(--color-orange500);
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   padding: 0 10px;
 }
 
-.spinner-wrapper {
+.loading-spinner {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 400px);
 }
 
 .mat-progress-spinner circle,
@@ -37,23 +35,6 @@
   stroke: var(--color-orange500);
 }
 
-.actions {
-  margin: 12px;
-  width: calc(100% - 24px);
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.load-week {
-  background-color: var(--color-orange500);
-  color: white;
-  width: 100%;
-  max-width: 300px;
-}
-
-.load-year {
-  color: var(--color-turquoise500);
-  width: 100%;
-  max-width: 300px;
+.intersection-and-loading {
+  height: 200px;
 }

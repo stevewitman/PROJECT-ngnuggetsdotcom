@@ -2,6 +2,11 @@ pre {
   white-space: pre-wrap;
 }
 
+hr {
+  margin-top:12px;
+  margin-bottom: 12px;
+}
+
 .admin-form-input-text {
   color: var(--color-turquoise700);
   font-size: 18px;
@@ -60,6 +65,10 @@ a {
     width: 100vw;
     max-width: 100vw !important;
   }
+}
+
+.card-secondary {
+  
 }
 
 .card-row-source {
@@ -179,4 +188,23 @@ a {
 
 .mat-option {
   background-color: var(--color-turquoise100);
+}
+
+.actions {
+  padding-top: 12px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn-cancel {
+  background-color: var(--color-gray-C);
+  color: white;
+  width: 33%;
+  height: 60px;
+}
+
+.btn-add {
+  background-color: var(--color-turquoise500);
+  color: white;
+  width: 67%;
 }

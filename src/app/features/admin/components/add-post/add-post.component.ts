@@ -24,6 +24,7 @@ export interface PostsData {
 })
 export class AddPostComponent implements OnInit, OnDestroy {
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
+  todaysPosts$: Observable<Post[]> = of([]);
   recentPosts$: Observable<Post[]> = of([]);
   SubRecentPosts: Subscription | undefined;
   SubUrlValueChanges: Subscription | undefined;
@@ -94,9 +95,11 @@ export class AddPostComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    this.getTodaysPosts();
     this.getRecentPosts();
     this.postForm.controls.dur.disable();
     this.initializeDates();
+    // this.initializeSlug();
     this.watchUrlChanges();
     this.watchTypeChanges();
     this.watchAuthorNameChanges();
@@ -116,8 +119,18 @@ export class AddPostComponent implements OnInit, OnDestroy {
     this.SubAuthorNameValueChanges?.unsubscribe();
   }
 
+  getTodaysPosts() {
+    // this.todaysPosts$ = this.adminPostsService.getTodaysPosts(
+    //   this.utils.todayDateString()
+    // );
+    this.todaysPosts$ = this.adminPostsService.getTodaysPosts(
+      '2022-09-22'
+    );
+
+  }
+
   getRecentPosts() {
-    this.recentPosts$ = this.adminPostsService.recentPosts();
+    this.recentPosts$ = this.adminPostsService.getRecentPosts();
   }
 
   /**
@@ -158,9 +171,7 @@ export class AddPostComponent implements OnInit, OnDestroy {
         concatMap((v) => {
           if (v === 'video' || v === 'podcast') {
             this.postForm.controls.dur.enable();
-            this.postForm.controls.dur.setValidators([
-              Validators.required,
-            ]);
+            this.postForm.controls.dur.setValidators([Validators.required]);
             return of(true); // return value not used for anything
           } else {
             this.postForm.controls.dur.disable();

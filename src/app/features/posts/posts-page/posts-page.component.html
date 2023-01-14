@@ -2,34 +2,24 @@
   <h1 class="page-title">
     Daily, Hastily-Curated ANGULAR News, Blogs, Videos and more
   </h1>
-  <ng-container *ngIf="postsByDay$; else loading">
-    <div *ngFor="let dayGroup of postsByDay$ | async" class="daily-section">
+  <ng-container *ngIf="postsByDay$; else loadingSpinner">
+    <div *ngFor="let dayGroup of postsByDay$ | async; let last = last" class="daily-section">
       <div class="divider-line">
         <span class="divider-text">{{ dayGroup.date }}</span>
       </div>
-      <ng-container *ngIf="dayGroup; else loading">
         <div class="flex-container">
           <div *ngFor="let post of dayGroup.dailyPosts">
             <app-post-card [post]="post"></app-post-card>
           </div>
         </div>
-      </ng-container>
-    </div>
-    <div class="actions">
-      <button
-        [disabled]="disableLoadButton$ | async"
-        mat-raised-button
-        class="load-week"
-        (click)="loadAnotherWeek()"
-      >
-        Load Another Week
-      </button>
-    </div>
+      </div>
+      <div #loadMorePosts *ngIf="!(isLoadingPosts$ | async); else loadingSpinner"></div>
   </ng-container>
 
-  <ng-template #loading>
-    <div class="spinner-wrapper">
-      <mat-spinner class="spinner"></mat-spinner>
+  <ng-template #loadingSpinner>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
     </div>
   </ng-template>
+
 </div>

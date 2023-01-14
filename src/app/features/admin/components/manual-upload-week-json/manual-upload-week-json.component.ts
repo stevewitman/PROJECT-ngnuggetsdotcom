@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { addDoc, collection, doc, docData, Firestore, setDoc } from '@angular/fire/firestore';
+import { doc, docData, Firestore, setDoc } from '@angular/fire/firestore';
 import { from, take, tap } from 'rxjs';
 
 @Component({
@@ -12,7 +12,7 @@ export class ManualUploadWeekJsonComponent implements OnInit {
   constructor(private http: HttpClient, private firestore: Firestore) {}
 
   week = '999';
-  // week = '037';
+  // week = '???';
   posts: any;
   errorMessage = '';
   postsFromFirestore: any;

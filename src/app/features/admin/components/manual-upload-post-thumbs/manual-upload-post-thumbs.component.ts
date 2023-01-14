@@ -19,7 +19,7 @@ export class ManualUploadPostThumbsComponent implements OnInit {
 
   constructor(private http: HttpClient, private storage: Storage) {}
 
-  week = '038';
+  week = '053';
   posts: any;
   error = false;
   errorMessage = '';  
