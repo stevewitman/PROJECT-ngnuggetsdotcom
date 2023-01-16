@@ -11,8 +11,8 @@ import { from, take, tap } from 'rxjs';
 export class ManualUploadWeekJsonComponent implements OnInit {
   constructor(private http: HttpClient, private firestore: Firestore) {}
 
-  week = '999';
-  // week = '???';
+  // week = '999';
+  week = '053'
   posts: any;
   errorMessage = '';
   postsFromFirestore: any;
