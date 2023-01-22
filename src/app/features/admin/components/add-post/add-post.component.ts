@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { Subscription, Observable, of } from 'rxjs';
@@ -23,13 +29,10 @@ export interface PostsData {
   styleUrls: ['./add-post.component.scss'],
 })
 export class AddPostComponent implements OnInit, OnDestroy {
+  subscriptions?: Subscription;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
   todaysPosts$: Observable<Post[]> = of([]);
   recentPosts$: Observable<Post[]> = of([]);
-  SubRecentPosts: Subscription | undefined;
-  SubUrlValueChanges: Subscription | undefined;
-  SubTypeValueChanges: Subscription | undefined;
-  SubAuthorNameValueChanges: Subscription | undefined;
   srcDateOffset = 0;
   addSpeakerOnBlur = true;
   speakerChips: string[] = [];
@@ -113,20 +116,14 @@ export class AddPostComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.SubRecentPosts?.unsubscribe();
-    this.SubUrlValueChanges?.unsubscribe();
-    this.SubTypeValueChanges?.unsubscribe();
-    this.SubAuthorNameValueChanges?.unsubscribe();
+    this.subscriptions?.unsubscribe();
   }
 
   getTodaysPosts() {
     // this.todaysPosts$ = this.adminPostsService.getTodaysPosts(
     //   this.utils.todayDateString()
     // );
-    this.todaysPosts$ = this.adminPostsService.getTodaysPosts(
-      '2022-09-22'
-    );
-
+    this.todaysPosts$ = this.adminPostsService.getTodaysPosts('2022-09-22');
   }
 
   getRecentPosts() {
@@ -141,21 +138,23 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchUrlChanges() {
-    this.SubUrlValueChanges = this.postForm.controls.url.valueChanges
-      .pipe(
-        concatMap((v) => {
-          this.constants.urlMatches.forEach((element) => {
-            if (this.adminUtils.urlContains(v, element.matchSubstring)) {
-              this.postForm.patchValue(element.postFormPatch);
-              return of(true); // return value not used for anything
-            } else {
-              return of(false); // return value not used for anything
-            }
-          });
-          return of(false); // return value not used for anything
-        })
-      )
-      .subscribe();
+    this.subscriptions?.add(
+      this.postForm.controls.url.valueChanges
+        .pipe(
+          concatMap((v) => {
+            this.constants.urlMatches.forEach((element) => {
+              if (this.adminUtils.urlContains(v, element.matchSubstring)) {
+                this.postForm.patchValue(element.postFormPatch);
+                return of(true); // return value not used for anything
+              } else {
+                return of(false); // return value not used for anything
+              }
+            });
+            return of(false); // return value not used for anything
+          })
+        )
+        .subscribe()
+    );
   }
 
   /**
@@ -166,21 +165,23 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchTypeChanges() {
-    this.SubTypeValueChanges = this.postForm.controls.type.valueChanges
-      .pipe(
-        concatMap((v) => {
-          if (v === 'video' || v === 'podcast') {
-            this.postForm.controls.dur.enable();
-            this.postForm.controls.dur.setValidators([Validators.required]);
-            return of(true); // return value not used for anything
-          } else {
-            this.postForm.controls.dur.disable();
-            this.postForm.controls.dur.setValidators(null);
-            return of(false); // return value not used for anything
-          }
-        })
-      )
-      .subscribe();
+    this.subscriptions?.add(
+      this.postForm.controls.type.valueChanges
+        .pipe(
+          concatMap((v) => {
+            if (v === 'video' || v === 'podcast') {
+              this.postForm.controls.dur.enable();
+              this.postForm.controls.dur.setValidators([Validators.required]);
+              return of(true); // return value not used for anything
+            } else {
+              this.postForm.controls.dur.disable();
+              this.postForm.controls.dur.setValidators(null);
+              return of(false); // return value not used for anything
+            }
+          })
+        )
+        .subscribe()
+    );
   }
 
   /**
@@ -191,32 +192,36 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchAuthorNameChanges() {
-    this.SubAuthorNameValueChanges = this.postForm.controls.aName.valueChanges
-      .pipe(
-        tap((res) => {
-          this.SubRecentPosts = this.recentPosts$
-            .pipe(
-              map((posts) =>
-                posts.find(
-                  (post) =>
-                    res === post.aName &&
-                    this.postForm.controls.srcSite.value === post.srcSite
+    this.subscriptions?.add(
+      this.postForm.controls.aName.valueChanges
+        .pipe(
+          tap((res) => {
+            this.subscriptions?.add(
+              this.recentPosts$
+                .pipe(
+                  map((posts) =>
+                    posts.find(
+                      (post) =>
+                        res === post.aName &&
+                        this.postForm.controls.srcSite.value === post.srcSite
+                    )
+                  ),
+                  tap((res) => {
+                    this.postForm.patchValue({
+                      aUrl: res?.aUrl,
+                      spkrs: res?.spkrs,
+                    });
+                    if (res?.spkrs) {
+                      this.speakerChips.push(res?.spkrs[0]);
+                    }
+                  })
                 )
-              ),
-              tap((res) => {
-                this.postForm.patchValue({
-                  aUrl: res?.aUrl,
-                  spkrs: res?.spkrs,
-                });
-                if (res?.spkrs) {
-                  this.speakerChips.push(res?.spkrs[0]);
-                }
-              })
-            )
-            .subscribe();
-        })
-      )
-      .subscribe();
+                .subscribe()
+            );
+          })
+        )
+        .subscribe()
+    );
   }
 
   /**

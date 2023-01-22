@@ -21,7 +21,6 @@ export class AdminPostsService {
       'postsByDay',
       date
     );
-        // const postData$ = docData(ref).pipe(tap(res => {console.log(res)})).subscribe();
     const postData$ = docData(ref).pipe(
       map((data) => data?.['posts']
       ));

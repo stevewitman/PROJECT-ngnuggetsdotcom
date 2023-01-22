@@ -41,6 +41,8 @@ import { Animations } from '../../../shared/animations';
   // ],
 })
 export class SidenavComponent implements OnInit, OnDestroy {
+  subscriptions?: Subscription;
+
   @Input() isAdmin$ = of(false);
   @ViewChild('drawer') drawerRef!: MatSidenav;
 
@@ -55,24 +57,28 @@ export class SidenavComponent implements OnInit, OnDestroy {
     private router: Router,
     private contexts: ChildrenOutletContexts
   ) {
-    router.events.subscribe((e) => {
-      if (e instanceof NavigationEnd && location.pathname == '/') {
-        this.showFilters = true;
-      }
-      if (e instanceof NavigationEnd && location.pathname !== '/') {
-        this.showFilters = false;
-      }
-    });
+    this.subscriptions?.add(
+      router.events.subscribe((e) => {
+        if (e instanceof NavigationEnd && location.pathname == '/') {
+          this.showFilters = true;
+        }
+        if (e instanceof NavigationEnd && location.pathname !== '/') {
+          this.showFilters = false;
+        }
+      })
+    );
   }
 
   ngOnInit() {
-    this.isHandset$$ = this.breakpointService.isHandset$?.subscribe((val) => {
-      this.isHandset = val;
-    });
+    this.subscriptions?.add(
+      this.breakpointService.isHandset$?.subscribe((val) => {
+        this.isHandset = val;
+      })
+    );
   }
 
   ngOnDestroy() {
-    this.isHandset$$?.unsubscribe();
+    this.subscriptions?.unsubscribe();
   }
 
   prepareRoute(outlet: RouterOutlet) {

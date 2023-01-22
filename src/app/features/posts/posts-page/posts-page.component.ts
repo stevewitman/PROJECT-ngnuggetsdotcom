@@ -1,8 +1,16 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  QueryList,
+  ViewChildren,
+} from '@angular/core';
 
-import { Observable, of, take } from 'rxjs';
+import { Observable, of, Subscription } from 'rxjs';
 
-import { DailyPost, Post } from 'src/app/core/models/post';
+import { DailyPost } from 'src/app/core/models/post';
 import { PostsService } from 'src/app/core/services/posts.service';
 import { Animations } from 'src/app/shared/animations';
 
@@ -12,7 +20,8 @@ import { Animations } from 'src/app/shared/animations';
   styleUrls: ['./posts-page.component.scss'],
   animations: [Animations.routeAnimations],
 })
-export class PostsPageComponent implements OnInit, AfterViewInit {
+export class PostsPageComponent implements OnInit, OnDestroy, AfterViewInit {
+  subscriptions?: Subscription;
   @ViewChildren('loadMorePosts', { read: ElementRef })
   loadMorePosts!: QueryList<ElementRef>;
 
@@ -30,12 +39,18 @@ export class PostsPageComponent implements OnInit, AfterViewInit {
     this.intersectionObserver();
   }
 
+  ngOnDestroy(): void {
+    this.subscriptions?.unsubscribe();
+  }
+
   ngAfterViewInit(): void {
-    this.loadMorePosts.changes.subscribe((d) => {
-      if (d.last) {
-        this.observer.observe(d.last.nativeElement);
-      }
-    });
+    this.subscriptions?.add(
+      this.loadMorePosts.changes.subscribe((d) => {
+        if (d.last) {
+          this.observer.observe(d.last.nativeElement);
+        }
+      })
+    );
   }
 
   intersectionObserver() {

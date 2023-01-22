@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-manual-reverse-json',
   templateUrl: './manual-reverse-json.component.html',
   styleUrls: ['./manual-reverse-json.component.scss'],
 })
-export class ManualReverseJsonComponent implements OnInit {
+export class ManualReverseJsonComponent implements OnInit, OnDestroy {
+  subscriptions?: Subscription;
 
   constructor(private http: HttpClient) {}
 
@@ -21,16 +23,22 @@ export class ManualReverseJsonComponent implements OnInit {
   }
 
   getPostsFromJson(week: string) {
-    this.http.get(`assets/json/${week}.json`).subscribe(
-      (val) => {
-        this.posts = val;
-        this.posts.reverse();
-        // console.log(this.posts);
-      },
-      (err) => {
-        this.errorMessage = err.message;
-        // console.log(err);
-      }
+    this.subscriptions?.add(
+      this.http.get(`assets/json/${week}.json`).subscribe(
+        (val) => {
+          this.posts = val;
+          this.posts.reverse();
+          // console.log(this.posts);
+        },
+        (err) => {
+          this.errorMessage = err.message;
+          // console.log(err);
+        }
+      )
     );
+  }
+
+  ngOnDestroy() {
+    this.subscriptions?.unsubscribe();
   }
 }
