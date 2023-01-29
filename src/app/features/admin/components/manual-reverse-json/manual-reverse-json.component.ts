@@ -23,19 +23,18 @@ export class ManualReverseJsonComponent implements OnInit, OnDestroy {
   }
 
   getPostsFromJson(week: string) {
-    this.subscriptions?.add(
-      this.http.get(`assets/json/${week}.json`).subscribe(
-        (val) => {
-          this.posts = val;
-          this.posts.reverse();
-          // console.log(this.posts);
-        },
-        (err) => {
-          this.errorMessage = err.message;
-          // console.log(err);
-        }
-      )
+    const sub = this.http.get(`assets/json/${week}.json`).subscribe(
+      (val) => {
+        this.posts = val;
+        this.posts.reverse();
+        // console.log(this.posts);
+      },
+      (err) => {
+        this.errorMessage = err.message;
+        // console.log(err);
+      }
     );
+    this.subscriptions?.add(sub);
   }
 
   ngOnDestroy() {

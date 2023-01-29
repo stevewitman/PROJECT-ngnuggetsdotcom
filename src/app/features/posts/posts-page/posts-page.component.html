@@ -3,7 +3,7 @@
     Daily, Hastily-Curated ANGULAR News, Blogs, Videos and more
   </h1>
   <ng-container *ngIf="postsByDay$; else loadingSpinner">
-    <div *ngFor="let dayGroup of postsByDay$ | async; let last = last" class="daily-section">
+    <div *ngFor="let dayGroup of postsByDay$ | async; let last = last">
       <div class="divider-line">
         <span class="divider-text">{{ dayGroup.date }}</span>
       </div>

@@ -52,31 +52,29 @@ export class PostsService {
   loadPosts(): void {
     this.isLoadingPosts$.next(true);
     if (this.nextWeekToLoad === 999) {
-      console.log('Loading current week');
-      this.subscriptions?.add(
-        this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
-          this.postsLoadedArray = data;
-          this.posts$.next(this.postsLoadedArray);
-          this.groupPostsByDay(this.postsLoadedArray);
-          this.postsByDay$.next(this.postsLoadedByDayArray);
-          this.nextWeekToLoad =
-          this.utilsService.getWeekNumberFromDateRange('2022-01-01', data[0].dAdd) - 1;
-          this.isLoadingPosts$.next(false);
-        })
-      );
+      console.log('Loading most recent');
+      const sub = this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
+        this.postsLoadedArray = data;
+        this.posts$.next(this.postsLoadedArray);
+        this.groupPostsByDay(this.postsLoadedArray);
+        this.postsByDay$.next(this.postsLoadedByDayArray);
+        this.nextWeekToLoad =
+        this.utilsService.getWeekNumberFromDateRange('2022-01-01', data[0].dAdd) - 1;
+        this.isLoadingPosts$.next(false);
+      });
+      this.subscriptions?.add(sub);
     } else if (this.nextWeekToLoad > 0) {
       console.log('Loading week', this.nextWeekToLoad);
-      this.subscriptions?.add(
-        this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
-          this.postsLoadedArray.push(...data);
-          this.posts$.next(this.postsLoadedArray);
-          this.groupPostsByDay(this.postsLoadedArray);
-          this.postsByDay$.next(this.postsLoadedByDayArray);
-          this.nextWeekToLoad = this.nextWeekToLoad - 1;
-          this.isLoadingPosts$.next(false);
-          // return this.posts$;
-        })
-      );
+      const sub = this.loadPostsByWeek(this.nextWeekToLoad).subscribe((data: Post[]) => {
+        this.postsLoadedArray.push(...data);
+        this.posts$.next(this.postsLoadedArray);
+        this.groupPostsByDay(this.postsLoadedArray);
+        this.postsByDay$.next(this.postsLoadedByDayArray);
+        this.nextWeekToLoad = this.nextWeekToLoad - 1;
+        this.isLoadingPosts$.next(false);
+        // return this.posts$;
+      });
+      this.subscriptions?.add(sub);
     } else {
       console.log('No more posts.');
       this.isLoadingPosts$.next(false);
@@ -94,21 +92,20 @@ export class PostsService {
   }
 
   groupPostsByDay(posts: Post[]) {
-    this.subscriptions?.add(
-      of(posts).pipe(
-        mergeMap((data: any) => from(data)),
-        groupBy((post: any) => post.dAdd),
-        mergeMap((group: any) => zip(of(group.key), group.pipe(toArray()))),
-        map((res: any) => ({
-          date: res[0],
-          dailyPosts: res[1],
-        })),
-        toArray()
-      ).subscribe((val) => {
-        this.postsLoadedByDayArray = val;
-        this.postsByDay$.next(this.postsLoadedByDayArray);
-      })
-    );
+    const sub = of(posts).pipe(
+      mergeMap((data: any) => from(data)),
+      groupBy((post: any) => post.dAdd),
+      mergeMap((group: any) => zip(of(group.key), group.pipe(toArray()))),
+      map((res: any) => ({
+        date: res[0],
+        dailyPosts: res[1],
+      })),
+      toArray()
+    ).subscribe((val) => {
+      this.postsLoadedByDayArray = val;
+      this.postsByDay$.next(this.postsLoadedByDayArray);
+    });
+    this.subscriptions?.add(sub);
   }
 
   groupBy(arrayObjects: any[], key: string | number) {

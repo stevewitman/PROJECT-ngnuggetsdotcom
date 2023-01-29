@@ -138,23 +138,22 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchUrlChanges() {
-    this.subscriptions?.add(
-      this.postForm.controls.url.valueChanges
-        .pipe(
-          concatMap((v) => {
-            this.constants.urlMatches.forEach((element) => {
-              if (this.adminUtils.urlContains(v, element.matchSubstring)) {
-                this.postForm.patchValue(element.postFormPatch);
-                return of(true); // return value not used for anything
-              } else {
-                return of(false); // return value not used for anything
-              }
-            });
-            return of(false); // return value not used for anything
-          })
-        )
-        .subscribe()
-    );
+    const sub = this.postForm.controls.url.valueChanges
+      .pipe(
+        concatMap((v) => {
+          this.constants.urlMatches.forEach((element) => {
+            if (this.adminUtils.urlContains(v, element.matchSubstring)) {
+              this.postForm.patchValue(element.postFormPatch);
+              return of(true); // return value not used for anything
+            } else {
+              return of(false); // return value not used for anything
+            }
+          });
+          return of(false); // return value not used for anything
+        })
+      )
+      .subscribe()
+    this.subscriptions?.add(sub);
   }
 
   /**
@@ -165,23 +164,22 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchTypeChanges() {
-    this.subscriptions?.add(
-      this.postForm.controls.type.valueChanges
-        .pipe(
-          concatMap((v) => {
-            if (v === 'video' || v === 'podcast') {
-              this.postForm.controls.dur.enable();
-              this.postForm.controls.dur.setValidators([Validators.required]);
-              return of(true); // return value not used for anything
-            } else {
-              this.postForm.controls.dur.disable();
-              this.postForm.controls.dur.setValidators(null);
-              return of(false); // return value not used for anything
-            }
-          })
-        )
-        .subscribe()
-    );
+    const sub = this.postForm.controls.type.valueChanges
+      .pipe(
+        concatMap((v) => {
+          if (v === 'video' || v === 'podcast') {
+            this.postForm.controls.dur.enable();
+            this.postForm.controls.dur.setValidators([Validators.required]);
+            return of(true); // return value not used for anything
+          } else {
+            this.postForm.controls.dur.disable();
+            this.postForm.controls.dur.setValidators(null);
+            return of(false); // return value not used for anything
+          }
+        })
+      )
+      .subscribe();
+    this.subscriptions?.add(sub);
   }
 
   /**
@@ -192,36 +190,33 @@ export class AddPostComponent implements OnInit, OnDestroy {
    * @returns
    */
   watchAuthorNameChanges() {
-    this.subscriptions?.add(
-      this.postForm.controls.aName.valueChanges
-        .pipe(
-          tap((res) => {
-            this.subscriptions?.add(
-              this.recentPosts$
-                .pipe(
-                  map((posts) =>
-                    posts.find(
-                      (post) =>
-                        res === post.aName &&
-                        this.postForm.controls.srcSite.value === post.srcSite
-                    )
-                  ),
-                  tap((res) => {
-                    this.postForm.patchValue({
-                      aUrl: res?.aUrl,
-                      spkrs: res?.spkrs,
-                    });
-                    if (res?.spkrs) {
-                      this.speakerChips.push(res?.spkrs[0]);
-                    }
-                  })
-                )
-                .subscribe()
-            );
-          })
-        )
-        .subscribe()
-    );
+    this.postForm.controls.aName.valueChanges
+      .pipe(
+        tap((res) => {
+          const sub = this.recentPosts$
+              .pipe(
+                map((posts) =>
+                  posts.find(
+                    (post) =>
+                      res === post.aName &&
+                      this.postForm.controls.srcSite.value === post.srcSite
+                  )
+                ),
+                tap((res) => {
+                  this.postForm.patchValue({
+                    aUrl: res?.aUrl,
+                    spkrs: res?.spkrs,
+                  });
+                  if (res?.spkrs) {
+                    this.speakerChips.push(res?.spkrs[0]);
+                  }
+                })
+              )
+              .subscribe();
+              this.subscriptions?.add(sub);
+            }));
+      // .subscribe()
+    
   }
 
   /**

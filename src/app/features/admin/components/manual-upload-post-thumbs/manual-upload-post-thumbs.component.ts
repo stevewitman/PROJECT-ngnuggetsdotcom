@@ -20,7 +20,7 @@ export class ManualUploadPostThumbsComponent implements OnInit, OnDestroy {
 
   constructor(private http: HttpClient, private storage: Storage) {}
 
-  week = '054';
+  week = '056';
   posts: any;
   error = false;
   errorMessage = '';
@@ -31,18 +31,17 @@ export class ManualUploadPostThumbsComponent implements OnInit, OnDestroy {
 
   getPostsFromJson(week: string) {
     console.log(`Getting posts from assets/json/${week}.json`);
-    this.subscriptions?.add(
-      this.http.get(`assets/json/${week}.json`).subscribe(
-        (val) => {
-          this.posts = val;
-          console.log(this.posts);
-        },
-        (err) => {
-          this.errorMessage = err.message;
-          console.log(err);
-        }
-      )
+    const sub = this.http.get(`assets/json/${week}.json`).subscribe(
+      (val) => {
+        this.posts = val;
+        console.log(this.posts);
+      },
+      (err) => {
+        this.errorMessage = err.message;
+        console.log(err);
+      }
     );
+    this.subscriptions?.add(sub);
   }
 
   uploadImage(event: any, index: number) {
@@ -53,20 +52,18 @@ export class ManualUploadPostThumbsComponent implements OnInit, OnDestroy {
     this.error = false;
     let stripedFileName = event.target.files[0].name.replace('.jpg', '');
     if (stripedFileName === this.posts[index].slug) {
-      this.subscriptions?.add(
-        this.SERVuploadImage(
-          event.target.files[0],
-          `thumbs/${this.week}/${this.posts[index].slug}`
-        )
-          .pipe(
-            tap((imgUrl) => {
-              this.posts[index]['imgUrl'] = imgUrl;
-              console.log('New Image URL:', imgUrl);
-            })
-          )
-          .subscribe()
-      );
+      const sub = this.SERVuploadImage(
+        event.target.files[0],
+        `thumbs/${this.week}/${this.posts[index].slug}`
+      ).pipe(
+        tap((imgUrl) => {
+          this.posts[index]['imgUrl'] = imgUrl;
+          console.log('New Image URL:', imgUrl);
+        })
+      )
+      .subscribe();
     } else {
+      console.log('Error occured uploading image');
       this.error = true;
     }
   }

@@ -13,8 +13,8 @@ export class ManualUploadWeekJsonComponent implements OnInit, OnDestroy {
 
   constructor(private http: HttpClient, private firestore: Firestore) {}
 
-  // week = '999';
-  week = '053';
+  week = '999';
+  // week = '056';
   posts: any;
   errorMessage = '';
   postsFromFirestore: any;
@@ -24,17 +24,16 @@ export class ManualUploadWeekJsonComponent implements OnInit, OnDestroy {
   }
 
   getPostsFromJson(week: string) {
-    this.subscriptions?.add(
-      this.http.get(`assets/json/${week}.json`).subscribe(
-        (val) => {
-          this.posts = val;
-        },
-        (err) => {
-          this.errorMessage = err.message;
-          console.log(err);
-        }
-      )
-    );
+    const sub = this.http.get(`assets/json/${week}.json`).subscribe(
+      (val) => {
+        this.posts = val;
+      },
+      (err) => {
+        this.errorMessage = err.message;
+        console.log(err);
+      }
+    )
+    this.subscriptions?.add(sub);
   }
 
   getPostsFromFirestore() {
@@ -44,8 +43,7 @@ export class ManualUploadWeekJsonComponent implements OnInit, OnDestroy {
 
   overwritePostsByWeek() {
     // Backup existing doc to oldPostsByWeek
-    // this.subscriptions?.add(
-    //   this.getPostsFromFirestore().pipe(
+    // const sub = this.getPostsFromFirestore().pipe(
     //     take(1)
     //   ).subscribe((res) => {
     //     console.log('RES:', res);
@@ -60,7 +58,7 @@ export class ManualUploadWeekJsonComponent implements OnInit, OnDestroy {
     //       console.log('No existing document exists');
     //     }
     //   })
-    // );
+    // this.subscriptions?.add(sub)
 
     // OVERWRITE doc with new data
     console.log('OVERWRITING postsByWeek/' + this.week);

@@ -1,167 +1,23 @@
 [
   {
-    "slug": "2023-01-15-D",
-    "type": "video",
-    "dur": "21",
-    "title": "How to create custom form components in Angular with ControlValueAccessor",
-    "url": "https://www.youtube.com/watch?v=krw9R77eV44",
-    "desc": "Demystify the ControlValueAccessor interface! In this video I cover how you can make your Angular components usable with ngModel and formControl by implementing the ControlValueAccessor interface.\n\nThis technique comes in handy when you want to create a custom form control, make your components more reusable, or when you want to break apart large forms into sub components.\n\nI cover some of the theory behind the interface, walk through a specific example of making a pre-existing component work within an Angular form, and point out some common pitfalls you may run into.",
-    "dAdd": "2023-01-15",
-    "dSrc": "2023-01-15",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "Scott Bailey",
-    "aUrl": "https://www.youtube.com/@zeddic1/videos",
-    "spkrs": [
-      "Scott Bailey"
-    ],
-    "tags": [
-      "ControlValueAccessor",
-      "Forms",
-      "Components",
-      "Custom"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-15-D?alt=media&token=41be286d-a1da-4bf2-9dd3-edd1ff90d17a"
-  },
-  {
-    "slug": "2023-01-15-C",
+    "slug": "2023-01-28-A",
     "type": "blog",
-    "title": "Transfer data from child to parent in Angular",
-    "url": "https://medium.com/@deepanshumehta003/transfer-data-from-child-to-parent-in-angular-16cb31837be6",
-    "desc": "You can use the @Input() decorator to declare a property in the child component that can accept data from the parent component.",
-    "dAdd": "2023-01-15",
-    "dSrc": "2023-01-15",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Deepanshu Mehta",
-    "aUrl": "https://medium.com/@deepanshumehta003",
-    "spkrs": [
-      "Deepanshu Mehta"
-    ],
-    "tags": [
-      "@Input",
-      "Data Transfer"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-15-C?alt=media&token=9b1a5910-cc11-4e28-817e-f070e73f20f8"
-  },
-  {
-    "slug": "2023-01-15-B",
-    "type": "blog",
-    "title": "Angular Dependency Injection",
-    "url": "https://directsoftwaresolutions.medium.com/angular-dependency-injection-1d281d4732b9",
-    "desc": "Dependency Injection is frequently abbreviated as DI. The paradigm is present throughout Angular.",
-    "dAdd": "2023-01-15",
-    "dSrc": "2023-01-14",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Direct Software Solutions",
-    "aUrl": "https://directsoftwaresolutions.medium.com",
-    "spkrs": [],
-    "tags": [
-      "Dependency Injection"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-15-B?alt=media&token=129805cd-0f5d-4763-b753-e3ba7ee252b1"
-  },
-  {
-    "slug": "2023-01-15-A",
-    "type": "blog",
-    "title": "RxJS hint BehaviorSubject, ReplaySubject(1)",
-    "url": "https://medium.com/javascript-everyday/rxjs-hint-behaviorsubject-replaysubject-1-61f71d390f19",
-    "desc": "This hint covers the difference between the BehaviorSubject and ReplaySubject(1) classes from the RxJS library.",
-    "dAdd": "2023-01-15",
-    "dSrc": "2023-01-14",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "Wojciech Trawinski",
-    "aUrl": "https://medium.com/@wojtrawi",
-    "spkrs": [
-      "Wojciech Trawinski"
-    ],
-    "tags": [
-      "RxJS",
-      "BehaviorSubject",
-      "ReplaySubject"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-15-A?alt=media&token=2c5c2346-da4f-4095-bddf-8ad1d5b7fb68"
-  },
-  {
-    "slug": "2023-01-14-D",
-    "type": "blog",
-    "title": "Mythical Angular — Angular Myth: Async pipes are good for performance",
-    "url": "https://medium.com/@kamil.galek/mythical-angular-angular-myth-async-pipes-are-good-for-performance-29fb63c01b44",
-    "desc": "Async pipes are considered a very good practice as they help with web performance problems and btw are easy to use. Sounds very cool, right?",
-    "dAdd": "2023-01-14",
-    "dSrc": "2023-01-14",
-    "srcSite": "Medium",
-    "srcUrl": "https://medium.com",
-    "aName": "galczo5",
-    "aUrl": "https://medium.com/@kamil.galek",
-    "spkrs": [],
-    "tags": [
-      "Async Pipe",
-      "Performance"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-14-D?alt=media&token=4d822f06-f262-4599-a61d-8aaa5bab7d96"
-  },
-  {
-    "slug": "2023-01-14-C",
-    "type": "video",
-    "dur": "4",
-    "title": "Angular 15 feature - Self closing tags for Angular components and custom elements",
-    "url": "https://www.youtube.com/watch?v=rXqlnW_PIac",
-    "desc": "Angular 15 feature - Self closing tags for Angular components and custom elements. In this video, we're going to learn how to use Angular 15's new self closing tags feature to create components and custom elements that will auto-close when the underlying template is loaded.",
-    "dAdd": "2023-01-14",
-    "dSrc": "2023-01-14",
-    "srcSite": "YouTube",
-    "srcUrl": "https://youtube.com",
-    "aName": "JS Frameworks",
-    "aUrl": "https://www.youtube.com/@JSFrameworks/videos",
-    "spkrs": [],
-    "tags": [
-      "Self Closing Tags"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-14-C?alt=media&token=4b4166da-f002-4cb1-a457-56025cff29ec"
-  },
-  {
-    "slug": "2023-01-14-B",
-    "type": "blog",
-    "title": "Avoiding common pitfalls with ControlValueAccessors in Angular",
-    "url": "https://dev.to/valorsoftware/avoiding-common-pitfalls-with-controlvalueaccessors-in-angular-4m57",
-    "desc": "One of the biggest advantages of Angular is the variety of tools and solutions that are brought to developers out of the box. One of them is the @angular/forms package, which brings the solid experience of working with any kind of UI controls.",
-    "dAdd": "2023-01-14",
-    "dSrc": "2023-01-14",
+    "title": "Angular 15: what happened to environment.ts",
+    "url": "https://dev.to/this-is-angular/angular-15-what-happened-to-environmentts-koh",
+    "desc": "Angular 15 simply doesn't ship anymore environment files by default. You can still create them and configure their replacement based on build target as it was done automatically at project creation in previous versions.",
+    "dAdd": "2023-01-28",
+    "dSrc": "2023-01-27",
     "srcSite": "DEV Community",
     "srcUrl": "https://dev.to",
-    "aName": "Dmitriy Stepanenko",
-    "aUrl": "https://dev.to/dmitriy_stepanenko",
+    "aName": "Gianpiero Errigo",
+    "aUrl": "https://dev.to/gianpiero_errigo",
     "spkrs": [
-      "Dmitriy Stepanenko"
+      "Gianpiero Errigo"
     ],
     "tags": [
-      "ControlValueAccessor",
-      "Forms"
+      "Environments",
+      "CLI"
     ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-14-B?alt=media&token=6e14efbc-9c33-44db-8193-28be186a5f25"
-  },
-  {
-    "slug": "2023-01-14-A",
-    "type": "blog",
-    "title": "Architecting A Highly Dynamic Card List In Angular",
-    "url": "https://sreyaj.dev/architecting-a-highly-dynamic-card-list-in-angular",
-    "desc": "Let's look at one way to architect Angular's highly customizable and dynamic card list component. The goal is to make it easier to render different kinds of card lists using one single component.",
-    "dAdd": "2023-01-14",
-    "dSrc": "2023-01-14",
-    "srcSite": "Hashnode",
-    "srcUrl": "https://hashnode.com",
-    "aName": "Adithya Sreyaj",
-    "aUrl": "https://hashnode.com/@adisreyaj",
-    "spkrs": [
-      "Adithya Sreyaj"
-    ],
-    "tags": [
-      "Components",
-      "Dynamic"
-    ],
-    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F054%2F2023-01-14-A?alt=media&token=2b746853-85eb-4261-a1d4-4e0cc9bf0703"
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/ngnuggetsdotcom-firebase.appspot.com/o/thumbs%2F056%2F2023-01-28-A?alt=media&token=9e7fe49a-1e3f-41ff-a409-55e0c56b3158"
   }
 ]

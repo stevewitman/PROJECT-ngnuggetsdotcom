@@ -57,24 +57,22 @@ export class SidenavComponent implements OnInit, OnDestroy {
     private router: Router,
     private contexts: ChildrenOutletContexts
   ) {
-    this.subscriptions?.add(
-      router.events.subscribe((e) => {
-        if (e instanceof NavigationEnd && location.pathname == '/') {
-          this.showFilters = true;
-        }
-        if (e instanceof NavigationEnd && location.pathname !== '/') {
-          this.showFilters = false;
-        }
-      })
-    );
+    const sub = router.events.subscribe((e) => {
+      if (e instanceof NavigationEnd && location.pathname == '/') {
+        this.showFilters = true;
+      }
+      if (e instanceof NavigationEnd && location.pathname !== '/') {
+        this.showFilters = false;
+      }
+    });
+    this.subscriptions?.add(sub);
   }
 
   ngOnInit() {
-    this.subscriptions?.add(
-      this.breakpointService.isHandset$?.subscribe((val) => {
-        this.isHandset = val;
-      })
-    );
+    const sub = this.breakpointService.isHandset$?.subscribe((val) => {
+      this.isHandset = val;
+    })
+    this.subscriptions?.add(sub);
   }
 
   ngOnDestroy() {

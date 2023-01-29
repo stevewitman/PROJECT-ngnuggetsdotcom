@@ -44,13 +44,12 @@ export class PostsPageComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.subscriptions?.add(
-      this.loadMorePosts.changes.subscribe((d) => {
-        if (d.last) {
-          this.observer.observe(d.last.nativeElement);
-        }
-      })
-    );
+    const sub = this.loadMorePosts.changes.subscribe((d) => {
+      if (d.last) {
+        this.observer.observe(d.last.nativeElement);
+      }
+    })
+    this.subscriptions?.add(sub);
   }
 
   intersectionObserver() {
