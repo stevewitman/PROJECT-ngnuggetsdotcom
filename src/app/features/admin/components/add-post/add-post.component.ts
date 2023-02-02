@@ -10,8 +10,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription, Observable, of } from 'rxjs';
 import { concatMap, map, tap, startWith } from 'rxjs/operators';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { MatChipInputEvent } from '@angular/material/chips';
-import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
+import { MatLegacyChipInputEvent as MatChipInputEvent } from '@angular/material/legacy-chips';
+import { MatLegacyAutocompleteSelectedEvent as MatAutocompleteSelectedEvent } from '@angular/material/legacy-autocomplete';
 
 import { AdminConstantsService } from '../../services/admin-constants.service';
 import { AdminUtilsService } from '../../services/admin-utils.service';
