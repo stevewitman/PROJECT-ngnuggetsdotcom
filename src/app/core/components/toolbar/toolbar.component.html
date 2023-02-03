@@ -4,6 +4,8 @@
     mat-icon-button
     (click)="toggleDrawer.emit(drawerOpen)"
     aria-label="Toggle sidenav button"
+    class="sidenav-toggle-button"
+    [ngClass]="{ 'sidenav-toggle-button-admin': (isAdmin$ | async)}"
   >
     <mat-icon aria-label="Side nav toggle icon" *ngIf="!drawerOpen"
       >menu</mat-icon
@@ -21,12 +23,5 @@
   </div>
 
   <!-- ***** AUTH STATUS ***** -->
-  <!-- <div class="search-button">
-    <button
-      mat-stroked-button
-    >
-      <mat-icon>search</mat-icon>
-    </button>
-  </div> -->
   <app-auth></app-auth>
 </mat-toolbar>

@@ -179,9 +179,21 @@ mat-form-field {
   padding-left: 0.1em;
 }
 
-.cdk-overlay-pane .auth-menu {
+.auth-menu {
   margin-right: -16px;
-  margin-top: 9px;
+  margin-top: 13px;
+  background-color: #EFEFEF;
+}
+
+.admin-menu {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #EFEFEF;
+}
+
+button.mat-menu-item {
+  height: 36px;
+  line-height: 36px;
 }
 
 .form-row {

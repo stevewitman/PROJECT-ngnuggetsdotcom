@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Observable, of } from 'rxjs';
@@ -14,14 +14,10 @@ import { AuthService } from '../../services/auth.service';
 export class AuthComponent implements OnInit {
   userAuthStatus$: Observable<User | null> = of(null);
 
-  constructor(
-    private authService: AuthService,
-    private router: Router
-  ) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit() {
     this.userAuthStatus$ = this.authService.userAuthState$;
-    // this.userAuthStatus$ = this.authService.getUserAuthState();
   }
 
   signInWithGoogle() {
@@ -29,7 +25,7 @@ export class AuthComponent implements OnInit {
       .signInWithGoogle()
       .then((res) => {
         // Sign-in successful.
-        console.log('AUTH COMPONENT: Signed In With Google');        
+        console.log('AUTH COMPONENT: Signed In With Google');
       })
       .catch((error) => {
         // An error happened.
@@ -44,7 +40,7 @@ export class AuthComponent implements OnInit {
     this.authService
       .signOutWithGoogle()
       .then(() => {
-        this.router.navigate([''])
+        this.router.navigate(['']);
         // Sign-out successful.
         console.log('AUTH COMPONENT: Signed Out With Google');
       })
